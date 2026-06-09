@@ -1,0 +1,57 @@
+{
+  "type": "matching-headings",
+  "title": "Matching Headings",
+  "instructions": "Choose the correct heading for each paragraph.",
+  "headings": {
+    "i": "A hidden consequence of abandonment",
+    "ii": "Evidence of biological adaptation",
+    "iii": "The creation of a restricted zone",
+    "iv": "A cautious conclusion about disaster and recovery",
+    "v": "Rare species return to the area",
+    "vi": "The early damage caused by radiation",
+    "vii": "Mammals increase after humans leave",
+    "viii": "Recovery beyond Chernobyl"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "paragraph": 1,
+      "answer": "i"
+    },
+    {
+      "number": 2,
+      "paragraph": 2,
+      "answer": "iii"
+    },
+    {
+      "number": 3,
+      "paragraph": 3,
+      "answer": "vii"
+    },
+    {
+      "number": 4,
+      "paragraph": 4,
+      "answer": "vi"
+    },
+    {
+      "number": 5,
+      "paragraph": 5,
+      "answer": "v"
+    },
+    {
+      "number": 6,
+      "paragraph": 7,
+      "answer": "ii"
+    },
+    {
+      "number": 7,
+      "paragraph": 10,
+      "answer": "viii"
+    },
+    {
+      "number": 8,
+      "paragraph": 11,
+      "answer": "iv"
+    }
+  ]
+}

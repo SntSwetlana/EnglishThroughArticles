@@ -1,0 +1,62 @@
+{
+  "type": "multiple-choice",
+  "title": "Multiple Choice",
+  "instructions": "Choose the correct letter, A, B, C or D.",
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is the main reason wildlife has recovered in the Chernobyl Exclusion Zone?",
+      "options": {
+        "A": "Radiation has improved animal health",
+        "B": "Human activity has been removed",
+        "C": "Predators have disappeared",
+        "D": "The climate has become warmer"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "question": "Why is the Red Forest important in the passage?",
+      "options": {
+        "A": "It shows the initial destructive impact of radiation",
+        "B": "It is the safest part of the exclusion zone",
+        "C": "It was created as a conservation experiment",
+        "D": "It contains only rare birds"
+      },
+      "answer": "A"
+    },
+    {
+      "number": 3,
+      "question": "Why is the greater spotted eagle significant?",
+      "options": {
+        "A": "It is common in urban areas",
+        "B": "It feeds only on contaminated animals",
+        "C": "It is globally endangered and sensitive to disturbance",
+        "D": "It was introduced by scientists in 1998"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 4,
+      "question": "What may explain the darker colour of tree frogs in the zone?",
+      "options": {
+        "A": "A shortage of food",
+        "B": "Higher melanin levels",
+        "C": "Lower temperatures",
+        "D": "A lack of predators"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "question": "What is the author’s final position?",
+      "options": {
+        "A": "Nuclear accidents are useful for conservation",
+        "B": "Radiation is harmless to ecosystems",
+        "C": "Chernobyl provides a complex lesson about disaster and resilience",
+        "D": "Human activity has no effect on biodiversity"
+      },
+      "answer": "C"
+    }
+  ]
+}

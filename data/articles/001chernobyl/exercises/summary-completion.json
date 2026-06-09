@@ -1,0 +1,66 @@
+{
+  "type": "summary-completion",
+  "title": "Complete the Summary",
+  "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage.",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "The Chernobyl Exclusion Zone was created after the nuclear accident in ____.",
+      "answer": [
+        "1986"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 2,
+      "prompt": "The zone has become an unintended experiment in large-scale ____.",
+      "answer": [
+        "rewilding"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 3,
+      "prompt": "Large mammals such as wolves, foxes and ____ have become more common.",
+      "answer": [
+        "Eurasian lynx",
+        "lynx"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 4,
+      "prompt": "In the Red Forest, pine trees turned ____ before dying.",
+      "answer": [
+        "reddish-brown",
+        "red-brown"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 5,
+      "prompt": "Tree frogs may be darker because of higher ____ levels.",
+      "answer": [
+        "melanin"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 6,
+      "prompt": "Some contaminated plants show ____ responses.",
+      "answer": [
+        "DNA repair"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 7,
+      "prompt": "Some animals show reduced reproductive success and higher ____.",
+      "answer": [
+        "mutation rates",
+        "mutation rate"
+      ],
+      "maxWords": 2
+    }
+  ]
+}

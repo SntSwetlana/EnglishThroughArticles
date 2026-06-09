@@ -1,0 +1,56 @@
+{
+  "type": "table-completion",
+  "title": "Complete the Table",
+  "instructions": "Choose NO MORE THAN THREE WORDS from the passage.",
+  "columns": [
+    "Example",
+    "Information from the passage"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "left": "Przewalski’s horses",
+      "prompt": "introduced in 1998 as a ____",
+      "answer": [
+        "conservation experiment"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 2,
+      "left": "Greater spotted eagle",
+      "prompt": "depends on ____ habitats",
+      "answer": [
+        "wetland"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 3,
+      "left": "Tree frogs",
+      "prompt": "may be protected by higher ____ levels",
+      "answer": [
+        "melanin"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 4,
+      "left": "Black fungi",
+      "prompt": "were found inside the damaged ____",
+      "answer": [
+        "reactor"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 5,
+      "left": "Fukushima",
+      "prompt": "shows similar patterns around nuclear ____",
+      "answer": [
+        "exclusion zones"
+      ],
+      "maxWords": 3
+    }
+  ]
+}
