@@ -1,10 +1,6 @@
 {
   "name": "english-through-articles",
   "private": true,
-  "scripts": {
-    "dev": "tsx watch src/bot.ts",
-    "start": "tsx src/bot.ts"
-  },
   "dependencies": {
     "dotenv": "^17.4.2",
     "grammy": "^1.43.0"
