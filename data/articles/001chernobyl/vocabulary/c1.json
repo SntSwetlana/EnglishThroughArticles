@@ -1,46 +1,15 @@
 {
   "title": "C1 Academic Vocabulary",
-  "level": "C1",
   "items": [
-    {
-      "term": "depleted",
-      "definition": "reduced in quantity, quality or availability",
-      "translation": "истощённый"
-    },
-    {
-      "term": "precarious",
-      "definition": "uncertain, unstable and potentially dangerous",
-      "translation": "нестабильный, уязвимый"
-    },
-    {
-      "term": "legacy",
-      "definition": "a lasting effect left by past events",
-      "translation": "наследие"
-    },
     {
       "term": "rewilding",
       "definition": "restoring ecosystems by allowing natural processes to return",
       "translation": "восстановление дикой природы"
     },
     {
-      "term": "intervene",
-      "definition": "to become involved in order to influence a situation",
-      "translation": "вмешиваться"
-    },
-    {
       "term": "natural resource extraction",
       "definition": "the removal of valuable materials from the environment",
       "translation": "добыча природных ресурсов"
-    },
-    {
-      "term": "comparable",
-      "definition": "similar enough to be meaningfully compared",
-      "translation": "сопоставимый"
-    },
-    {
-      "term": "uncontaminated",
-      "definition": "free from pollutants or harmful substances",
-      "translation": "незагрязнённый"
     },
     {
       "term": "evacuation",
@@ -53,18 +22,13 @@
       "translation": "повторно заселять"
     },
     {
-      "term": "establish a population",
-      "definition": "to create a stable breeding group of a species",
-      "translation": "сформировать популяцию"
-    },
-    {
       "term": "sensitive to disturbance",
       "definition": "easily affected by environmental disruption",
       "translation": "чувствительный к беспокойству"
     },
     {
-      "term": "chronic radiation",
-      "definition": "long-term exposure to radiation",
+      "term": "chronic radiation exposure",
+      "definition": "long-term contact with radiation",
       "translation": "хроническое воздействие радиации"
     },
     {
@@ -73,19 +37,9 @@
       "translation": "нетронутый"
     },
     {
-      "term": "genetically distinct",
-      "definition": "possessing genetic characteristics different from others",
-      "translation": "генетически отличающийся"
-    },
-    {
       "term": "environmental degradation",
       "definition": "the deterioration of environmental quality",
       "translation": "деградация окружающей среды"
-    },
-    {
-      "term": "existential risk",
-      "definition": "a threat that could seriously damage or eliminate a species or civilisation",
-      "translation": "экзистенциальная угроза"
     },
     {
       "term": "reproductive success",

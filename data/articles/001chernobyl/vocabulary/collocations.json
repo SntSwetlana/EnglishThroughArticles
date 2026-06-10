@@ -1,6 +1,5 @@
 {
   "title": "Academic Collocations",
-  "level": "C1-C2",
   "items": [
     {
       "term": "wildlife recovery",
@@ -11,11 +10,6 @@
       "term": "ecological recovery",
       "definition": "the restoration of ecosystem functions after damage",
       "translation": "экологическое восстановление"
-    },
-    {
-      "term": "biodiversity increase",
-      "definition": "growth in the variety of living organisms",
-      "translation": "рост биоразнообразия"
     },
     {
       "term": "human disturbance",
@@ -33,39 +27,9 @@
       "translation": "водно-болотная экосистема"
     },
     {
-      "term": "genetic adaptation",
-      "definition": "a hereditary change improving survival",
-      "translation": "генетическая адаптация"
-    },
-    {
-      "term": "evolutionary adaptation",
-      "definition": "a trait developed through natural selection",
-      "translation": "эволюционная адаптация"
-    },
-    {
       "term": "radiation exposure",
       "definition": "contact with ionising radiation",
       "translation": "воздействие радиации"
-    },
-    {
-      "term": "environmental pressure",
-      "definition": "environmental factors influencing survival and reproduction",
-      "translation": "давление окружающей среды"
-    },
-    {
-      "term": "species recovery",
-      "definition": "the restoration of a species population",
-      "translation": "восстановление популяции вида"
-    },
-    {
-      "term": "population growth",
-      "definition": "an increase in the number of individuals",
-      "translation": "рост популяции"
-    },
-    {
-      "term": "natural selection",
-      "definition": "the process by which advantageous traits become more common",
-      "translation": "естественный отбор"
     },
     {
       "term": "ecosystem recovery",

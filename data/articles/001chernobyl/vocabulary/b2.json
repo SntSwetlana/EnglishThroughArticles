@@ -1,6 +1,5 @@
 {
   "title": "B2 Core Vocabulary",
-  "level": "B2",
   "items": [
     {
       "term": "wildlife sanctuary",
@@ -18,21 +17,6 @@
       "translation": "исчезающий вид"
     },
     {
-      "term": "large mammal",
-      "definition": "a large warm-blooded animal that feeds its young with milk",
-      "translation": "крупное млекопитающее"
-    },
-    {
-      "term": "animal population",
-      "definition": "the number of animals living in a particular area",
-      "translation": "популяция животных"
-    },
-    {
-      "term": "nature reserve",
-      "definition": "a protected area managed for conservation",
-      "translation": "природный заповедник"
-    },
-    {
       "term": "human activity",
       "definition": "actions carried out by people that affect the environment",
       "translation": "деятельность человека"
@@ -41,21 +25,6 @@
       "term": "radiation damage",
       "definition": "harm caused by exposure to radiation",
       "translation": "ущерб от радиации"
-    },
-    {
-      "term": "long-term study",
-      "definition": "research conducted over an extended period",
-      "translation": "долгосрочное исследование"
-    },
-    {
-      "term": "scientific evidence",
-      "definition": "information obtained through scientific investigation",
-      "translation": "научные доказательства"
-    },
-    {
-      "term": "ecological research",
-      "definition": "the study of relationships between organisms and their environment",
-      "translation": "экологические исследования"
     },
     {
       "term": "exclusion zone",
@@ -78,11 +47,6 @@
       "translation": "биоразнообразие"
     },
     {
-      "term": "disturbance",
-      "definition": "an event that disrupts normal environmental conditions",
-      "translation": "нарушение, беспокойство"
-    },
-    {
       "term": "adaptation",
       "definition": "a characteristic that improves survival in a particular environment",
       "translation": "адаптация"
@@ -91,16 +55,6 @@
       "term": "recovery",
       "definition": "the process of returning to a healthy or stable condition",
       "translation": "восстановление"
-    },
-    {
-      "term": "evidence",
-      "definition": "information indicating whether something is true",
-      "translation": "доказательство"
-    },
-    {
-      "term": "conservation",
-      "definition": "the protection and management of nature and wildlife",
-      "translation": "охрана природы"
     }
   ]
 }

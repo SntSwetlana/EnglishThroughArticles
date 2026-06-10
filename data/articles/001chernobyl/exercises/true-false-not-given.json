@@ -15,43 +15,8 @@
     },
     {
       "number": 3,
-      "statement": "Brown bears and European bison have returned to the area.",
-      "answer": "TRUE"
-    },
-    {
-      "number": 4,
       "statement": "The Red Forest recovered within ten years of the accident.",
       "answer": "NOT GIVEN"
-    },
-    {
-      "number": 5,
-      "statement": "The greater spotted eagle is sensitive to human disturbance.",
-      "answer": "TRUE"
-    },
-    {
-      "number": 6,
-      "statement": "Tree frogs in the zone are lighter than usual.",
-      "answer": "FALSE"
-    },
-    {
-      "number": 7,
-      "statement": "All species in the exclusion zone have benefited from radiation.",
-      "answer": "FALSE"
-    },
-    {
-      "number": 8,
-      "statement": "Similar wildlife recovery has been observed near Fukushima.",
-      "answer": "TRUE"
-    },
-    {
-      "number": 9,
-      "statement": "Scientists know exactly how every organism adapts to radiation.",
-      "answer": "FALSE"
-    },
-    {
-      "number": 10,
-      "statement": "The author argues that nuclear disasters should be used as conservation tools.",
-      "answer": "FALSE"
     }
   ]
 }

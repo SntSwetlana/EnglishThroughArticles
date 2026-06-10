@@ -8,12 +8,11 @@
   "source": "The Conversation",
   "originalUrl": "https://theconversation.com/",
   "description": "An IELTS-style unit about wildlife recovery, rewilding, radiation adaptation and human impact in the Chernobyl Exclusion Zone.",
-  "tags": [
-    "environment",
-    "ecology",
-    "rewilding",
-    "radiation",
-    "conservation"
-  ],
+  "quizlet": {
+    "b2": "https://quizlet.com/",
+    "c1": "https://quizlet.com/",
+    "c2": "https://quizlet.com/",
+    "collocations": "https://quizlet.com/"
+  },
   "enabled": true
 }

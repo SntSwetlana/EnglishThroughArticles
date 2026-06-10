@@ -1,0 +1,28 @@
+{
+  "title": "Part 2 Quiz",
+  "part": 1,
+  "questions": [
+    {
+      "question": "Why is the greater spotted eagle important?",
+      "options": [
+        "It is globally endangered and sensitive to disturbance",
+        "It lives only in cities",
+        "It was created by genetic engineering",
+        "It feeds on radioactive fungi"
+      ],
+      "answer": 0,
+      "explanation": "The text says it is globally endangered and highly sensitive to human disturbance."
+    },
+    {
+      "question": "What may explain the darker colour of tree frogs?",
+      "options": [
+        "Lower melanin levels",
+        "Higher melanin levels",
+        "Less sunlight",
+        "A lack of water"
+      ],
+      "answer": 1,
+      "explanation": "Higher melanin levels may help protect tree frogs against radiation damage."
+    }
+  ]
+}

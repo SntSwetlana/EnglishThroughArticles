@@ -1,6 +1,5 @@
 {
   "title": "C2 Advanced Vocabulary",
-  "level": "C2",
   "items": [
     {
       "term": "unintentional wildlife sanctuary",
@@ -13,14 +12,9 @@
       "translation": "экологическое нарушение"
     },
     {
-      "term": "chronic exposure to radiation",
-      "definition": "prolonged contact with radioactive energy over time",
-      "translation": "длительное воздействие радиации"
-    },
-    {
-      "term": "DNA repair mechanisms",
-      "definition": "biological processes that correct genetic damage",
-      "translation": "механизмы восстановления ДНК"
+      "term": "DNA repair responses",
+      "definition": "biological responses that correct genetic damage",
+      "translation": "реакции восстановления ДНК"
     },
     {
       "term": "radiation tolerance",
@@ -28,54 +22,14 @@
       "translation": "устойчивость к радиации"
     },
     {
-      "term": "ecological succession",
-      "definition": "the gradual development of an ecosystem over time",
-      "translation": "экологическая сукцессия"
-    },
-    {
-      "term": "genetically distinct population",
-      "definition": "a group with unique genetic characteristics compared with other populations",
-      "translation": "генетически обособленная популяция"
-    },
-    {
-      "term": "environmental catastrophe",
-      "definition": "a large-scale environmental disaster",
-      "translation": "экологическая катастрофа"
-    },
-    {
-      "term": "biodiversity hotspot",
-      "definition": "a region with exceptionally high biological diversity",
-      "translation": "очаг биоразнообразия"
-    },
-    {
-      "term": "wildlife conservation strategy",
-      "definition": "a planned approach to protecting animal species",
-      "translation": "стратегия сохранения дикой природы"
-    },
-    {
       "term": "ecological consequences",
       "definition": "environmental outcomes resulting from an event or action",
       "translation": "экологические последствия"
     },
     {
-      "term": "ecological transformation",
-      "definition": "a major change in ecosystem structure and function",
-      "translation": "экологическая трансформация"
-    },
-    {
-      "term": "extrapolate",
-      "definition": "to extend conclusions beyond available evidence",
-      "translation": "экстраполировать"
-    },
-    {
-      "term": "civilian nuclear accident",
-      "definition": "a nuclear disaster involving non-military facilities",
-      "translation": "авария на гражданском ядерном объекте"
-    },
-    {
-      "term": "radioactive cloud",
-      "definition": "airborne radioactive material released into the atmosphere",
-      "translation": "радиоактивное облако"
+      "term": "radioactive material",
+      "definition": "material containing unstable atoms that release radiation",
+      "translation": "радиоактивный материал"
     },
     {
       "term": "absence of human intervention",
@@ -88,14 +42,9 @@
       "translation": "эволюционное давление"
     },
     {
-      "term": "gamma radiation",
-      "definition": "extremely high-energy electromagnetic radiation",
-      "translation": "гамма-излучение"
-    },
-    {
-      "term": "anthropogenic impact",
-      "definition": "environmental effects caused by human activity",
-      "translation": "антропогенное воздействие"
+      "term": "heavy metals",
+      "definition": "metallic elements that may be toxic to organisms",
+      "translation": "тяжёлые металлы"
     },
     {
       "term": "flourish under unusual conditions",
