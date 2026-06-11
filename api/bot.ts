@@ -4,14 +4,36 @@ import { Bot, InlineKeyboard, webhookCallback } from "grammy";
 import fs from "node:fs";
 import path from "node:path";
 
-type Article = { id: string; slug: string; title: string; subtitle?: string; level: string; ieltsTarget?: string; source?: string; originalUrl?: string; description?: string; quizlet?: Record<string, string>; enabled?: boolean; };
-type VocabItem = { term: string; definition: string; translation?: string; };
+type Article = { 
+    id: string; 
+    slug: string; 
+    title: string; 
+    subtitle?: string; 
+    level: string; 
+    ieltsTarget?: string;
+    source?: string; 
+    originalUrl?: string; 
+    description?: string; 
+    quizlet?: Record<string, string>; enabled?: boolean; 
+};
+
+type VocabItem = { 
+    term: string; 
+    definition: string; 
+    translation?: string; 
+};
+
 const token = process.env.BOT_TOKEN;
 if (!token) throw new Error("BOT_TOKEN is missing");
+
 const bot = new Bot(token);
+
 const ARTICLES_DIR = path.join(process.cwd(), "data", "articles");
+
+
 const LETTERS = ["A","B","C","D","E","F","G","H","I","J","K"];
-const ICONS = ["🅰️","🅱️","🅲","🅳","🅴","🅵","🅶","🅷","🅸","🅹","🅺"];
+const ICONS = ["🔤","🔤","🔤","🔤","🔤","🔤","🔤","🔤","🔤","🔤","🔤"];
+
 function escapeHtml(text = "") { return String(text).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
 function escapeRegExp(text = "") { return String(text).replace(/[.*+?^${}()|[\]\\]/g,"\\$&"); }
 async function safeEditOrReply(ctx: any, text: string, options: any = {}) { try { if (ctx.callbackQuery?.message) return await ctx.editMessageText(text, options); } catch {} return ctx.reply(text, options); }
