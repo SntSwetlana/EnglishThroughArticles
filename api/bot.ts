@@ -643,10 +643,10 @@ function formatExerciseQuestion(exercise: any, question: any, questionIndex: num
 
   let text =
     `📝 <b>${escapeHtml(exercise.title ?? "IELTS Exercise")}</b>\n\n` +
-    `Question ${questionIndex + 1}/${total}\n\n`;
+    `<b>Question</b> ${questionIndex + 1}/${total}\n\n`;
 
   if (exercise.type === "matching-headings") {
-    text += `<b>Paragraph ${escapeHtml(String(question.paragraph))}</b>\n\n`;
+    text += `<b>Paragraph</b>\n\n\t${escapeHtml(String(question.paragraph))}\n`;
 
     text += `${escapeHtml(question.text ?? "")}\n\n`;
 
