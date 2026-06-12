@@ -547,9 +547,68 @@ bot.callbackQuery(/^exercise:([^:]+):(.+\.json)$/, async (ctx) => {
   const slug = ctx.match[1];
   const file = ctx.match[2];
 
+  const key = sessionKey(ctx.from?.id, slug, file);
+  exerciseSessions.set(key, {});
+
   await showExerciseQuestion(ctx, slug, file, 0);
 });
 
+bot.callbackQuery(/^exercise-q:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+
+  await showExerciseQuestion(ctx, slug, file, questionIndex);
+});
+async function showExerciseResults(ctx: any, slug: string, file: string) {
+  const exercise = await getExercise(slug, file);
+
+  if (!exercise) {
+    return safeEditOrReply(ctx, "Exercise not found.");
+  }
+
+  const key = sessionKey(ctx.from?.id, slug, file);
+  const userAnswers = exerciseSessions.get(key) ?? {};
+
+  let correctCount = 0;
+  const mistakes: string[] = [];
+
+  for (let i = 0; i < exercise.questions.length; i++) {
+    const question = exercise.questions[i];
+    const userAnswer = userAnswers[i];
+    const correctAnswer = getCorrectAnswer(question);
+
+    const isCorrect =
+      normalizeAnswer(userAnswer ?? "") === normalizeAnswer(correctAnswer);
+
+    if (isCorrect) {
+      correctCount++;
+    } else {
+      mistakes.push(
+        `${i + 1}. Your answer: ${userAnswer ?? "—"} | Correct: ${correctAnswer}`
+      );
+    }
+  }
+
+  const text =
+    `🏁 <b>${escapeHtml(exercise.title)}</b>\n\n` +
+    `Result: <b>${correctCount}/${exercise.questions.length}</b>\n\n` +
+    (mistakes.length
+      ? `<b>Mistakes:</b>\n${mistakes.map(escapeHtml).join("\n")}`
+      : `✅ No mistakes.`);
+
+  await safeEditOrReply(ctx, text, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("🔁 Try Again", `exercise:${slug}:${file}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`)
+      .row()
+      .text("⬅️ Article", `article:${slug}`),
+  });
+}
 async function showExerciseQuestion(
   ctx: any,
   slug: string,
@@ -568,23 +627,110 @@ async function showExerciseQuestion(
   const question = questions[questionIndex];
 
   if (!question) {
-    return safeEditOrReply(ctx, "🏁 <b>Exercise finished!</b>\n\nGreat work.", {
-      parse_mode: "HTML",
-      reply_markup: new InlineKeyboard()
-        .text("⬅️ IELTS Exercises", `ielts:${slug}`)
-        .row()
-        .text("⬅️ Article", `article:${slug}`),
-    });
+    return showExerciseResults(ctx, slug, file);
   }
 
-  const text = formatInteractiveQuestion(exercise, question, questionIndex);
-  const keyboard = exerciseAnswerKeyboard(slug, file, exercise, questionIndex, question);
+  const text = formatExerciseQuestion(exercise, question, questionIndex);
+  const keyboard = exerciseQuestionKeyboard(slug, file, exercise, questionIndex);
 
   await safeEditOrReply(ctx, text, {
     parse_mode: "HTML",
     reply_markup: keyboard,
   });
 }
+function formatExerciseQuestion(exercise: any, question: any, questionIndex: number): string {
+  const total = exercise.questions?.length ?? 0;
+
+  let text =
+    `📝 <b>${escapeHtml(exercise.title ?? "IELTS Exercise")}</b>\n\n` +
+    `Question ${questionIndex + 1}/${total}\n\n`;
+
+  if (exercise.type === "matching-headings") {
+    text += `<b>${escapeHtml(String(question.paragraph))}</b>\n\n`;
+    text += `Choose the correct heading.`;
+    return text;
+  }
+
+  if (question.statement) {
+    text += escapeHtml(question.statement);
+    return text;
+  }
+
+  if (question.question) {
+    text += escapeHtml(question.question);
+    return text;
+  }
+
+  if (question.prompt) {
+    text += escapeHtml(question.prompt);
+    return text;
+  }
+
+  if (question.left) {
+    text += `${escapeHtml(question.left)} — ${escapeHtml(question.prompt ?? "")}`;
+    return text;
+  }
+
+  return escapeHtml(JSON.stringify(question));
+}
+function exerciseQuestionKeyboard(
+  slug: string,
+  file: string,
+  exercise: any,
+  questionIndex: number
+): InlineKeyboard {
+  const keyboard = new InlineKeyboard();
+
+  if (exercise.type === "matching-headings") {
+    for (const [key, value] of Object.entries(exercise.headings ?? {})) {
+      keyboard
+        .text(
+          `${key}. ${String(value).slice(0, 28)}`,
+          `ex-a:${slug}:${file}:${questionIndex}:${key}`
+        )
+        .row();
+    }
+
+    keyboard.text("⬅️ IELTS", `ielts:${slug}`);
+    return keyboard;
+  }
+
+  if (exercise.type === "true-false-not-given") {
+    keyboard
+      .text("TRUE", `ex-a:${slug}:${file}:${questionIndex}:TRUE`)
+      .row()
+      .text("FALSE", `ex-a:${slug}:${file}:${questionIndex}:FALSE`)
+      .row()
+      .text("NOT GIVEN", `ex-a:${slug}:${file}:${questionIndex}:NOT GIVEN`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`);
+
+    return keyboard;
+  }
+
+  return keyboard
+    .text("👁 Show Answer", `ex-show:${slug}:${file}:${questionIndex}`)
+    .row()
+    .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+    .row()
+    .text("⬅️ IELTS", `ielts:${slug}`);
+}
+
+bot.callbackQuery(/^ex-a:([^:]+):(.+\.json):(\d+):(.+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+  const selected = ctx.match[4];
+
+  const key = sessionKey(ctx.from?.id, slug, file);
+  const answers = exerciseSessions.get(key) ?? {};
+  answers[questionIndex] = selected;
+  exerciseSessions.set(key, answers);
+
+  await showExerciseQuestion(ctx, slug, file, questionIndex + 1);
+});
 
 function formatInteractiveQuestion(
   exercise: any,
@@ -845,4 +991,38 @@ function formatExercise(exercise: any): string {
   }
 
   return text.trim();
+}
+
+const exerciseSessions = new Map<string, Record<number, string>>();
+
+function sessionKey(userId: number | undefined, slug: string, file: string): string {
+  return `${userId ?? "unknown"}:${slug}:${file}`;
+}
+
+function getCorrectAnswer(question: any): string {
+  if (Array.isArray(question.answer)) {
+    return String(question.answer[0]);
+  }
+
+  return String(question.answer);
+}
+
+function normalizeAnswer(text: string): string {
+  return String(text)
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[“”«»]/g, '"')
+    .replace(/[–—−]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+async function getExercise(slug: string, file: string): Promise<any | null> {
+  const filePath = path.join(ARTICLES_DIR, slug, "exercises", file);
+
+  if (!(await exists(filePath))) {
+    return null;
+  }
+
+  return readJson<any>(filePath);
 }
