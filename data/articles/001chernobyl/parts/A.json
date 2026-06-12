@@ -3,17 +3,103 @@
   "part": "Part A",
   "title": "An Unintentional Wildlife Sanctuary",
   "level": "B2/C1/C2",
-  "text": "Replace with full text.",
+  "text": "In the novel When There Are Wolves Again by E.J. Swift, the Chernobyl disaster and its legacy is extrapolated to a near future where natural habitats are depleted and precarious.\n\nThis work of eco-fiction deftly explores issues of possible paths to a future where animals return to a nature depleted area. In the real world, a parallel version of this story has been unfolding as nature is thriving around former nuclear power plants.\n\nThis is especially evident at the former Chernobyl plant in Ukraine, where the absence of human activity has enabled wildlife to flourish despite continuing radiation, 40 years after the nuclear disaster there.\n\nA 2,600 km² exclusion zone was established following the world's worst civilian nuclear accident at Chernobyl in 1986, which released a radioactive cloud across Europe and led to the evacuation of around 115,000 people from the surrounding area. Almost immediately, radiation poisoning killed 31 plant workers and firefighters.\n\nIt is 40 years since the Chernobyl disaster that led to the creation of the Chernobyl Exclusion Zone (CEZ). Since 1986, it has turned into a thriving, unintentional wildlife sanctuary and a vast rewilding laboratory. The CEZ prohibits people living there, commercial activities, natural resource extraction and public access. Now the area is home to flourishing populations of large mammals.",
   "levels": {
-    "B2": {
-      "quizlet": []
+        "B2": {
+          "quizlet": [
+            ["legacy", "наследие", "its legacy"],
+            ["depleted", "истощённый", "natural habitats are depleted"],
+            ["natural habitat", "естественная среда обитания", "natural habitats"],
+            ["radioactive cloud", "радиоактивное облако", "released a radioactive cloud"],
+            ["evacuation", "эвакуация", "led to the evacuation"],
+            ["radiation poisoning", "лучевая болезнь", "radiation poisoning killed"],
+            ["public access", "доступ для общественности", "public access"]
+          ]
+        },
+
+        "C1": {
+          "quizlet": [
+            ["precarious", "нестабильный, уязвимый", "depleted and precarious"],
+            ["eco-fiction", "экологическая художественная литература", "This work of eco-fiction"],
+            ["parallel version", "параллельная версия", "a parallel version of this story"],
+            ["human activity", "деятельность человека", "absence of human activity"],
+            ["civilian nuclear accident", "авария на гражданском ядерном объекте", "worst civilian nuclear accident"],
+            ["exclusion zone", "зона отчуждения", "A 2,600km² exclusion zone"],
+            ["former nuclear power plant", "бывшая атомная электростанция", "former nuclear power plants"],
+            ["rewilding laboratory", "лаборатория восстановления дикой природы", "vast rewilding laboratory"]
+          ]
+        },
+
+        "C2": {
+          "quizlet": [
+            ["extrapolated", "экстраполируется", "is extrapolated to a near future"],
+            ["absence of human activity", "отсутствие деятельности человека", "absence of human activity"],
+            ["natural resource extraction", "добыча природных ресурсов", "natural resource extraction"],
+            ["unintentional wildlife sanctuary", "непреднамеренный заповедник", "unintentional wildlife sanctuary"],
+            ["flourishing populations", "процветающие популяции", "flourishing populations of large mammals"]
+          ]
+        }
     },
-    "C1": {
-      "quizlet": []
-    },
-    "C2": {
-      "quizlet": []
-    }
-  },
-  "questions": []
+    "questions": [
+      {
+        "type": "choice",
+        "question": "Why does the text mention the novel When There Are Wolves Again?",
+        "options": [
+          "To introduce a fictional example that parallels real ecological recovery",
+          "To explain how nuclear reactors work",
+          "To describe the history of Ukrainian literature",
+          "To argue that fiction is more accurate than science"
+        ],
+        "answer": 0,
+        "explanation": "The novel is used to introduce the idea of animals returning to depleted natural areas, which is then compared with real events around Chernobyl."
+      },
+      {
+        "type": "choice",
+        "question": "What has enabled wildlife to flourish around the former Chernobyl plant?",
+        "options": [
+          "The complete disappearance of radiation",
+          "The absence of human activity",
+          "The arrival of new farming methods",
+          "The construction of artificial habitats"
+        ],
+        "answer": 1,
+        "explanation": "The text states that the absence of human activity has enabled wildlife to flourish despite continuing radiation."
+      },
+      {
+        "type": "choice",
+        "question": "What was one immediate consequence of the Chernobyl accident?",
+        "options": [
+          "The return of European bison",
+          "The creation of a tourist resort",
+          "The death of 31 plant workers and firefighters from radiation poisoning",
+          "The disappearance of all wildlife from Ukraine"
+        ],
+        "answer": 2,
+        "explanation": "The text says that radiation poisoning killed 31 plant workers and firefighters almost immediately."
+      },
+      {
+        "type": "choice",
+        "question": "What does the CEZ prohibit?",
+        "options": [
+          "Only scientific research",
+          "Only animal migration",
+          "People living there, commercial activities, resource extraction and public access",
+          "Only hunting and fishing"
+        ],
+        "answer": 2,
+        "explanation": "The passage says the CEZ prohibits people living there, commercial activities, natural resource extraction and public access."
+      },
+      {
+        "type": "choice",
+        "question": "How is the Chernobyl Exclusion Zone described forty years after the disaster?",
+        "options": [
+          "As a thriving unintentional wildlife sanctuary",
+          "As a fully restored human city",
+          "As an agricultural centre",
+          "As a completely lifeless radioactive desert"
+        ],
+        "answer": 0,
+        "explanation": "The text describes the CEZ as a thriving, unintentional wildlife sanctuary and a vast rewilding laboratory."
+      }
+    ]
 }
