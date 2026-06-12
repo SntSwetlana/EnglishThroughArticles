@@ -6,6 +6,12 @@ import path from "node:path";
 
 type Level = "B2" | "C1" | "C2";
 
+type ArticlePartMeta = {
+  id: string;
+  icon?: string;
+  title?: string;
+};
+
 type Article = {
   id: string;
   slug: string;
@@ -17,6 +23,7 @@ type Article = {
   originalUrl?: string;
   description?: string;
   enabled?: boolean;
+  parts?: ArticlePartMeta[];
 };
 
 type QuizletItem = [string, string, string?];
@@ -188,9 +195,17 @@ function articleHeader(article: Article): string {
   );
 }
 
-function partHeader(part: Part): string {
+async function partHeader(slug: string, part: Part): Promise<string> {
+  const article = await readArticle(slug);
+  const partId = part.part.replace("Part ", "");
+  const meta = article?.parts?.find((item) => item.id === partId);
+
+  const icon = meta?.icon ?? "📄";
+  const title = meta?.title ?? part.title;
+
   return (
-    `${escapeHtml(part.part)} • <b>${escapeHtml(part.title)}</b>\n` +
+    `${icon} <b>${escapeHtml(part.part)}</b>\n\n` +
+    `${escapeHtml(title)}\n\n` +
     `Level: ${escapeHtml(part.level || "B2/C1/C2")}`
   );
 }
@@ -207,15 +222,21 @@ async function articlesKeyboard(): Promise<InlineKeyboard> {
 }
 
 async function partsKeyboard(slug: string): Promise<InlineKeyboard> {
+  const article = await readArticle(slug);
   const partIds = await getPartIds(slug);
   const keyboard = new InlineKeyboard();
 
   for (const partId of partIds) {
-    const icon = PART_ICONS[partId] ?? "🔹";
     const part = await getPart(slug, partId);
-    const title = part?.title ? ` — ${part.title}` : "";
+    const meta = article?.parts?.find((item) => item.id === partId);
 
-    keyboard.text(`${icon} Part ${partId}${title}`, `part:${slug}:${partId}`).row();
+    const icon = meta?.icon ?? "📄";
+    const title = meta?.title ?? part?.title ?? `Part ${partId}`;
+
+    keyboard.text(
+      `${icon} ${title}`,
+      `part:${slug}:${partId}`
+    ).row();
   }
 
   keyboard.text("⬅️ All Articles", "articles");
@@ -342,7 +363,7 @@ bot.callbackQuery(/^part:([^:]+):([^:]+)$/, async (ctx) => {
     return safeEditOrReply(ctx, "Part not found.");
   }
 
-  await safeEditOrReply(ctx, partHeader(part), {
+await safeEditOrReply(ctx, await partHeader(slug, part), {
     parse_mode: "HTML",
     reply_markup: partKeyboard(slug, partId),
   });

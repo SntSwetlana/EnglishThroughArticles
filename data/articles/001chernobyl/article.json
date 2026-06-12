@@ -8,5 +8,27 @@
   "source": "The Conversation",
   "originalUrl": "https://theconversation.com/40-years-on-from-the-disaster-why-there-are-foxes-bears-and-bison-again-around-chernobyl-280300",
   "description": "A study of rewilding, biodiversity and adaptation in the Chernobyl Exclusion Zone.",
-  "enabled": true
+  "enabled": true,
+    "parts": [
+    {
+      "id": "A",
+      "icon": "📖",
+      "title": "The Disaster"
+    },
+    {
+      "id": "B",
+      "icon": "🌿",
+      "title": "Wildlife Recovery"
+    },
+    {
+      "id": "C",
+      "icon": "🦅",
+      "title": "Rare Species"
+    },
+    {
+      "id": "D",
+      "icon": "🧬",
+      "title": "Adaptation & Lessons"
+    }
+  ]
 }
