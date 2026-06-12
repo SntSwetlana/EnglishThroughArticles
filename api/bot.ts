@@ -646,8 +646,18 @@ function formatExerciseQuestion(exercise: any, question: any, questionIndex: num
     `Question ${questionIndex + 1}/${total}\n\n`;
 
   if (exercise.type === "matching-headings") {
-    text += `<b>${escapeHtml(String(question.paragraph))}</b>\n\n`;
-    text += `Choose the correct heading.`;
+    text += `<b>Paragraph ${escapeHtml(String(question.paragraph))}</b>\n\n`;
+
+    text += `${escapeHtml(question.text ?? "")}\n\n`;
+
+    text += `<b>Headings</b>\n`;
+
+    for (const [key, value] of Object.entries(exercise.headings ?? {})) {
+      text += `${escapeHtml(key)}. ${escapeHtml(String(value))}\n`;
+    }
+
+    text += `\n<b>Choose the best heading.</b>`;
+
     return text;
   }
 
@@ -682,24 +692,29 @@ function exerciseQuestionKeyboard(
 ): InlineKeyboard {
   const keyboard = new InlineKeyboard();
 
-  if (exercise.type === "matching-headings") {
-    for (const [key, value] of Object.entries(exercise.headings ?? {})) {
-      keyboard
-        .text(
-          `${key}. ${String(value).slice(0, 28)}`,
-          `ex-a:${slug}:${file}:${questionIndex}:${key}`
-        )
-        .row();
-    }
+if (exercise.type === "matching-headings") {
+  const keys = Object.keys(exercise.headings ?? {});
 
-    keyboard.text("⬅️ IELTS", `ielts:${slug}`);
-    return keyboard;
+  for (let i = 0; i < keys.length; i += 3) {
+    const row = keys.slice(i, i + 3).map((key) =>
+      InlineKeyboard.text(
+        key,
+        `ex-a:${slug}:${file}:${questionIndex}:${key}`
+      )
+    );
+
+    keyboard.row(...row);
   }
+
+  keyboard.row().text("⬅️ IELTS", `ielts:${slug}`);
+
+  return keyboard;
+}
   if (exercise.type === "multiple-choice" && question.options) {
   for (const [key, value] of Object.entries(question.options)) {
     keyboard
       .text(
-        `${key}. ${String(value).slice(0, 28)}`,
+        `${key}\n${String(value)}`,
         `ex-a:${slug}:${file}:${questionIndex}:${key}`
       )
       .row();
