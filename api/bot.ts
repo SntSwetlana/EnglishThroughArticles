@@ -626,6 +626,16 @@ async function showExerciseQuestion(
   const questions = exercise.questions ?? [];
   const question = questions[questionIndex];
 
+  if (
+    exercise.type === "summary-completion" &&
+    ctx.from?.id
+  ) {
+    pendingTextAnswers.set(ctx.from.id, {
+      slug,
+      file,
+      questionIndex,
+    });
+  }
   if (!question) {
     return showExerciseResults(ctx, slug, file);
   }
@@ -669,6 +679,7 @@ if (exercise.type === "multiple-choice" && question.question) {
 
   return text;
 }
+
   if (question.statement) {
     text += escapeHtml(question.statement);
     return text;
@@ -828,6 +839,15 @@ function exerciseAnswerKeyboard(
     return keyboard;
   }
 
+  if (exercise.type === "summary-completion") {
+    keyboard
+      .text("⏭ Skip", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`);
+
+    return keyboard;
+  }
+
   if (exercise.type === "true-false-not-given") {
     keyboard
       .text("TRUE", `ex-a:${slug}:${file}:${questionIndex}:TRUE`)
@@ -866,6 +886,76 @@ if (exercise.type === "multiple-choice" && question.options) {
 
   return keyboard;
 }
+function formatAnswer(answer: unknown): string {
+  if (Array.isArray(answer)) {
+    return answer.join(" / ");
+  }
+
+  return String(answer ?? "");
+}
+
+bot.on("message:text", async (ctx) => {
+  const userId = ctx.from?.id;
+
+  if (!userId) return;
+
+  const pending = pendingTextAnswers.get(userId);
+
+  if (!pending) return;
+
+  const { slug, file, questionIndex } = pending;
+
+  const exercise = await getExercise(slug, file);
+  const question = exercise?.questions?.[questionIndex];
+
+  if (!exercise || !question) {
+    pendingTextAnswers.delete(userId);
+    return ctx.reply("Question not found.");
+  }
+
+  const userAnswer = ctx.message.text;
+  const answers = Array.isArray(question.answer)
+    ? question.answer
+    : [question.answer];
+
+  const isCorrect = answers.some(
+    (answer: string) =>
+      normalizeAnswer(userAnswer) === normalizeAnswer(String(answer))
+  );
+
+  const wordCount = userAnswer.trim().split(/\s+/).filter(Boolean).length;
+  const maxWords = Number(question.maxWords ?? 999);
+
+  let resultText = "";
+
+  if (wordCount > maxWords) {
+    resultText =
+      `⚠️ <b>Too many words.</b>\n\n` +
+      `Your answer: <b>${escapeHtml(userAnswer)}</b>\n` +
+      `Limit: NO MORE THAN ${maxWords} WORDS\n\n` +
+      `Correct answer: <b>${escapeHtml(formatAnswer(question.answer))}</b>`;
+  } else if (isCorrect) {
+    resultText =
+      `✅ <b>Correct!</b>\n\n` +
+      `Your answer: <b>${escapeHtml(userAnswer)}</b>`;
+  } else {
+    resultText =
+      `❌ <b>Not quite.</b>\n\n` +
+      `Your answer: <b>${escapeHtml(userAnswer)}</b>\n` +
+      `Correct answer: <b>${escapeHtml(formatAnswer(question.answer))}</b>`;
+  }
+
+  pendingTextAnswers.delete(userId);
+
+  await ctx.reply(resultText, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`),
+  });
+});
+
 bot.callbackQuery(/^ex-a:([^:]+):(.+\.json):(\d+):(.+)$/, async (ctx) => {
   await ctx.answerCallbackQuery();
 
@@ -982,6 +1072,15 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   return handleUpdate(req, res);
 }
+
+const pendingTextAnswers = new Map<
+  number,
+  {
+    slug: string;
+    file: string;
+    questionIndex: number;
+  }
+>();
 
 const exerciseSessions = new Map<string, Record<number, string>>();
 
