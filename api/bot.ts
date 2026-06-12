@@ -660,7 +660,15 @@ function formatExerciseQuestion(exercise: any, question: any, questionIndex: num
 
     return text;
   }
+if (exercise.type === "multiple-choice" && question.question) {
+  text += `${escapeHtml(question.question)}\n\n`;
 
+  for (const [key, value] of Object.entries(question.options ?? {})) {
+    text += `<b>${escapeHtml(key)}</b>. ${escapeHtml(String(value))}\n`;
+  }
+
+  return text;
+}
   if (question.statement) {
     text += escapeHtml(question.statement);
     return text;
@@ -710,20 +718,21 @@ if (exercise.type === "matching-headings") {
 
   return keyboard;
 }
-  if (exercise.type === "multiple-choice" && question.options) {
-  for (const [key, value] of Object.entries(question.options)) {
-    keyboard
-      .text(
-        `${key}\n${String(value)}`,
+if (exercise.type === "multiple-choice" && question.options) {
+  const keys = Object.keys(question.options);
+
+  keyboard.row(
+    ...keys.map((key) =>
+      InlineKeyboard.text(
+        key,
         `ex-a:${slug}:${file}:${questionIndex}:${key}`
       )
-      .row();
-  }
+    )
+  );
 
-  keyboard.text("⬅️ IELTS", `ielts:${slug}`);
+  keyboard.row().text("⬅️ IELTS", `ielts:${slug}`);
   return keyboard;
 }
-
   if (exercise.type === "true-false-not-given") {
     keyboard
       .text("TRUE", `ex-a:${slug}:${file}:${questionIndex}:TRUE`)
@@ -832,14 +841,21 @@ function exerciseAnswerKeyboard(
     return keyboard;
   }
 
-  if (exercise.type === "multiple-choice" && question.options) {
-    for (const key of Object.keys(question.options)) {
-      keyboard.text(key, `ex-a:${slug}:${file}:${questionIndex}:${key}`).row();
-    }
+if (exercise.type === "multiple-choice" && question.options) {
+  const keys = Object.keys(question.options);
 
-    keyboard.text("⬅️ IELTS", `ielts:${slug}`);
-    return keyboard;
-  }
+  keyboard.row(
+    ...keys.map((key) =>
+      InlineKeyboard.text(
+        key,
+        `ex-a:${slug}:${file}:${questionIndex}:${key}`
+      )
+    )
+  );
+
+  keyboard.row().text("⬅️ IELTS", `ielts:${slug}`);
+  return keyboard;
+}
 
   keyboard
     .text("👁 Show Answer", `ex-show:${slug}:${file}:${questionIndex}`)
