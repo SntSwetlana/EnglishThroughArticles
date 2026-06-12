@@ -631,7 +631,7 @@ async function showExerciseQuestion(
   }
 
   const text = formatExerciseQuestion(exercise, question, questionIndex);
-  const keyboard = exerciseQuestionKeyboard(slug, file, exercise, questionIndex);
+  const keyboard = exerciseQuestionKeyboard(slug, file, exercise, questionIndex, question);
 
   await safeEditOrReply(ctx, text, {
     parse_mode: "HTML",
@@ -677,7 +677,8 @@ function exerciseQuestionKeyboard(
   slug: string,
   file: string,
   exercise: any,
-  questionIndex: number
+  questionIndex: number,
+  question: any
 ): InlineKeyboard {
   const keyboard = new InlineKeyboard();
 
@@ -694,6 +695,19 @@ function exerciseQuestionKeyboard(
     keyboard.text("⬅️ IELTS", `ielts:${slug}`);
     return keyboard;
   }
+  if (exercise.type === "multiple-choice" && question.options) {
+  for (const [key, value] of Object.entries(question.options)) {
+    keyboard
+      .text(
+        `${key}. ${String(value).slice(0, 28)}`,
+        `ex-a:${slug}:${file}:${questionIndex}:${key}`
+      )
+      .row();
+  }
+
+  keyboard.text("⬅️ IELTS", `ielts:${slug}`);
+  return keyboard;
+}
 
   if (exercise.type === "true-false-not-given") {
     keyboard
@@ -938,91 +952,8 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   return handleUpdate(req, res);
 }
 
-function formatExercise(exercise: any): string {
-  let text =
-    `📝 <b>${escapeHtml(exercise.title ?? "IELTS Exercise")}</b>\n\n` +
-    `${escapeHtml(exercise.instructions ?? "")}\n\n`;
-
-  if (exercise.headings) {
-    text += `<b>Headings</b>\n`;
-
-    for (const [key, value] of Object.entries(exercise.headings)) {
-      text += `${escapeHtml(key)}. ${escapeHtml(String(value))}\n`;
-    }
-
-    text += `\n`;
-  }
-
-  for (const q of exercise.questions ?? []) {
-    if (q.statement) {
-      text += `${q.number}. ${escapeHtml(q.statement)}\n`;
-      continue;
-    }
-
-    if (q.question) {
-      text += `${q.number}. ${escapeHtml(q.question)}\n`;
-
-      if (q.options) {
-        for (const [key, value] of Object.entries(q.options)) {
-          text += `   ${escapeHtml(key)}. ${escapeHtml(String(value))}\n`;
-        }
-      }
-
-      text += `\n`;
-      continue;
-    }
-
-    if (q.prompt) {
-      text += `${q.number}. ${escapeHtml(q.prompt)}\n`;
-      continue;
-    }
-
-    if (q.left) {
-      text += `${q.number}. ${escapeHtml(q.left)} — ${escapeHtml(q.prompt ?? "")}\n`;
-      continue;
-    }
-
-    if (q.paragraph) {
-      text += `${q.number}. Paragraph ${escapeHtml(String(q.paragraph))}\n`;
-      continue;
-    }
-
-    text += `${q.number ?? "?"}. ${escapeHtml(JSON.stringify(q))}\n`;
-  }
-
-  return text.trim();
-}
-
 const exerciseSessions = new Map<string, Record<number, string>>();
 
 function sessionKey(userId: number | undefined, slug: string, file: string): string {
   return `${userId ?? "unknown"}:${slug}:${file}`;
-}
-
-function getCorrectAnswer(question: any): string {
-  if (Array.isArray(question.answer)) {
-    return String(question.answer[0]);
-  }
-
-  return String(question.answer);
-}
-
-function normalizeAnswer(text: string): string {
-  return String(text)
-    .toLowerCase()
-    .replace(/[’‘]/g, "'")
-    .replace(/[“”«»]/g, '"')
-    .replace(/[–—−]/g, "-")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-async function getExercise(slug: string, file: string): Promise<any | null> {
-  const filePath = path.join(ARTICLES_DIR, slug, "exercises", file);
-
-  if (!(await exists(filePath))) {
-    return null;
-  }
-
-  return readJson<any>(filePath);
 }
