@@ -914,6 +914,11 @@ bot.on("message:text", async (ctx) => {
   }
 
   const userAnswer = ctx.message.text;
+  const key = sessionKey(userId, slug, file);
+  const savedAnswers = exerciseSessions.get(key) ?? {};
+  savedAnswers[questionIndex] = userAnswer;
+  exerciseSessions.set(key, savedAnswers);
+
   const answers = Array.isArray(question.answer)
     ? question.answer
     : [question.answer];
