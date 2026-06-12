@@ -496,14 +496,66 @@ bot.callbackQuery(/^ielts:([^:]+)$/, async (ctx) => {
   await ctx.answerCallbackQuery();
 
   const slug = ctx.match[1];
+  const exercisesDir = path.join(ARTICLES_DIR, slug, "exercises");
 
-  await safeEditOrReply(
-    ctx,
-    "📝 IELTS exercises will be added here:\n\n• True / False / Not Given\n• Matching Headings\n• Summary Completion\n• Table Completion\n• NO MORE THAN TWO WORDS",
-    {
+  if (!(await exists(exercisesDir))) {
+    return safeEditOrReply(ctx, "Exercises not found.", {
       reply_markup: new InlineKeyboard().text("⬅️ Article", `article:${slug}`),
-    }
-  );
+    });
+  }
+
+  const files = (await fs.readdir(exercisesDir))
+    .filter((file) => file.endsWith(".json"))
+    .filter((file) => file !== "grammar-gap-fill.json")
+    .sort();
+
+  const keyboard = new InlineKeyboard();
+
+  for (const file of files) {
+    const exercise = await readJson<{ title?: string; type?: string }>(
+      path.join(exercisesDir, file)
+    );
+
+    keyboard
+      .text(
+        `📝 ${exercise.title ?? file.replace(".json", "")}`,
+        `exercise:${slug}:${file}`
+      )
+      .row();
+  }
+
+  keyboard.text("⬅️ Article", `article:${slug}`);
+
+  await safeEditOrReply(ctx, "📝 IELTS Exercises", {
+    reply_markup: keyboard,
+  });
+});
+
+bot.callbackQuery(/^exercise:([^:]+):(.+\.json)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+
+  const filePath = path.join(ARTICLES_DIR, slug, "exercises", file);
+
+  if (!(await exists(filePath))) {
+    return safeEditOrReply(ctx, "Exercise not found.", {
+      reply_markup: new InlineKeyboard().text("⬅️ IELTS", `ielts:${slug}`),
+    });
+  }
+
+  const exercise = await readJson<any>(filePath);
+
+  const text = formatExercise(exercise);
+
+  await safeEditOrReply(ctx, text, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("⬅️ IELTS Exercises", `ielts:${slug}`)
+      .row()
+      .text("⬅️ Article", `article:${slug}`),
+  });
 });
 
 bot.callbackQuery(/^grammar-menu:([^:]+)$/, async (ctx) => {
@@ -532,4 +584,59 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   return handleUpdate(req, res);
+}
+
+function formatExercise(exercise: any): string {
+  let text =
+    `📝 <b>${escapeHtml(exercise.title ?? "IELTS Exercise")}</b>\n\n` +
+    `${escapeHtml(exercise.instructions ?? "")}\n\n`;
+
+  if (exercise.headings) {
+    text += `<b>Headings</b>\n`;
+
+    for (const [key, value] of Object.entries(exercise.headings)) {
+      text += `${escapeHtml(key)}. ${escapeHtml(String(value))}\n`;
+    }
+
+    text += `\n`;
+  }
+
+  for (const q of exercise.questions ?? []) {
+    if (q.statement) {
+      text += `${q.number}. ${escapeHtml(q.statement)}\n`;
+      continue;
+    }
+
+    if (q.question) {
+      text += `${q.number}. ${escapeHtml(q.question)}\n`;
+
+      if (q.options) {
+        for (const [key, value] of Object.entries(q.options)) {
+          text += `   ${escapeHtml(key)}. ${escapeHtml(String(value))}\n`;
+        }
+      }
+
+      text += `\n`;
+      continue;
+    }
+
+    if (q.prompt) {
+      text += `${q.number}. ${escapeHtml(q.prompt)}\n`;
+      continue;
+    }
+
+    if (q.left) {
+      text += `${q.number}. ${escapeHtml(q.left)} — ${escapeHtml(q.prompt ?? "")}\n`;
+      continue;
+    }
+
+    if (q.paragraph) {
+      text += `${q.number}. Paragraph ${escapeHtml(String(q.paragraph))}\n`;
+      continue;
+    }
+
+    text += `${q.number ?? "?"}. ${escapeHtml(JSON.stringify(q))}\n`;
+  }
+
+  return text.trim();
 }
