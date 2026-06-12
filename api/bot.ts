@@ -80,6 +80,16 @@ async function safeEditOrReply(ctx: any, text: string, options: any = {}) {
   return ctx.reply(text, options);
 }
 
+async function getExercise(slug: string, file: string): Promise<any | null> {
+  const filePath = path.join(ARTICLES_DIR, slug, "exercises", file);
+
+  if (!(await exists(filePath))) {
+    return null;
+  }
+
+  return readJson<any>(filePath);
+}
+
 async function readJson<T>(filePath: string): Promise<T> {
   const raw = await fs.readFile(filePath, "utf8");
   return JSON.parse(raw) as T;
@@ -537,26 +547,222 @@ bot.callbackQuery(/^exercise:([^:]+):(.+\.json)$/, async (ctx) => {
   const slug = ctx.match[1];
   const file = ctx.match[2];
 
-  const filePath = path.join(ARTICLES_DIR, slug, "exercises", file);
+  await showExerciseQuestion(ctx, slug, file, 0);
+});
 
-  if (!(await exists(filePath))) {
+async function showExerciseQuestion(
+  ctx: any,
+  slug: string,
+  file: string,
+  questionIndex: number
+) {
+  const exercise = await getExercise(slug, file);
+
+  if (!exercise) {
     return safeEditOrReply(ctx, "Exercise not found.", {
       reply_markup: new InlineKeyboard().text("⬅️ IELTS", `ielts:${slug}`),
     });
   }
 
-  const exercise = await readJson<any>(filePath);
+  const questions = exercise.questions ?? [];
+  const question = questions[questionIndex];
 
-  const text = formatExercise(exercise);
+  if (!question) {
+    return safeEditOrReply(ctx, "🏁 <b>Exercise finished!</b>\n\nGreat work.", {
+      parse_mode: "HTML",
+      reply_markup: new InlineKeyboard()
+        .text("⬅️ IELTS Exercises", `ielts:${slug}`)
+        .row()
+        .text("⬅️ Article", `article:${slug}`),
+    });
+  }
+
+  const text = formatInteractiveQuestion(exercise, question, questionIndex);
+  const keyboard = exerciseAnswerKeyboard(slug, file, exercise, questionIndex, question);
 
   await safeEditOrReply(ctx, text, {
     parse_mode: "HTML",
-    reply_markup: new InlineKeyboard()
-      .text("⬅️ IELTS Exercises", `ielts:${slug}`)
+    reply_markup: keyboard,
+  });
+}
+
+function formatInteractiveQuestion(
+  exercise: any,
+  question: any,
+  questionIndex: number
+): string {
+  const total = exercise.questions?.length ?? 0;
+
+  let text =
+    `📝 <b>${escapeHtml(exercise.title ?? "IELTS Exercise")}</b>\n\n` +
+    `Question ${questionIndex + 1}/${total}\n\n`;
+
+  if (question.paragraph) {
+    text += `<b>Paragraph ${escapeHtml(String(question.paragraph))}</b>\n\n`;
+    text += `Choose the correct heading.`;
+    return text;
+  }
+
+  if (question.statement) {
+    text += `${escapeHtml(question.statement)}`;
+    return text;
+  }
+
+  if (question.question) {
+    text += `${escapeHtml(question.question)}`;
+    return text;
+  }
+
+  if (question.prompt) {
+    text += `${escapeHtml(question.prompt)}`;
+    return text;
+  }
+
+  if (question.left) {
+    text += `${escapeHtml(question.left)} — ${escapeHtml(question.prompt ?? "")}`;
+    return text;
+  }
+
+  return escapeHtml(JSON.stringify(question));
+}
+
+function exerciseAnswerKeyboard(
+  slug: string,
+  file: string,
+  exercise: any,
+  questionIndex: number,
+  question: any
+): InlineKeyboard {
+  const keyboard = new InlineKeyboard();
+
+  if (exercise.type === "matching-headings" && exercise.headings) {
+    for (const key of Object.keys(exercise.headings)) {
+      keyboard.text(key, `ex-a:${slug}:${file}:${questionIndex}:${key}`).row();
+    }
+
+    keyboard.text("⬅️ IELTS", `ielts:${slug}`);
+    return keyboard;
+  }
+
+  if (exercise.type === "true-false-not-given") {
+    keyboard
+      .text("TRUE", `ex-a:${slug}:${file}:${questionIndex}:TRUE`)
       .row()
-      .text("⬅️ Article", `article:${slug}`),
+      .text("FALSE", `ex-a:${slug}:${file}:${questionIndex}:FALSE`)
+      .row()
+      .text("NOT GIVEN", `ex-a:${slug}:${file}:${questionIndex}:NOT GIVEN`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`);
+
+    return keyboard;
+  }
+
+  if (exercise.type === "multiple-choice" && question.options) {
+    for (const key of Object.keys(question.options)) {
+      keyboard.text(key, `ex-a:${slug}:${file}:${questionIndex}:${key}`).row();
+    }
+
+    keyboard.text("⬅️ IELTS", `ielts:${slug}`);
+    return keyboard;
+  }
+
+  keyboard
+    .text("👁 Show Answer", `ex-show:${slug}:${file}:${questionIndex}`)
+    .row()
+    .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+    .row()
+    .text("⬅️ IELTS", `ielts:${slug}`);
+
+  return keyboard;
+}
+bot.callbackQuery(/^ex-a:([^:]+):(.+\.json):(\d+):(.+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+  const selected = ctx.match[4];
+
+  const exercise = await getExercise(slug, file);
+
+  if (!exercise) {
+    return safeEditOrReply(ctx, "Exercise not found.");
+  }
+
+  const question = exercise.questions?.[questionIndex];
+
+  if (!question) {
+    return safeEditOrReply(ctx, "Question not found.");
+  }
+
+  const correct = getCorrectAnswer(question);
+  const isCorrect = normalizeAnswer(selected) === normalizeAnswer(correct);
+
+  const resultText = isCorrect
+    ? `✅ <b>Correct!</b>\n\nAnswer: <b>${escapeHtml(correct)}</b>`
+    : `❌ <b>Not quite.</b>\n\nYour answer: <b>${escapeHtml(selected)}</b>\nCorrect answer: <b>${escapeHtml(correct)}</b>`;
+
+  await safeEditOrReply(ctx, resultText, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`),
   });
 });
+
+bot.callbackQuery(/^exercise-q:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+
+  await showExerciseQuestion(ctx, slug, file, questionIndex);
+});
+
+bot.callbackQuery(/^ex-show:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const file = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+
+  const exercise = await getExercise(slug, file);
+  const question = exercise?.questions?.[questionIndex];
+
+  if (!question) {
+    return safeEditOrReply(ctx, "Question not found.");
+  }
+
+  const correct = getCorrectAnswer(question);
+
+  await safeEditOrReply(ctx, `✅ <b>Answer:</b> ${escapeHtml(correct)}`, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`),
+  });
+});
+
+function getCorrectAnswer(question: any): string {
+  if (Array.isArray(question.answer)) {
+    return String(question.answer[0]);
+  }
+
+  return String(question.answer);
+}
+
+function normalizeAnswer(text: string): string {
+  return String(text)
+    .toLowerCase()
+    .replace(/[’‘]/g, "'")
+    .replace(/[“”«»]/g, '"')
+    .replace(/[–—−]/g, "-")
+    .replace(/\s+/g, " ")
+    .trim();
+}
 
 bot.callbackQuery(/^grammar-menu:([^:]+)$/, async (ctx) => {
   await ctx.answerCallbackQuery();
