@@ -1,0 +1,18 @@
+{
+  "id": "001chernobyl",
+  "slug": "001chernobyl",
+  "title": "Wildlife Returns to Chernobyl",
+  "subtitle": "How nature recovered in a radioactive exclusion zone",
+  "level": "C1",
+  "ieltsTarget": "7.5–8.5",
+  "source": "The Conversation",
+  "originalUrl": "https://theconversation.com/",
+  "description": "An IELTS-style unit about wildlife recovery, rewilding, radiation adaptation and human impact in the Chernobyl Exclusion Zone.",
+  "quizlet": {
+    "b2": "https://quizlet.com/",
+    "c1": "https://quizlet.com/",
+    "c2": "https://quizlet.com/",
+    "collocations": "https://quizlet.com/"
+  },
+  "enabled": true
+}
