@@ -57,17 +57,6 @@ if (!token) {
 const bot = new Bot(token);
 
 const ARTICLES_DIR = path.join(process.cwd(), "data", "articles");
-const LEVELS: Level[] = ["B2", "C1", "C2"];
-
-const PART_ICONS: Record<string, string> = {
-  A: "🅰️",
-  B: "🅱️",
-  C: "🅲",
-  D: "🅳",
-  E: "🅴",
-  F: "🅵",
-};
-
 function escapeHtml(text = ""): string {
   return String(text)
     .replace(/&/g, "&amp;")
