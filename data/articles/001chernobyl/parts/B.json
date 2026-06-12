@@ -3,17 +3,102 @@
   "part": "Part B",
   "title": "The Return of Large Mammals",
   "level": "B2/C1/C2",
-  "text": "Replace with full text.",
+  "text": "Populations of wolves, foxes, Eurasian lynx, elk and wild boar have significantly increased here. Species such as brown bears and European bison, meanwhile, have returned.\n\nThis is rewilding in its most extreme form, given the inability of humans to intervene and it has resulted in several unexpected effects in the CEZ.\n\nStudies indicate that the lack of human hunting, agriculture and development has a more positive impact on animal numbers than radiation has a negative one.\n\nLarge mammal populations in the Belarusian sector of the zone are comparable to or higher than those in uncontaminated nature reserves.\n\nThere is no doubt that initial radiation caused major damage to flora and fauna, most notably in the Red Forest, a 10 km² area near the nuclear power plant.\n\nThis area earned its name after pine trees died and turned red-brown due to high radiation absorption. Yet long-term studies show that biodiversity has increased in the absence of humans.",
   "levels": {
-    "B2": {
-      "quizlet": []
-    },
-    "C1": {
-      "quizlet": []
-    },
-    "C2": {
-      "quizlet": []
-    }
+        "B2": {
+          "quizlet": [
+            ["wolf", "волк", "wolves"],
+            ["fox", "лиса", "foxes"],
+            ["wild boar", "дикий кабан", "wild boar"],
+            ["brown bear", "бурый медведь", "brown bears"],
+            ["European bison", "европейский бизон", "European bison"],
+            ["returned", "вернулись", "have returned"],
+            ["hunting", "охота", "human hunting"],
+            ["biodiversity", "биоразнообразие", "biodiversity has increased"]
+          ]
+        },
+
+        "C1": {
+          "quizlet": [
+            ["Eurasian lynx", "евразийская рысь", "Eurasian lynx"],
+            ["intervene", "вмешиваться", "humans to intervene"],
+            ["unexpected effects", "неожиданные последствия", "several unexpected effects"],
+            ["animal numbers", "численность животных", "impact on animal numbers"],
+            ["uncontaminated nature reserves", "незагрязнённые природные заповедники", "uncontaminated nature reserves"],
+            ["flora and fauna", "флора и фауна", "damage to flora and fauna"]
+          ]
+        },
+
+        "C2": {
+          "quizlet": [
+            ["rewilding in its most extreme form", "восстановление природы в наиболее экстремальной форме", "rewilding in its most extreme form"],
+            ["positive impact", "положительное влияние", "more positive impact"],
+            ["negative one", "отрицательное влияние", "a negative one"],
+            ["radiation absorption", "поглощение радиации", "high radiation absorption"],
+            ["absence of humans", "отсутствие людей", "absence of humans"]
+          ]
+        }
   },
-  "questions": []
+"questions": [
+  {
+    "type": "choice",
+    "question": "Which animals have significantly increased in the Chernobyl Exclusion Zone?",
+    "options": [
+      "Wolves, foxes, Eurasian lynx, elk and wild boar",
+      "Lions, elephants and giraffes",
+      "Penguins, seals and whales",
+      "Only domestic animals"
+    ],
+    "answer": 0,
+    "explanation": "The passage lists wolves, foxes, Eurasian lynx, elk and wild boar as species whose populations have significantly increased."
+  },
+  {
+    "type": "choice",
+    "question": "Why is Chernobyl described as rewilding in its most extreme form?",
+    "options": [
+      "Because humans are unable to intervene in the area",
+      "Because all animals were artificially introduced",
+      "Because radiation was deliberately used to protect wildlife",
+      "Because the area is managed like a zoo"
+    ],
+    "answer": 0,
+    "explanation": "The text says this is rewilding in its most extreme form because humans cannot intervene."
+  },
+  {
+    "type": "choice",
+    "question": "What do studies indicate about animal numbers in the zone?",
+    "options": [
+      "Radiation has a more positive effect than human absence",
+      "Human hunting increases biodiversity",
+      "The lack of hunting, agriculture and development has a strong positive impact",
+      "Animal numbers are lower than everywhere else"
+    ],
+    "answer": 2,
+    "explanation": "The passage says that the lack of human hunting, agriculture and development has a more positive impact on animal numbers than radiation has a negative one."
+  },
+  {
+    "type": "choice",
+    "question": "What was the Red Forest named after?",
+    "options": [
+      "A rare red bird species",
+      "Pine trees that died and turned red-brown after absorbing radiation",
+      "Red soil brought from Belarus",
+      "A conservation project"
+    ],
+    "answer": 1,
+    "explanation": "The Red Forest earned its name after pine trees died and turned red-brown due to high radiation absorption."
+  },
+  {
+    "type": "choice",
+    "question": "What do long-term studies show about biodiversity in the zone?",
+    "options": [
+      "It has increased in the absence of humans",
+      "It has completely disappeared",
+      "It has remained exactly the same",
+      "It only increased inside cities"
+    ],
+    "answer": 0,
+    "explanation": "The text says long-term studies show that biodiversity has increased in the absence of humans."
+  }
+]
 }

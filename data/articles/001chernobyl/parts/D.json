@@ -3,17 +3,110 @@
   "part": "Part D",
   "title": "Lessons from Chernobyl",
   "level": "B2/C1/C2",
-  "text": "Replace with full text.",
+  "text": "Adaptation is not limited to animals. A black fungus discovered inside reactor 4 appears to use melanin to convert gamma radiation into energy.\n\nSome plants in the zone are demonstrating DNA repair as a response to high radiation levels. Certain species show enhanced ability to manage heavy metals and radiation.\n\nThe area is now one of Europe's largest nature reserves and an important site for ecological research.\n\nThe zone has also produced unusual outcomes. Pet dogs abandoned after the disaster have become feral and genetically distinct from other dog populations in Ukraine.\n\nDespite evidence supporting rewilding, not all consequences have been positive. Some species show reduced reproductive success and increased mutation rates.\n\nSimilar wildlife recoveries have occurred in Fukushima and around other nuclear facilities. However, the article stresses that nuclear disasters should not be viewed as a conservation strategy.\n\nWildlife has returned largely because people left, demonstrating how ecosystems can recover when human pressure is removed.",
   "levels": {
     "B2": {
-      "quizlet": []
+      "quizlet": [
+            ["black fungus", "черный гриб", "A black fungus"],
+            ["plant", "растение", "some plants"],
+            ["nature reserve", "природный заповедник", "nature reserves"],
+            ["wildlife", "дикая природа", "remarkable wildlife"],
+            ["pet dog", "домашняя собака", "pet dogs"],
+            ["health issue", "проблема со здоровьем", "health issues"],
+            ["mutation", "мутация", "mutation rates"],
+            ["bear", "медведь", "bears"],
+            ["raccoon", "енот", "raccoons"],
+            ["lesson", "урок", "lessons to be learned"]
+      ]
     },
     "C1": {
-      "quizlet": []
+      "quizlet": [
+          ["gamma radiation", "гамма-излучение", "gamma radiation"],
+          ["DNA repair", "восстановление ДНК", "DNA repair"],
+          ["heavy metals", "тяжелые металлы", "heavy metals"],
+          ["ecological research", "экологические исследования", "ecological research"],
+          ["ecosystem recovery", "восстановление экосистемы", "ecosystems recover"],
+          ["feral dogs", "одичавшие собаки", "feral dogs"],
+          ["genetically distinct", "генетически отличающийся", "genetically distinct"],
+          ["reproductive success", "успешность размножения", "reduced reproductive success"],
+          ["environmental degradation", "деградация окружающей среды", "environmental degradation"],
+          ["existential risk", "экзистенциальная угроза", "existential risk"]
+      ]
     },
     "C2": {
-      "quizlet": []
+      "quizlet": [
+          ["convert gamma radiation into energy", "преобразовывать гамма-излучение в энергию", "convert gamma radiation into energy"],
+          ["demonstrating DNA repair", "демонстрировать восстановление ДНК", "demonstrating DNA repair"],
+          ["enhanced ability", "повышенная способность", "enhanced ability"],
+          ["ecological rules no longer apply", "экологические правила больше не действуют", "ecological rules no longer apply"],
+          ["evolved to survive", "эволюционировали для выживания", "evolved to survive"],
+          ["evolutionary pressure", "эволюционное давление", "evolutionary pressure"],
+          ["high mutation rates", "высокая частота мутаций", "high mutation rates"],
+          ["unexpected sanctuaries", "неожиданные убежища для животных", "unexpected sanctuaries"],
+          ["habitat creation", "создание среды обитания", "habitat creation"],
+          ["lessons to be learned from such catastrophes", "уроки, которые следует извлечь из подобных катастроф", "lessons to be learned from such catastrophes"]
+      ]
     }
   },
-  "questions": []
-}
+"questions": [
+  {
+    "type": "choice",
+    "question": "What was discovered inside reactor 4 in 1991?",
+    "options": [
+      "A new species of bird",
+      "A black fungus",
+      "A population of wolves",
+      "A rare plant"
+    ],
+    "answer": 1,
+    "explanation": "The text says a black fungus was discovered inside reactor 4 using remotely piloted robots."
+  },
+  {
+    "type": "choice",
+    "question": "What response are some plants in the nearby zone demonstrating?",
+    "options": [
+      "DNA repair as a response to high radiation levels",
+      "Complete inability to survive",
+      "A need for constant human care",
+      "A loss of all genetic material"
+    ],
+    "answer": 0,
+    "explanation": "The passage states that some plants demonstrate DNA repair as a response to high radiation levels."
+  },
+  {
+    "type": "choice",
+    "question": "What happened to some pet dogs abandoned after the disaster?",
+    "options": [
+      "They became feral and genetically distinct",
+      "They were all immediately rescued",
+      "They disappeared completely",
+      "They became identical to wolves"
+    ],
+    "answer": 0,
+    "explanation": "The text says abandoned pet dogs became feral dogs that evolved to be genetically distinct from other populations in Ukraine."
+  },
+  {
+    "type": "choice",
+    "question": "Why is the situation described as complicated?",
+    "options": [
+      "Because all outcomes are positive",
+      "Because some species show health issues, reduced reproductive success and high mutation rates",
+      "Because no species have returned",
+      "Because scientists refuse to study the area"
+    ],
+    "answer": 1,
+    "explanation": "The passage explains that not all outcomes have been beneficial, with some species showing health issues and high mutation rates."
+  },
+  {
+    "type": "choice",
+    "question": "What final lesson does the article suggest?",
+    "options": [
+      "Nuclear accidents should be used to create wildlife sanctuaries",
+      "Radiation is always good for ecosystems",
+      "Ecosystems can flourish when human pressure is removed, but the results are uneven",
+      "Humans should never protect wildlife"
+    ],
+    "answer": 2,
+    "explanation": "The article concludes that wildlife has largely returned due to the absence of people, although not predictably or evenly."
+  }
+]}

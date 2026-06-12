@@ -3,17 +3,111 @@
   "part": "Part C",
   "title": "Rare Species and Adaptation",
   "level": "B2/C1/C2",
-  "text": "Replace with full text.",
+  "text": "A range of endangered species have returned to the exclusion zone. This includes Przewalski's horses, reintroduced in 1998 as a conservation experiment.\n\nBoth Eurasian lynx and European bison have returned and established their populations. Several bird species have also returned, including black storks, white storks and white-tailed eagles.\n\nMost significant is the return of the globally endangered greater spotted eagle, which depends on wetland habitats and is very sensitive to human disturbance.\n\nThere is also scientific evidence that some species appear to be adapting to the radioactive environment. Tree frogs in the zone are darker, as higher melanin levels seem to protect against radiation damage.\n\nResearch on wolves indicates possible adaptations that may help them survive chronic radiation exposure and reduce cancer risks.",
   "levels": {
     "B2": {
-      "quizlet": []
+      "quizlet": [   
+          ["endangered species", "исчезающий вид", "endangered species"],
+          ["return", "возвращаться", "have returned"],
+          ["bird species", "вид птиц", "bird species"],
+          ["population", "популяция", "their populations"],
+          ["nest", "гнездиться", "documented nesting"],
+          ["tree frog", "древесная лягушка", "tree frogs"],
+          ["radiation damage", "ущерб от радиации", "radiation damage"],
+          ["adaptation", "адаптация", "Such adaptation"],
+          ["environment", "окружающая среда", "radioactive environment"],
+          ["cancer risk", "риск рака", "reduce cancer risks"]
+      ]
     },
     "C1": {
-      "quizlet": []
+      "quizlet": [ 
+          ["Przewalski’s horses", "лошади Пржевальского", "Przewalski’s horses, reintroduced in 1998"],
+          ["conservation experiment", "природоохранный эксперимент", "as a conservation experiment"],
+          ["Eurasian lynx", "евразийская рысь", "Eurasian lynx"],
+          ["European bison", "европейский бизон", "European bison"],
+          ["greater spotted eagle", "большой подорлик", "greater spotted eagle"],
+          ["wetland habitat", "водно-болотная среда", "wetland habitats"],
+          ["human disturbance", "беспокойство со стороны человека", "human disturbance"],
+          ["melanin levels", "уровень меланина", "higher melanin levels"],
+          ["chronic radiation", "хроническое воздействие радиации", "chronic radiation"],
+          ["resilience", "устойчивость", "resilience evolving in wolves"]
+      ]
     },
     "C2": {
-      "quizlet": []
+      "quizlet": [
+          ["scientific evidence", "научные доказательства", "scientific evidence"],
+          ["adapting to the radioactive environment", "адаптироваться к радиоактивной среде", "adapting to the radioactive environment"],
+          ["globally endangered", "находящийся под угрозой исчезновения во всем мире", "globally endangered"],
+          ["sensitive to human disturbance", "чувствительный к человеческому воздействию", "sensitive to human disturbance"],
+          ["documented nesting", "зафиксированное гнездование", "documented nesting"],
+          ["potential adaptations", "возможные адаптации", "potential adaptations"],
+          ["survive chronic radiation", "переживать длительное воздействие радиации", "survive chronic radiation"],
+          ["reduce cancer risks", "снижать риск рака", "reduce cancer risks"],
+          ["radioactive environment", "радиоактивная среда", "radioactive environment"],
+          ["evolutionary resilience", "эволюционная устойчивость", "resilience evolving in wolves"]
+      ]
     }
   },
-  "questions": []
+"questions": [
+  {
+    "type": "choice",
+    "question": "Which species was reintroduced in 1998 as a conservation experiment?",
+    "options": [
+      "European bison",
+      "Przewalski’s horses",
+      "White-tailed eagles",
+      "Tree frogs"
+    ],
+    "answer": 1,
+    "explanation": "The text states that Przewalski’s horses were reintroduced in 1998 as a conservation experiment."
+  },
+  {
+    "type": "choice",
+    "question": "Which bird is described as globally endangered and sensitive to human disturbance?",
+    "options": [
+      "The white stork",
+      "The black stork",
+      "The greater spotted eagle",
+      "The white-tailed eagle"
+    ],
+    "answer": 2,
+    "explanation": "The passage describes the greater spotted eagle as globally endangered and very sensitive to human disturbance."
+  },
+  {
+    "type": "choice",
+    "question": "Why are tree frogs in the zone darker?",
+    "options": [
+      "They have higher melanin levels that may protect against radiation damage",
+      "They live in colder water",
+      "They have less food than other frogs",
+      "They are covered with ash from the reactor"
+    ],
+    "answer": 0,
+    "explanation": "The text says tree frogs are darker because higher melanin levels seem to protect against radiation damage."
+  },
+  {
+    "type": "choice",
+    "question": "What does research on Eurasian wolves suggest?",
+    "options": [
+      "They have completely disappeared from the zone",
+      "They may be developing adaptations to survive chronic radiation",
+      "They are unable to reproduce",
+      "They avoid radioactive areas entirely"
+    ],
+    "answer": 1,
+    "explanation": "The passage says research on Eurasian wolves indicates potential adaptations to survive chronic radiation and reduce cancer risks."
+  },
+  {
+    "type": "choice",
+    "question": "What is the main focus of Part C?",
+    "options": [
+      "The return of rare species and possible adaptation to radiation",
+      "The economic value of nuclear power",
+      "The evacuation of people from Ukraine",
+      "The history of Soviet agriculture"
+    ],
+    "answer": 0,
+    "explanation": "This section focuses on endangered species returning and some organisms adapting to the radioactive environment."
+  }
+]
 }
