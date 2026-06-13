@@ -5,6 +5,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 type Level = "B2" | "C1" | "C2";
+type Band = "6.0-6.5" | "7.0-7.5" | "7.5-8.0" | "8.0-8.5";
 
 type ArticlePartMeta = {
   id: string;
@@ -19,6 +20,8 @@ type Article = {
   subtitle?: string;
   level: string;
   ieltsTarget?: string;
+  bands?: string[];
+  topics?: string[];
   source?: string;
   originalUrl?: string;
   description?: string;
@@ -49,6 +52,7 @@ type Part = {
 };
 
 const token = process.env.BOT_TOKEN;
+const BANDS: Band[] = ["6.0-6.5", "7.0-7.5", "7.5-8.0", "8.0-8.5"];
 
 if (!token) {
   throw new Error("BOT_TOKEN is missing");
@@ -209,17 +213,70 @@ async function partHeader(slug: string, part: Part): Promise<string> {
   );
 }
 
-async function articlesKeyboard(): Promise<InlineKeyboard> {
+function articlesMenuKeyboard(): InlineKeyboard {
+  return new InlineKeyboard()
+    .text("🎯 By IELTS Band", "bands")
+    .row()
+    .text("🧭 By Topic", "topics")
+    .row()
+    .text("📚 All Articles", "articles-all");
+}
+async function bandsKeyboard(): Promise<InlineKeyboard> {
   const articles = await getArticles();
   const keyboard = new InlineKeyboard();
 
-  for (const article of articles) {
+  for (const band of BANDS) {
+    const count = articles.filter((a) => a.bands?.includes(band)).length;
+    keyboard.text(`🎯 ${band} (${count})`, `band:${band}`).row();
+  }
+
+  keyboard.text("⬅️ Menu", "articles");
+  return keyboard;
+}
+
+async function articlesByBandKeyboard(band: string): Promise<InlineKeyboard> {
+  const articles = await getArticles();
+  const keyboard = new InlineKeyboard();
+
+  for (const article of articles.filter((a) => a.bands?.includes(band))) {
     keyboard.text(`📖 ${article.title}`, `article:${article.slug}`).row();
   }
+
+  keyboard.text("⬅️ Bands", "bands").row();
+  keyboard.text("⬅️ Menu", "articles");
 
   return keyboard;
 }
 
+async function topicsKeyboard(): Promise<InlineKeyboard> {
+  const articles = await getArticles();
+
+  const topics = Array.from(
+    new Set(articles.flatMap((article) => article.topics ?? []))
+  ).sort();
+
+  const keyboard = new InlineKeyboard();
+
+  for (const topic of topics) {
+    keyboard.text(`🧭 ${topic}`, `topic:${topic}`).row();
+  }
+
+  keyboard.text("⬅️ Menu", "articles");
+  return keyboard;
+}
+async function articlesByTopicKeyboard(topic: string): Promise<InlineKeyboard> {
+  const articles = await getArticles();
+  const keyboard = new InlineKeyboard();
+
+  for (const article of articles.filter((a) => a.topics?.includes(topic))) {
+    keyboard.text(`📖 ${article.title}`, `article:${article.slug}`).row();
+  }
+
+  keyboard.text("⬅️ Topics", "topics").row();
+  keyboard.text("⬅️ Menu", "articles");
+
+  return keyboard;
+}
 async function partsKeyboard(slug: string): Promise<InlineKeyboard> {
   const article = await readArticle(slug);
   const partIds = await getPartIds(slug);
@@ -311,19 +368,75 @@ bot.command("start", async (ctx) => {
 });
 
 bot.command("articles", async (ctx) => {
-  await ctx.reply("📚 Available Articles", {
-    reply_markup: await articlesKeyboard(),
+  await ctx.reply("📚 Choose how to browse articles:", {
+    reply_markup: articlesMenuKeyboard(),
   });
 });
 
 bot.callbackQuery("articles", async (ctx) => {
   await ctx.answerCallbackQuery();
 
-  await safeEditOrReply(ctx, "📚 Available Articles", {
-    reply_markup: await articlesKeyboard(),
+  await safeEditOrReply(ctx, "📚 Choose how to browse articles:", {
+    reply_markup: articlesMenuKeyboard(),
+  });
+});
+bot.callbackQuery("bands", async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  await safeEditOrReply(ctx, "🎯 Choose IELTS band:", {
+    reply_markup: await bandsKeyboard(),
   });
 });
 
+bot.callbackQuery(/^band:(.+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const band = ctx.match[1];
+
+  await safeEditOrReply(ctx, `🎯 IELTS Band ${escapeHtml(band)}`, {
+    parse_mode: "HTML",
+    reply_markup: await articlesByBandKeyboard(band),
+  });
+});
+
+bot.callbackQuery("topics", async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  await safeEditOrReply(ctx, "🧭 Choose topic:", {
+    reply_markup: await topicsKeyboard(),
+  });
+});
+
+bot.callbackQuery(/^topic:(.+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const topic = ctx.match[1];
+
+  await safeEditOrReply(ctx, `🧭 Topic: ${escapeHtml(topic)}`, {
+    parse_mode: "HTML",
+    reply_markup: await articlesByTopicKeyboard(topic),
+  });
+});
+
+bot.callbackQuery("articles-all", async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  await safeEditOrReply(ctx, "📚 All Articles", {
+    reply_markup: await allArticlesKeyboard(),
+  });
+});
+async function allArticlesKeyboard(): Promise<InlineKeyboard> {
+  const articles = await getArticles();
+  const keyboard = new InlineKeyboard();
+
+  for (const article of articles) {
+    keyboard.text(`📖 ${article.title}`, `article:${article.slug}`).row();
+  }
+
+  keyboard.text("⬅️ Menu", "articles");
+
+  return keyboard;
+}
 bot.callbackQuery(/^article:([^:]+)$/, async (ctx) => {
   await ctx.answerCallbackQuery();
 

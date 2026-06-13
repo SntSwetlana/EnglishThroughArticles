@@ -5,9 +5,11 @@
   "subtitle": "How nature recovered in a radioactive exclusion zone",
   "level": "C1/C2",
   "ieltsTarget": "7.5-8.5",
+  "bands": ["7.5-8.0", "8.0-8.5"],
   "source": "The Conversation",
   "originalUrl": "https://theconversation.com/40-years-on-from-the-disaster-why-there-are-foxes-bears-and-bison-again-around-chernobyl-280300",
   "description": "A study of rewilding, biodiversity and adaptation in the Chernobyl Exclusion Zone.",
+   "topics": ["Health", "Medicine", "Science"],
   "enabled": true,
     "parts": [
     {

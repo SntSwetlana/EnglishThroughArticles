@@ -13,4 +13,4 @@ The article explores a complex ecological question:
 Can nature recover more successfully without humans, even in an environment affected by radiation?
 
 👇 Open article unit in the bot:
-https://t.me/YOUR_BOT_NAME?start=article_001chernobyl
+https://t.me/IeltsNewScientistBased?start=article_001chernobyl
