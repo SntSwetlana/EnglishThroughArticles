@@ -1,0 +1,203 @@
+{
+  "article": "Hearing Loss and the Whole Body",
+  "part": "Part D",
+  "title": "Treatment, Diet and Hearing Aids",
+  "level": "B2/C1/C2",
+  "text": "The third approach is chemical compounds that protect or regenerate the parts of the inner ear that break down in age-related hearing loss. Such drugs have been in development for some time and have a habit of failing: since 2023, three promising ones have been binned after failing to perform well enough in clinical trials. But hope springs eternal. One of the failures, from Audion Therapeutics, was a close-run thing, suggesting that the drug might get over the line if tweaked a little. And there are many others in development, two of which – Ebselen from Sound Pharmaceuticals in Seattle, Washington, and Paliroden from Cilcare in Montpellier, France – are in phase II clinical trials. “It’s impossible to forecast when we’ll actually have a drug but, yeah, I think there’s potential,” says Golub.\n\nWhile we await hearing-saving drugs, there are already things you can swallow. Foods rich in antioxidants, vitamin B9 (folate), omega-3 fatty acids and magnesium have been found to be protective of the inner ear, and last year a team at Rush University in Chicago reported that people who eat healthily, particularly the DASH (dietary approaches to stop hypertension) diet, have a reduced risk of hearing loss and slower cognitive decline once it starts.\n\nCan you say that again?\n\nThere may already be an off-the-shelf solution to many of these problems: hearing aids. Ten years ago, researchers at Johns Hopkins Bloomberg School of Public Health in Baltimore, Maryland, began the world’s first clinical trial to see whether these devices can slow down or prevent cognitive decline and dementia in older adults with hearing loss. The results, published in 2023, indicated that they do, in some circumstances. The overall effect wasn’t statistically significant, but among a subgroup of subjects – who were more susceptible to dementia because they were older, less educated, less wealthy and more likely to smoke, plus had more underlying health conditions – hearing aids substantially slowed cognitive decline.\n\nThere are dissenting voices, however. Sabia’s team at Paris City University also analysed whether hearing aid use protected against dementia, finding that it didn’t. “Wearing a hearing aid isn’t going to mitigate the risk of dementia,” says Singh-Manoux. But that isn’t a reason not to wear one, she says. “Hearing aids are important for people to remain connected to life, to remain connected to friends, to remain connected in conversations, to manage their day-to-day life.” Ditto cochlear implants, which can vastly improve the quality of life of people with severe or profound hearing loss, says Golub.\n\nBut the most important thing is to get your hearing tested, he says, especially if you suspect you are losing it. “My main advice would be, don’t ignore it. Go and see an audiologist, find out exactly what your level of hearing loss is and then you can make a decision about what to do about it.” Hearing test apps for smartphones are also available and increasingly good, he says.\n\nMy test revealed that I have very mild hearing loss at two middle frequencies in my left ear. It’s clearly age-related, unfortunately, but also nothing to worry about – yet. I’ll be keeping a close ear on it.\n\nGraham Lawton is a consultant for New Scientist. He is the author of Mustn’t Grumble: The surprising science of everyday ailments.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        [
+          "chemical compounds",
+          "химические соединения",
+          "chemical compounds"
+        ],
+        [
+          "clinical trials",
+          "клинические испытания",
+          "clinical trials"
+        ],
+        [
+          "antioxidants",
+          "антиоксиданты",
+          "antioxidants"
+        ],
+        [
+          "vitamin B9",
+          "витамин B9",
+          "vitamin B9"
+        ],
+        [
+          "hearing aids",
+          "слуховые аппараты",
+          "hearing aids"
+        ],
+        [
+          "older adults",
+          "пожилые люди",
+          "older adults"
+        ],
+        [
+          "hearing tested",
+          "проверка слуха",
+          "get your hearing tested"
+        ],
+        [
+          "audiologist",
+          "аудиолог",
+          "audiologist"
+        ]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        [
+          "age-related hearing loss",
+          "возрастная потеря слуха",
+          "age-related hearing loss"
+        ],
+        [
+          "hearing-saving drugs",
+          "препараты для сохранения слуха",
+          "hearing-saving drugs"
+        ],
+        [
+          "omega-3 fatty acids",
+          "омега-3 жирные кислоты",
+          "omega-3 fatty acids"
+        ],
+        [
+          "cognitive decline",
+          "снижение когнитивных функций",
+          "cognitive decline"
+        ],
+        [
+          "statistically significant",
+          "статистически значимый",
+          "statistically significant"
+        ],
+        [
+          "underlying health conditions",
+          "основные заболевания",
+          "underlying health conditions"
+        ],
+        [
+          "cochlear implants",
+          "кохлеарные импланты",
+          "cochlear implants"
+        ],
+        [
+          "quality of life",
+          "качество жизни",
+          "quality of life"
+        ]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        [
+          "have a habit of failing",
+          "имеют тенденцию проваливаться",
+          "have a habit of failing"
+        ],
+        [
+          "hope springs eternal",
+          "надежда умирает последней",
+          "hope springs eternal"
+        ],
+        [
+          "a close-run thing",
+          "почти успешная попытка",
+          "a close-run thing"
+        ],
+        [
+          "get over the line",
+          "дойти до успеха",
+          "get over the line"
+        ],
+        [
+          "off-the-shelf solution",
+          "готовое решение",
+          "off-the-shelf solution"
+        ],
+        [
+          "dissenting voices",
+          "несогласные мнения",
+          "dissenting voices"
+        ],
+        [
+          "mitigate the risk",
+          "снизить риск",
+          "mitigate the risk"
+        ],
+        [
+          "keeping a close ear on it",
+          "внимательно следить за этим",
+          "keeping a close ear on it"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "What is the third treatment approach described?",
+      "options": [
+        "Chemical compounds that protect or regenerate the inner ear",
+        "Removing the cochlea",
+        "Avoiding all vitamins",
+        "Replacing hearing tests with apps only"
+      ],
+      "answer": 0,
+      "explanation": "The article describes chemical compounds that protect or regenerate parts of the inner ear."
+    },
+    {
+      "type": "choice",
+      "question": "Which diet is mentioned as protective?",
+      "options": [
+        "A sugar-only diet",
+        "The DASH diet",
+        "A high-salt diet",
+        "A fasting-only diet"
+      ],
+      "answer": 1,
+      "explanation": "The DASH diet is associated with reduced risk of hearing loss and slower cognitive decline."
+    },
+    {
+      "type": "choice",
+      "question": "What did the Johns Hopkins trial investigate?",
+      "options": [
+        "Whether hearing aids can slow or prevent cognitive decline",
+        "Whether antioxidants cause deafness",
+        "Whether hearing aids increase stroke risk",
+        "Whether smartphones damage the cochlea"
+      ],
+      "answer": 0,
+      "explanation": "The trial tested whether hearing aids could slow or prevent cognitive decline and dementia."
+    },
+    {
+      "type": "choice",
+      "question": "What is Singh-Manoux’s view of hearing aids?",
+      "options": [
+        "They are useless in daily life",
+        "They may not mitigate dementia risk, but they help people remain connected",
+        "They cure all profound hearing loss",
+        "They should never be worn"
+      ],
+      "answer": 1,
+      "explanation": "She says hearing aids are important for remaining connected to life, friends and conversations."
+    },
+    {
+      "type": "choice",
+      "question": "What is Golub’s main advice?",
+      "options": [
+        "Ignore mild hearing loss",
+        "Avoid audiologists",
+        "Get your hearing tested",
+        "Wait until treatment becomes urgent"
+      ],
+      "answer": 2,
+      "explanation": "Golub advises people not to ignore suspected hearing loss and to see an audiologist."
+    }
+  ]
+}

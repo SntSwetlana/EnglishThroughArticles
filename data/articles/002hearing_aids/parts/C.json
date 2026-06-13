@@ -1,0 +1,203 @@
+{
+  "article": "Hearing Loss and the Whole Body",
+  "part": "Part C",
+  "title": "Brain Overload and New Therapies",
+  "level": "B2/C1/C2",
+  "text": "Brain overload.\n\nBut there are those who say the Lancet commission is over-egging it. Last year, a team led by Séverine Sabia at the research organisation INSERM and Paris City University in France published an analysis of existing data to see whether hearing loss around the relatively young age of 50 is an even bigger risk factor for dementia – as you might expect, given that these people will spend much longer being hard of hearing. But that isn’t what the researchers found. “There is an association, but it’s not as strong as previously thought,” says team member Marcos Daniel Machado-Fragua, now at the Spanish National Centre for Cardiovascular Research in Madrid. This study put the increased risk at more like 10 per cent.\n\nAccording to Sabia’s INSERM colleague Archana Singh-Manoux, the reason why the Lancet commission found such large numbers is probably because the study populations were people in their 70s, who may have hearing loss as a result of the early stages of dementia. “Pre-clinical dementia causes changes in the central nervous system, it affects hearing, so those results are open to what we call reverse causation, which is the disease itself affecting what you think is a risk factor,” she says.\n\nNonetheless, a 10 per cent increased risk is not to be ignored. The reason for the link is debated. According to the Lancet commission, there are four main contenders. It could be because hearing loss leads to social isolation, loneliness and depression, which are dementia risk factors in their own right.\n\nIt could alternatively be that the brains of people with hearing impairments are chronically overloaded by the burden of processing sounds. Such high “cognitive load” would cause the brain to shrink and eventually lead to dementia. A third possibility is brain shrinkage caused by reduced sensory stimulation. Or perhaps hearing loss is just another symptom of dementia that can appear before cognitive deficits. Given the troublesome forecast of a global hearing-loss time bomb, rumbles of new-generation remedies are welcome.\n\nOne future solution in the works is drugs that prevent or reverse hearing loss. At the moment, there are none, but plenty of people are working to change that. “New therapies have gotten a bit of a buzz recently,” says Golub.\n\nThat is partly because the US Food and Drug Administration recently approved a treatment for a previously intractable form of congenital deafness called DFNB9. The treatment, Otarmeni, developed by Regeneron Pharmaceuticals in New York state, is a gene therapy that fixes a mutation responsible for profound hearing loss from birth. It won’t directly help many people – just a few thousand worldwide have DFNB9 – but Otarmeni is proof of principle that gene therapies can be delivered to the correct part of the inner ear and restore hearing, says Golub. “It’s exciting because we finally have an example of a biological treatment for hearing loss.”\n\nThat is a boon to researchers and companies working on fixing the genetic basis of later-life hearing loss. One group, based at the University of New South Wales in Sydney, Australia, is currently developing a gene therapy to enhance the performance of cochlear implants. The genes are delivered during the installation of the implant and stimulate the production of two growth factors known to promote the survival of neurons, neurotrophin-3 and BDNF.\n\nThe therapy has successfully completed a phase II clinical trial and is moving into phase III. The results have yet to be published, but they are looking good, says chief investigator Gary Housley. “The regeneration occurs very rapidly,” he says. “The results bode well for the use of this technology to achieve better hearing.” The delivery system could eventually be used for standalone gene therapy without a cochlear implant, he says.\n\nAnother promising approach is using stem cells to regenerate the spiral ganglion, a clump of neurons that connects the cochlea to the auditory nerve. Degeneration of these neurons is a leading cause of SNHL, and while they don’t regenerate of their own accord, they can be coaxed into doing so by implanting stem cells called otic neural progenitors. Earlier this year, a company called Rinri Pharmaceuticals based in Sheffield, UK, got clearance to run a clinical trial of such a therapy – again, delivered simultaneously with a cochlear implant – and a US rival, Lineage Cell Therapeutics in Carlsbad, California, has something similar in early-stage testing.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        [
+          "dementia",
+          "деменция",
+          "dementia"
+        ],
+        [
+          "risk factor",
+          "фактор риска",
+          "risk factor"
+        ],
+        [
+          "brain",
+          "мозг",
+          "brain"
+        ],
+        [
+          "depression",
+          "депрессия",
+          "depression"
+        ],
+        [
+          "treatment",
+          "лечение",
+          "treatment"
+        ],
+        [
+          "gene therapy",
+          "генная терапия",
+          "gene therapy"
+        ],
+        [
+          "cochlear implant",
+          "кохлеарный имплант",
+          "cochlear implants"
+        ],
+        [
+          "stem cells",
+          "стволовые клетки",
+          "stem cells"
+        ]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        [
+          "existing data",
+          "существующие данные",
+          "existing data"
+        ],
+        [
+          "reverse causation",
+          "обратная причинность",
+          "reverse causation"
+        ],
+        [
+          "central nervous system",
+          "центральная нервная система",
+          "central nervous system"
+        ],
+        [
+          "cognitive load",
+          "когнитивная нагрузка",
+          "cognitive load"
+        ],
+        [
+          "sensory stimulation",
+          "сенсорная стимуляция",
+          "sensory stimulation"
+        ],
+        [
+          "congenital deafness",
+          "врождённая глухота",
+          "congenital deafness"
+        ],
+        [
+          "growth factors",
+          "факторы роста",
+          "growth factors"
+        ],
+        [
+          "clinical trial",
+          "клиническое испытание",
+          "clinical trial"
+        ]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        [
+          "over-egging it",
+          "преувеличивать",
+          "over-egging it"
+        ],
+        [
+          "not as strong as previously thought",
+          "не так сильна, как считалось ранее",
+          "not as strong as previously thought"
+        ],
+        [
+          "pre-clinical dementia",
+          "доклиническая деменция",
+          "Pre-clinical dementia"
+        ],
+        [
+          "chronically overloaded",
+          "хронически перегруженный",
+          "chronically overloaded"
+        ],
+        [
+          "global hearing-loss time bomb",
+          "глобальная бомба замедленного действия потери слуха",
+          "global hearing-loss time bomb"
+        ],
+        [
+          "previously intractable form",
+          "ранее трудноизлечимая форма",
+          "previously intractable form"
+        ],
+        [
+          "proof of principle",
+          "доказательство концепции",
+          "proof of principle"
+        ],
+        [
+          "coaxed into doing so",
+          "стимулированы к этому",
+          "coaxed into doing so"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "What did Sabia’s team investigate?",
+      "options": [
+        "Whether hearing loss around age 50 is a stronger dementia risk factor",
+        "Whether hearing aids cause dementia",
+        "Whether children can develop SNHL",
+        "Whether cardiovascular disease cures hearing loss"
+      ],
+      "answer": 0,
+      "explanation": "They analysed whether hearing loss around age 50 was a stronger risk factor for dementia."
+    },
+    {
+      "type": "choice",
+      "question": "What is reverse causation in this context?",
+      "options": [
+        "Hearing loss making people younger",
+        "Dementia affecting hearing before cognitive symptoms appear",
+        "Gene therapy causing deafness",
+        "Cochlear implants preventing all disease"
+      ],
+      "answer": 1,
+      "explanation": "Pre-clinical dementia may affect hearing, making hearing loss appear to be a risk factor."
+    },
+    {
+      "type": "choice",
+      "question": "What does cognitive load refer to?",
+      "options": [
+        "The brain being overloaded by processing sounds",
+        "The ear becoming blocked by wax",
+        "The heart pumping too much blood",
+        "A clinical trial for gene therapy"
+      ],
+      "answer": 0,
+      "explanation": "The article explains that hearing impairment may overload the brain with the burden of processing sounds."
+    },
+    {
+      "type": "choice",
+      "question": "Why is Otarmeni important?",
+      "options": [
+        "It is a new hearing aid app",
+        "It proves biological treatment for hearing loss is possible",
+        "It prevents all dementia",
+        "It replaces all cochlear implants"
+      ],
+      "answer": 1,
+      "explanation": "Otarmeni is described as proof of principle that gene therapies can restore hearing."
+    },
+    {
+      "type": "choice",
+      "question": "What is one stem-cell approach trying to regenerate?",
+      "options": [
+        "The spiral ganglion",
+        "The blood vessels in the heart",
+        "The outer ear",
+        "The immune system"
+      ],
+      "answer": 0,
+      "explanation": "Stem cells are being explored to regenerate the spiral ganglion, a group of neurons linked to hearing."
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "article": "Hearing Loss and the Whole Body",
+  "part": "Part A",
+  "title": "Types of Hearing Loss",
+  "level": "B2/C1/C2",
+  "text": "Hearing loss is bad for the whole body, but there are ways to safeguard this crucial sense, finds Graham Lawton.\n\nI’m sitting in a soundproof booth at an audiologist’s office, wearing headphones and straining to hear some faint electronic noises. When I think I’ve heard one, I press a button. It’s really hard. Was that real or did I imagine it? Oh god, I’m going to fail.\n\nI’m here because my partner thinks I’m losing my hearing. Apparently I’m always saying “Huh?” when she’s talking to me. I wouldn’t be surprised if I am. Deafness runs in my family and I have probably been to too many loud concerts and spent too much time listening to music via headphones.\n\nIf I am losing my hearing, I might well lose a lot more besides, including my mental health, my heart health and even my life. Once regarded as a mere inconvenience of getting older, hearing loss is now being recognised as a major public health issue, according to otologist Justin Golub at Columbia University in New York. It is strongly linked to issues from dementia to cardiovascular disease. Fortunately, there are ways to restore the hearing of those who are losing it. There are also promising new-generation drug therapies in the pipeline for a condition that, up till now, has had none. So, if you don’t want to lose one of your most important faculties, listen up.\n\nHearing loss happens for many reasons, mainly the wear and tear of old age. Whatever the cause, the outcome is the same: a problem hearing very quiet sounds. When the quietest sound detectable is roughly 20 to 25 decibels – about as loud as a ticking watch – a diagnosis of hearing loss is in order.\n\nThe condition comes in three basic flavours. The plain variety is when sound waves can’t reach the inner ear because of a blockage.\n\nEarwax build-up and infections are the usual causes of this “conductive” hearing loss and can be cleared up relatively easily. More troublesome, and by far the most common, is sensorineural hearing loss (SNHL), which is caused by damage to the inner ear, either the snail-shaped cochlea or the nerve pathways from it to the brain. This is usually due to advancing age, genes, underlying diseases, noise damage or pharmaceuticals that are toxic to the inner ear, notably a class of antibiotics called aminoglycosides.\n\nThe third and most complex type is auditory neuropathy spectrum disorder (ANSD), in which, for some reason, the way the brain processes sound goes awry. Both SNHL and ANSD are irreversible, but can be alleviated somewhat with technology or therapy.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["hearing loss",  "потеря слуха",  "hearing loss"],
+        ["hearing aid", "слуховой аппарат","hearing aid"],
+        ["deafness","глухота","Deafness"],
+        ["mental health","психическое здоровье","mental health"],
+        ["heart health","здоровье сердца","heart health"],
+        ["old age","старость","old age"],
+        ["inner ear","внутреннее ухо","inner ear"],
+        ["blockage","закупорка, препятствие","blockage"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["soundproof booth","звуконепроницаемая кабина","soundproof booth"],
+        ["audiologist","сурдолог, аудиолог","audiologist’s office"],
+        ["major public health issue","серьёзная проблема общественного здоровья","major public health issue"],
+        ["cardiovascular disease","сердечно-сосудистое заболевание","cardiovascular disease"],
+        ["wear and tear","износ","wear and tear of old age"],
+        ["conductive hearing loss","кондуктивная потеря слуха","conductive hearing loss"],
+        ["sensorineural hearing loss","нейросенсорная тугоухость","sensorineural hearing loss"],
+        ["underlying diseases","основные заболевания","underlying diseases"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["safeguard this crucial sense","защитить это важнейшее чувство","safeguard this crucial sense"],
+        ["straining to hear","напрягаясь, чтобы услышать","straining to hear"],
+        ["a mere inconvenience","простое неудобство","mere inconvenience"],
+        ["drug therapies in the pipeline","лекарственные терапии в разработке","drug therapies in the pipeline"],
+        ["the quietest sound detectable","самый тихий различимый звук","quietest sound detectable"],
+        ["snail-shaped cochlea","улиткообразная улитка внутреннего уха","snail-shaped cochlea"],
+        ["auditory neuropathy spectrum disorder","расстройство спектра слуховой нейропатии","auditory neuropathy spectrum disorder"],
+        ["the brain processes sound goes awry","обработка звука мозгом нарушается","brain processes sound goes awry"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why does the writer visit an audiologist?",
+      "options": [
+        "He wants to test new headphones",
+        "His partner thinks he may be losing his hearing",
+        "He is researching heart disease",
+        "He needs treatment for an infection"
+      ],
+      "answer": 1,
+      "explanation": "The writer says he is there because his partner thinks he is losing his hearing."
+    },
+    {
+      "type": "choice",
+      "question": "How is hearing loss now being recognised?",
+      "options": [
+        "As a minor inconvenience only",
+        "As a major public health issue",
+        "As a purely genetic disorder",
+        "As a condition without any wider consequences"
+      ],
+      "answer": 1,
+      "explanation": "The text says hearing loss is now recognised as a major public health issue."
+    },
+    {
+      "type": "choice",
+      "question": "What is conductive hearing loss usually caused by?",
+      "options": [
+        "A blockage such as earwax build-up or infection",
+        "Damage to the brain only",
+        "A lack of sleep",
+        "Too much blood pressure"
+      ],
+      "answer": 0,
+      "explanation": "Conductive hearing loss occurs when sound waves cannot reach the inner ear because of a blockage."
+    },
+    {
+      "type": "choice",
+      "question": "Which type of hearing loss is described as the most common?",
+      "options": [
+        "Conductive hearing loss",
+        "Sensorineural hearing loss",
+        "Auditory neuropathy spectrum disorder",
+        "Temporary hearing loss"
+      ],
+      "answer": 1,
+      "explanation": "The article says sensorineural hearing loss is by far the most common type."
+    },
+    {
+      "type": "choice",
+      "question": "What is true of SNHL and ANSD?",
+      "options": [
+        "They are always caused by earwax",
+        "They are irreversible but may be alleviated",
+        "They can be cured by antibiotics",
+        "They only affect children"
+      ],
+      "answer": 1,
+      "explanation": "Both SNHL and ANSD are described as irreversible, though they can be alleviated with technology or therapy."
+    }
+  ]
+}

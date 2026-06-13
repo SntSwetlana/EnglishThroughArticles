@@ -1,0 +1,203 @@
+{
+  "article": "Hearing Loss and the Whole Body",
+  "part": "Part B",
+  "title": "Social Isolation and Heart Health",
+  "level": "B2/C1/C2",
+  "text": "Today, over 1.5 billion people – almost a fifth of the global population – are living with some form of hearing loss, according to the World Health Organization, making hearing loss one of the most common chronic conditions on the planet. Indeed, around half of people over 65 have some difficulty hearing, according to the WHO’s first-ever World Report on Hearing, published in 2021. The prevalence doubles with every decade of life and, by age 70, about two-thirds of people can’t hear as well as they used to.\n\nThe problem is only going to get worse. The WHO predicts that, by the end of this decade, 1.9 billion people will be hard of hearing, and by 2050, this will rise to 2.5 billion people: a quarter of the world’s population. At least 700 million will be sufficiently affected to need a hearing aid, cochlear implant or some other form of intervention, such as learning sign language or lip-reading. The ramifications for worldwide well-being could be seismic.\n\nTake the most obvious effect of losing your hearing: social isolation and loneliness. According to Julie Beadle at Simon Fraser University in Vancouver, Canada, even mild hearing loss can cause people to become socially disengaged. Multiple studies have shown this effect and a recent review found that “uncorrected hearing loss often leads to a significant withdrawal from social activities”.\n\nIt also makes it hard to work or study, lowers self-esteem and can be very tiring. The results are alarming. All told, social isolation and loneliness increase the risk of death from any cause by about a third.\n\nHear for your heart. If the isolation doesn’t get you, maybe cardiovascular disease will. Evidence of an association has been building for some time, and earlier this year a team led by Iris Otero-Luis at the University of Castilla-La Mancha in Cuenca, Spain, reviewed all the research. The researchers concluded that many known risk factors for cardiovascular disease – obesity, type 2 diabetes, high blood pressure, imbalances in blood lipids and metabolic syndrome – are also risk factors for hearing loss.\n\nAccording to a study led by Woei Shyang Loh at the National University Health System in Singapore, people with hearing loss have a 38 per cent higher risk of cardiovascular disease. The more severe the hearing loss, the higher the risk. One study in China, for example, found that participants with the worst hearing were 76 per cent more likely to have a stroke.\n\nThis isn’t to say that hearing loss causes cardiovascular disease. The most likely explanation, says Otero-Luis, is that the two are consequences of the same underlying problem. Cardiovascular disease is often caused by damage to small blood vessels, and this may also disrupt the workings of the inner ear. Oxidative stress and inflammation may also be involved, she says, but as yet the mechanism remains unclear.\n\nThe idea that hearing loss and cardiovascular disease are two sides of the same coin may also explain why asymmetric hearing loss greatly increases stroke risk, as it can reflect localized damage to blood vessels in one side of the brain and inner ear. Paradoxically, this may be good news, according to Shaojie Li at Peking University in Beijing. Asymmetric hearing loss could be an early warning sign of cardiovascular trouble brewing, so allow for early intervention. Other troubling scourges linked with hearing loss include falling over – a leading cause of injury and injury-related death worldwide – as well as mental health troubles like depression.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        [
+          "global population",
+          "население мира",
+          "global population"
+        ],
+        [
+          "hearing aid",
+          "слуховой аппарат",
+          "hearing aid"
+        ],
+        [
+          "cochlear implant",
+          "кохлеарный имплант",
+          "cochlear implant"
+        ],
+        [
+          "social isolation",
+          "социальная изоляция",
+          "social isolation"
+        ],
+        [
+          "loneliness",
+          "одиночество",
+          "loneliness"
+        ],
+        [
+          "self-esteem",
+          "самооценка",
+          "self-esteem"
+        ],
+        [
+          "high blood pressure",
+          "высокое кровяное давление",
+          "high blood pressure"
+        ],
+        [
+          "stroke",
+          "инсульт",
+          "stroke"
+        ]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        [
+          "chronic conditions",
+          "хронические заболевания",
+          "chronic conditions"
+        ],
+        [
+          "the prevalence doubles",
+          "распространённость удваивается",
+          "prevalence doubles"
+        ],
+        [
+          "some form of intervention",
+          "какая-либо форма вмешательства",
+          "some other form of intervention"
+        ],
+        [
+          "worldwide well-being",
+          "глобальное благополучие",
+          "worldwide well-being"
+        ],
+        [
+          "socially disengaged",
+          "социально отчуждённый",
+          "socially disengaged"
+        ],
+        [
+          "withdrawal from social activities",
+          "отказ от социальной активности",
+          "withdrawal from social activities"
+        ],
+        [
+          "blood lipids",
+          "липиды крови",
+          "blood lipids"
+        ],
+        [
+          "metabolic syndrome",
+          "метаболический синдром",
+          "metabolic syndrome"
+        ]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        [
+          "the ramifications could be seismic",
+          "последствия могут быть огромными",
+          "ramifications for worldwide well-being could be seismic"
+        ],
+        [
+          "evidence of an association",
+          "доказательства связи",
+          "Evidence of an association"
+        ],
+        [
+          "two sides of the same coin",
+          "две стороны одной медали",
+          "two sides of the same coin"
+        ],
+        [
+          "asymmetric hearing loss",
+          "асимметричная потеря слуха",
+          "Asymmetric hearing loss"
+        ],
+        [
+          "localized damage",
+          "локализованное повреждение",
+          "localized damage"
+        ],
+        [
+          "cardiovascular trouble brewing",
+          "надвигающиеся сердечно-сосудистые проблемы",
+          "cardiovascular trouble brewing"
+        ],
+        [
+          "early intervention",
+          "раннее вмешательство",
+          "early intervention"
+        ],
+        [
+          "troubling scourges",
+          "серьёзные бедствия",
+          "troubling scourges"
+        ]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "How many people are currently living with some form of hearing loss?",
+      "options": [
+        "About 700 million",
+        "Over 1.5 billion",
+        "Around 2.5 billion",
+        "About 100 million"
+      ],
+      "answer": 1,
+      "explanation": "The text says over 1.5 billion people live with some form of hearing loss."
+    },
+    {
+      "type": "choice",
+      "question": "What does the WHO predict by 2050?",
+      "options": [
+        "Hearing loss will disappear",
+        "2.5 billion people will have hearing loss",
+        "Only children will need hearing aids",
+        "Cochlear implants will no longer be needed"
+      ],
+      "answer": 1,
+      "explanation": "The WHO predicts that by 2050, 2.5 billion people will be hard of hearing."
+    },
+    {
+      "type": "choice",
+      "question": "What can even mild hearing loss cause?",
+      "options": [
+        "Social disengagement",
+        "Perfect concentration",
+        "Improved self-esteem",
+        "Lower death risk"
+      ],
+      "answer": 0,
+      "explanation": "Julie Beadle says even mild hearing loss can make people socially disengaged."
+    },
+    {
+      "type": "choice",
+      "question": "What risk is linked to hearing loss in the Singapore study?",
+      "options": [
+        "A 38 per cent higher risk of cardiovascular disease",
+        "A 38 per cent lower risk of stroke",
+        "A 76 per cent lower risk of diabetes",
+        "No measurable health risk"
+      ],
+      "answer": 0,
+      "explanation": "The study found a 38 per cent higher risk of cardiovascular disease among people with hearing loss."
+    },
+    {
+      "type": "choice",
+      "question": "Why might asymmetric hearing loss be useful as a warning sign?",
+      "options": [
+        "It proves that hearing loss is harmless",
+        "It may reflect localized blood vessel damage",
+        "It shows that both ears are equally healthy",
+        "It prevents cardiovascular disease"
+      ],
+      "answer": 1,
+      "explanation": "Asymmetric hearing loss may reflect localized damage to blood vessels in one side of the brain and inner ear."
+    }
+  ]
+}
