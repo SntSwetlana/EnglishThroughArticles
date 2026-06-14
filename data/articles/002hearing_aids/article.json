@@ -7,7 +7,7 @@
   "ieltsTarget": "8.0-8.5",
   "bands": ["8.0-8.5"],
   "source": "New Scientist",
-  "originalUrl": "https://",
+  "originalUrl": "",
   "description": "Hearing loss affects far more than communication. It influences cardiovascular health, cognition, social wellbeing and ageing.",
   "topics": ["Health", "Medicine", "Science"],
   "enabled": true,
