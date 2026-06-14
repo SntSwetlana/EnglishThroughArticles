@@ -1,13 +1,15 @@
 {
-  "id": "002hearing-loss",
-  "slug": "002hearing-loss",
+  "id": "002hearing_aids",
+  "slug": "002hearing_aids",
   "title": "Hearing Loss and the Whole Body",
   "subtitle": "How hearing affects cognition, health and ageing",
   "level": "C1/C2",
   "ieltsTarget": "8.0-8.5",
   "bands": ["8.0-8.5"],
   "source": "New Scientist",
+  "originalUrl": "https://",
   "description": "Hearing loss affects far more than communication. It influences cardiovascular health, cognition, social wellbeing and ageing.",
+  "topics": ["Health", "Medicine", "Science"],
   "enabled": true,
   "parts": [
     {
