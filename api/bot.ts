@@ -51,6 +51,29 @@ type Part = {
   }[];
 };
 
+type QuizQuestion = {
+  question: string;
+  options: string[];
+  answer: number;
+  explanation: string;
+};
+
+type QuizFile = {
+  title: string;
+  part: number;
+  questions: QuizQuestion[];
+};
+
+async function getQuiz(slug: string, part: string): Promise<QuizFile | null> {
+  const filePath = path.join(ARTICLES_DIR, slug, "quizzes", `${part}.json`);
+
+  if (!(await exists(filePath))) {
+    return null;
+  }
+
+  return readJson<QuizFile>(filePath);
+}
+
 const token = process.env.BOT_TOKEN;
 const BANDS: Band[] = ["6.0-6.5", "7.0-7.5", "7.5-8.0", "8.0-8.5"];
 
@@ -675,6 +698,7 @@ bot.callbackQuery(/^exercise-q:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
 
   await showExerciseQuestion(ctx, slug, file, questionIndex);
 });
+
 async function showExerciseResults(ctx: any, slug: string, file: string) {
   const exercise = await getExercise(slug, file);
 
@@ -886,13 +910,34 @@ bot.callbackQuery(/^ex-a:([^:]+):(.+\.json):(\d+):(.+)$/, async (ctx) => {
   const questionIndex = Number(ctx.match[3]);
   const selected = ctx.match[4];
 
-  const key = sessionKey(ctx.from?.id, slug, file);
-  const answers = exerciseSessions.get(key) ?? {};
-  answers[questionIndex] = selected;
-  exerciseSessions.set(key, answers);
+  const exercise = await getExercise(slug, file);
 
-  await showExerciseQuestion(ctx, slug, file, questionIndex + 1);
+  if (!exercise) {
+    return safeEditOrReply(ctx, "Exercise not found.");
+  }
+
+  const question = exercise.questions?.[questionIndex];
+
+  if (!question) {
+    return safeEditOrReply(ctx, "Question not found.");
+  }
+
+  const correct = getCorrectAnswer(question);
+  const isCorrect = normalizeAnswer(selected) === normalizeAnswer(correct);
+
+  const resultText = isCorrect
+    ? `✅ <b>Correct!</b>\n\nAnswer: <b>${escapeHtml(correct)}</b>`
+    : `❌ <b>Not quite.</b>\n\nYour answer: <b>${escapeHtml(selected)}</b>\nCorrect answer: <b>${escapeHtml(correct)}</b>`;
+
+  await safeEditOrReply(ctx, resultText, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ IELTS", `ielts:${slug}`),
+  });
 });
+
 
 function formatInteractiveQuestion(
   exercise: any,
@@ -1074,51 +1119,6 @@ bot.on("message:text", async (ctx) => {
   });
 });
 
-bot.callbackQuery(/^ex-a:([^:]+):(.+\.json):(\d+):(.+)$/, async (ctx) => {
-  await ctx.answerCallbackQuery();
-
-  const slug = ctx.match[1];
-  const file = ctx.match[2];
-  const questionIndex = Number(ctx.match[3]);
-  const selected = ctx.match[4];
-
-  const exercise = await getExercise(slug, file);
-
-  if (!exercise) {
-    return safeEditOrReply(ctx, "Exercise not found.");
-  }
-
-  const question = exercise.questions?.[questionIndex];
-
-  if (!question) {
-    return safeEditOrReply(ctx, "Question not found.");
-  }
-
-  const correct = getCorrectAnswer(question);
-  const isCorrect = normalizeAnswer(selected) === normalizeAnswer(correct);
-
-  const resultText = isCorrect
-    ? `✅ <b>Correct!</b>\n\nAnswer: <b>${escapeHtml(correct)}</b>`
-    : `❌ <b>Not quite.</b>\n\nYour answer: <b>${escapeHtml(selected)}</b>\nCorrect answer: <b>${escapeHtml(correct)}</b>`;
-
-  await safeEditOrReply(ctx, resultText, {
-    parse_mode: "HTML",
-    reply_markup: new InlineKeyboard()
-      .text("➡️ Next", `exercise-q:${slug}:${file}:${questionIndex + 1}`)
-      .row()
-      .text("⬅️ IELTS", `ielts:${slug}`),
-  });
-});
-
-bot.callbackQuery(/^exercise-q:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
-  await ctx.answerCallbackQuery();
-
-  const slug = ctx.match[1];
-  const file = ctx.match[2];
-  const questionIndex = Number(ctx.match[3]);
-
-  await showExerciseQuestion(ctx, slug, file, questionIndex);
-});
 
 bot.callbackQuery(/^ex-show:([^:]+):(.+\.json):(\d+)$/, async (ctx) => {
   await ctx.answerCallbackQuery();
@@ -1205,3 +1205,130 @@ const exerciseSessions = new Map<string, Record<number, string>>();
 function sessionKey(userId: number | undefined, slug: string, file: string): string {
   return `${userId ?? "unknown"}:${slug}:${file}`;
 }
+
+bot.callbackQuery(/^quizzes-menu:([^:]+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+
+  await safeEditOrReply(ctx, "✅ Choose quiz part:", {
+    reply_markup: new InlineKeyboard()
+      .text("Part 1 Quiz", `quiz:${slug}:part1:0`)
+      .row()
+      .text("Part 2 Quiz", `quiz:${slug}:part2:0`)
+      .row()
+      .text("Part 3 Quiz", `quiz:${slug}:part3:0`)
+      .row()
+      .text("⬅️ Article", `article:${slug}`),
+  });
+});
+
+async function showQuizQuestion(
+  ctx: any,
+  slug: string,
+  part: string,
+  questionIndex: number
+) {
+  const quiz = await getQuiz(slug, part);
+
+  if (!quiz) {
+    return safeEditOrReply(ctx, "Quiz not found.", {
+      reply_markup: new InlineKeyboard().text("⬅️ Quizzes", `quizzes-menu:${slug}`),
+    });
+  }
+
+  const question = quiz.questions[questionIndex];
+
+  if (!question) {
+    return safeEditOrReply(ctx, `🏁 <b>${escapeHtml(quiz.title)} finished!</b>`, {
+      parse_mode: "HTML",
+      reply_markup: new InlineKeyboard()
+        .text("🔁 Try Again", `quiz:${slug}:${part}:0`)
+        .row()
+        .text("⬅️ Quizzes", `quizzes-menu:${slug}`)
+        .row()
+        .text("⬅️ Article", `article:${slug}`),
+    });
+  }
+
+  const keyboard = new InlineKeyboard();
+
+  question.options.forEach((option, optionIndex) => {
+    keyboard
+      .text(
+        `${String.fromCharCode(65 + optionIndex)}`,
+        `quiz-a:${slug}:${part}:${questionIndex}:${optionIndex}`
+      )
+      .row();
+  });
+
+  keyboard.text("⬅️ Quizzes", `quizzes-menu:${slug}`);
+
+  const text =
+    `✅ <b>${escapeHtml(quiz.title)}</b>\n\n` +
+    `<b>Question ${questionIndex + 1}/${quiz.questions.length}</b>\n\n` +
+    `${escapeHtml(question.question)}\n\n` +
+    question.options
+      .map(
+        (option, index) =>
+          `<b>${String.fromCharCode(65 + index)}.</b> ${escapeHtml(option)}`
+      )
+      .join("\n");
+
+  await safeEditOrReply(ctx, text, {
+    parse_mode: "HTML",
+    reply_markup: keyboard,
+  });
+}
+
+bot.callbackQuery(/^quiz:([^:]+):(part\d+):(\d+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const part = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+
+  await showQuizQuestion(ctx, slug, part, questionIndex);
+});
+
+bot.callbackQuery(/^quiz-a:([^:]+):(part\d+):(\d+):(\d+)$/, async (ctx) => {
+  await ctx.answerCallbackQuery();
+
+  const slug = ctx.match[1];
+  const part = ctx.match[2];
+  const questionIndex = Number(ctx.match[3]);
+  const selected = Number(ctx.match[4]);
+
+  const quiz = await getQuiz(slug, part);
+
+  if (!quiz) {
+    return safeEditOrReply(ctx, "Quiz not found.");
+  }
+
+  const question = quiz.questions[questionIndex];
+
+  if (!question) {
+    return safeEditOrReply(ctx, "Question not found.");
+  }
+
+  const isCorrect = selected === question.answer;
+
+  const correctLetter = String.fromCharCode(65 + question.answer);
+  const correctAnswer = question.options[question.answer];
+
+  const text = isCorrect
+    ? `✅ <b>Correct!</b>\n\n💡 ${escapeHtml(question.explanation)}`
+    : `❌ <b>Not quite.</b>\n\nCorrect answer: <b>${correctLetter}. ${escapeHtml(
+        correctAnswer
+      )}</b>\n\n💡 ${escapeHtml(question.explanation)}`;
+
+  await safeEditOrReply(ctx, text, {
+    parse_mode: "HTML",
+    reply_markup: new InlineKeyboard()
+      .text("➡️ Next", `quiz:${slug}:${part}:${questionIndex + 1}`)
+      .row()
+      .text("⬅️ Quizzes", `quizzes-menu:${slug}`)
+      .row()
+      .text("⬅️ Article", `article:${slug}`),
+  });
+});

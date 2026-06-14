@@ -1,0 +1,87 @@
+{
+  "type": "summary-completion",
+  "title": "Complete the Summary",
+  "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage.",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "According to the WHO, hearing loss is one of the most common chronic conditions and affects over 1.5 billion people worldwide, almost a fifth of the global ____.",
+      "answer": [
+        "population"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 2,
+      "prompt": "Even mild hearing loss can cause people to become socially disengaged and may result in withdrawal from social ____.",
+      "answer": [
+        "activities"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 3,
+      "prompt": "Researchers have found that hearing loss is associated with an increased risk of ____ disease.",
+      "answer": [
+        "cardiovascular"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 4,
+      "prompt": "One possible explanation is damage to small blood vessels, together with processes such as oxidative stress and ____.",
+      "answer": [
+        "inflammation"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 5,
+      "prompt": "A report by the Lancet commission identified hearing loss as one of fourteen known risk factors for ____.",
+      "answer": [
+        "dementia"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 6,
+      "prompt": "Some researchers argue that the relationship may partly be explained by ____ causation, meaning that dementia itself can affect hearing.",
+      "answer": [
+        "reverse"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 7,
+      "prompt": "Another theory suggests that the constant effort required to process sounds creates a high cognitive ____.",
+      "answer": [
+        "load"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 8,
+      "prompt": "One promising treatment called Otarmeni is a ____ therapy developed to correct a mutation causing congenital deafness.",
+      "answer": [
+        "gene"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 9,
+      "prompt": "Researchers in Australia are also developing a treatment designed to improve the performance of ____ implants.",
+      "answer": [
+        "cochlear"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 10,
+      "prompt": "Until new therapies become widely available, experts recommend having your hearing tested and seeking advice from an ____.",
+      "answer": [
+        "audiologist"
+      ],
+      "maxWords": 2
+    }
+  ]
+}

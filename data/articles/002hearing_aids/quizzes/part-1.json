@@ -1,0 +1,61 @@
+{
+  "title": "Part 1 Quiz",
+  "part": 1,
+  "questions": [
+    {
+      "question": "Why did the author decide to have his hearing tested?",
+      "options": [
+        "His doctor recommended it",
+        "His partner thought he was losing his hearing",
+        "He was preparing for a research project",
+        "He had suffered an ear infection"
+      ],
+      "answer": 1,
+      "explanation": "The author's partner noticed he often said 'Huh?' and suspected hearing loss."
+    },
+    {
+      "question": "What is the most common cause of conductive hearing loss?",
+      "options": [
+        "Brain damage",
+        "Genetic mutations",
+        "Earwax build-up and infections",
+        "Exposure to loud music"
+      ],
+      "answer": 2,
+      "explanation": "The article identifies earwax and infections as the usual causes."
+    },
+    {
+      "question": "What causes sensorineural hearing loss (SNHL)?",
+      "options": [
+        "Damage to the inner ear or auditory pathways",
+        "Excessive earwax",
+        "Poor blood circulation in the fingers",
+        "Psychological stress alone"
+      ],
+      "answer": 0,
+      "explanation": "SNHL results from damage to the cochlea or nerve pathways."
+    },
+    {
+      "question": "According to the WHO, how many people currently live with some form of hearing loss?",
+      "options": [
+        "Around 500 million",
+        "Around 900 million",
+        "Over 1.5 billion",
+        "Over 3 billion"
+      ],
+      "answer": 2,
+      "explanation": "The article states that more than 1.5 billion people are affected."
+    },
+    {
+      "question": "What proportion of people over 65 have some difficulty hearing?",
+      "options": [
+        "About one quarter",
+        "About one third",
+        "About half",
+        "Almost all"
+      ],
+      "answer": 2,
+      "explanation": "The WHO estimates that around half of people over 65 experience hearing difficulties."
+    }
+  ]
+}

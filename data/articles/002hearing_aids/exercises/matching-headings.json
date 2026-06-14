@@ -1,0 +1,60 @@
+{
+  "type": "matching-headings",
+  "title": "Matching Headings",
+  "instructions": "Choose the correct heading for each paragraph.",
+  "headings": {
+    "C": "The role of diet in protecting hearing",
+    "D": "Different forms of hearing impairment",
+    "F": "The social consequences of hearing loss",
+    "I": "Can hearing aids reduce cognitive decline?",
+    "G": "The connection between hearing loss and dementia",
+    "K": "A warning sign of cardiovascular disease",
+    "A": "Questioning the strength of the dementia link",
+    "E": "Possible explanations for cognitive decline",
+    "J": "How hearing loss is diagnosed",
+    "H": "New biological treatments on the horizon",
+    "B": "A rapidly growing global health problem"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "paragraph": "Today, over 1.5 billion people – almost a fifth of the global population – are living with some form of hearing loss, according to the World Health Organization, making hearing loss one of the most common chronic conditions on the planet. Indeed, around half of people over 65 have some difficulty hearing, according to the WHO’s first-ever World Report on Hearing, published in 2021. The prevalence doubles with every decade of life and, by age 70, about two-thirds of people can’t hear as well as they used to.",
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "paragraph": "Take the most obvious effect of losing your hearing: social isolation and loneliness. According to Julie Beadle at Simon Fraser University in Vancouver, Canada, even mild hearing loss can cause people to become socially disengaged. Multiple studies have shown this effect and a recent review found that “uncorrected hearing loss often leads to a significant withdrawal from social activities”.",
+      "answer": "F"
+    },
+    {
+      "number": 3,
+      "paragraph": "According to a study led by Woei Shyang Loh at the National University Health System in Singapore, people with hearing loss have a 38 per cent higher risk of cardiovascular disease. The more severe the hearing loss, the higher the risk. One study in China, for example, found that participants with the worst hearing were 76 per cent more likely to have a stroke.",
+      "answer": "K"
+    },
+    {
+      "number": 4,
+      "paragraph": "There is also a link between hearing loss and dementia. In 2024, the Lancet commission on dementia published a landmark report on the condition’s prevention, intervention and care. It identified 14 known risk factors, one of which is hearing loss. In the past decade, five major studies have found a significant association between hearing loss in old age and subsequent dementia. The increased risk ranges from 28 per cent to a whopping 139 per cent. The most recent of these analyses found that each 10 decibels of hearing loss increases dementia risk by 16 per cent. The Lancet commission concluded that 7 out of 100 cases of dementia are caused by hearing loss and could be prevented.",
+      "answer": "G"
+    },
+    {
+      "number": 5,
+      "paragraph": "According to Sabia’s INSERM colleague Archana Singh-Manoux, the reason why the Lancet commission found such large numbers is probably because the study populations were people in their 70s, who may have hearing loss as a result of the early stages of dementia. “Pre-clinical dementia causes changes in the central nervous system, it affects hearing, so those results are open to what we call reverse causation, which is the disease itself affecting what you think is a risk factor,” she says.",
+      "answer": "A"
+    },
+    {
+      "number": 6,
+      "paragraph": "It could alternatively be that the brains of people with hearing impairments are chronically overloaded by the burden of processing sounds. Such high “cognitive load” would cause the brain to shrink and eventually lead to dementia. A third possibility is brain shrinkage caused by reduced sensory stimulation. Or perhaps hearing loss is just another symptom of dementia that can appear before cognitive deficits. Given the troublesome forecast of a global hearing-loss time bomb, rumbles of new-generation remedies are welcome.",
+      "answer": "E"
+    },
+    {
+      "number": 7,
+      "paragraph": "One future solution in the works is drugs that prevent or reverse hearing loss. At the moment, there are none, but plenty of people are working to change that. “New therapies have gotten a bit of a buzz recently,” says Golub.",
+      "answer": "H"
+    },
+    {
+      "number": 8,
+      "paragraph": "There may already be an off-the-shelf solution to many of these problems: hearing aids. Ten years ago, researchers at Johns Hopkins Bloomberg School of Public Health in Baltimore, Maryland, began the world’s first clinical trial to see whether these devices can slow down or prevent cognitive decline and dementia in older adults with hearing loss. The results, published in 2023, indicated that they do, in some circumstances. The overall effect wasn’t statistically significant, but among a subgroup of subjects – who were more susceptible to dementia because they were older, less educated, less wealthy and more likely to smoke, plus had more underlying health conditions – hearing aids substantially slowed cognitive decline.",
+      "answer": "I"
+    }
+  ]
+}

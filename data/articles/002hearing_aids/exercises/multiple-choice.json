@@ -1,0 +1,117 @@
+{
+  "type": "multiple-choice",
+  "title": "Multiple Choice",
+  "instructions": "Choose the correct letter, A, B, C or D.",
+  "questions": [
+    {
+      "number": 1,
+      "question": "Why did the author decide to take a hearing test?",
+      "options": {
+        "A": "His employer required it",
+        "B": "He was experiencing severe ear pain",
+        "C": "His partner suspected he was losing his hearing",
+        "D": "He was participating in a scientific study"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 2,
+      "question": "What is the most common form of hearing loss discussed in the article?",
+      "options": {
+        "A": "Conductive hearing loss",
+        "B": "Sensorineural hearing loss (SNHL)",
+        "C": "Auditory neuropathy spectrum disorder",
+        "D": "Congenital deafness"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "question": "According to the WHO, what proportion of people over 65 experience some difficulty hearing?",
+      "options": {
+        "A": "About one-third",
+        "B": "About half",
+        "C": "About two-thirds",
+        "D": "About three-quarters"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 4,
+      "question": "What is one consequence of hearing loss highlighted by Julie Beadle?",
+      "options": {
+        "A": "Improved concentration",
+        "B": "Greater independence",
+        "C": "Social disengagement",
+        "D": "Increased physical fitness"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 5,
+      "question": "What did researchers find about the relationship between hearing loss and cardiovascular disease?",
+      "options": {
+        "A": "Hearing loss directly causes heart disease",
+        "B": "People with hearing loss have a lower risk of heart disease",
+        "C": "The two conditions share several risk factors",
+        "D": "Only severe hearing loss is associated with cardiovascular disease"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 6,
+      "question": "Why do some researchers question the strength of the link between hearing loss and dementia?",
+      "options": {
+        "A": "Hearing tests are unreliable",
+        "B": "Dementia itself may affect hearing before diagnosis",
+        "C": "No studies have found any association",
+        "D": "The studies only involved young adults"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 7,
+      "question": "According to one theory, how might hearing loss contribute to dementia?",
+      "options": {
+        "A": "By increasing blood pressure",
+        "B": "By damaging the auditory nerve",
+        "C": "By creating a constant cognitive burden on the brain",
+        "D": "By weakening the immune system"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 8,
+      "question": "What makes the approval of Otarmeni significant?",
+      "options": {
+        "A": "It completely cures all forms of hearing loss",
+        "B": "It is the first approved biological treatment restoring hearing through gene therapy",
+        "C": "It replaces the need for cochlear implants",
+        "D": "It prevents age-related hearing loss"
+      },
+      "answer": "B"
+    },
+    {
+      "number": 9,
+      "question": "What is true about the Australian gene therapy described in the article?",
+      "options": {
+        "A": "It has failed clinical testing",
+        "B": "It is available worldwide",
+        "C": "It is designed to improve cochlear implant performance",
+        "D": "It only works in children"
+      },
+      "answer": "C"
+    },
+    {
+      "number": 10,
+      "question": "What is Golub's main advice regarding hearing loss?",
+      "options": {
+        "A": "Avoid hearing aids whenever possible",
+        "B": "Wait until symptoms become severe",
+        "C": "Take supplements before seeking help",
+        "D": "Get your hearing tested and do not ignore the problem"
+      },
+      "answer": "D"
+    }
+  ]
+}

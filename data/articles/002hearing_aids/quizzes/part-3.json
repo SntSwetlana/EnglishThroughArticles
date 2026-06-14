@@ -1,0 +1,61 @@
+{
+  "title": "Part 3 Quiz",
+  "part": 3,
+  "questions": [
+    {
+      "question": "Why is the approval of Otarmeni considered important?",
+      "options": [
+        "It completely cures age-related hearing loss",
+        "It demonstrates that gene therapy can restore hearing",
+        "It replaces hearing aids permanently",
+        "It works for every type of deafness"
+      ],
+      "answer": 1,
+      "explanation": "Otarmeni provides proof that gene therapy can be delivered successfully to the inner ear."
+    },
+    {
+      "question": "What is the goal of the Australian gene therapy project?",
+      "options": [
+        "To eliminate hearing aids",
+        "To improve cochlear implant performance",
+        "To reduce ear infections",
+        "To prevent cardiovascular disease"
+      ],
+      "answer": 1,
+      "explanation": "The therapy aims to enhance outcomes for cochlear implant users."
+    },
+    {
+      "question": "Which cells are being studied to regenerate the spiral ganglion?",
+      "options": [
+        "Red blood cells",
+        "Stem cells called otic neural progenitors",
+        "Skin cells",
+        "Immune cells"
+      ],
+      "answer": 1,
+      "explanation": "Researchers hope these stem cells can regenerate damaged auditory neurons."
+    },
+    {
+      "question": "Which diet was associated with reduced risk of hearing loss?",
+      "options": [
+        "Mediterranean diet",
+        "Ketogenic diet",
+        "DASH diet",
+        "Paleo diet"
+      ],
+      "answer": 2,
+      "explanation": "The article specifically mentions the DASH diet."
+    },
+    {
+      "question": "What is Golub's main recommendation?",
+      "options": [
+        "Wait for gene therapies to become available",
+        "Avoid all loud environments",
+        "Ignore mild symptoms",
+        "Get your hearing tested and seek professional advice"
+      ],
+      "answer": 3,
+      "explanation": "Golub stresses that people should not ignore hearing loss and should consult an audiologist."
+    }
+  ]
+}

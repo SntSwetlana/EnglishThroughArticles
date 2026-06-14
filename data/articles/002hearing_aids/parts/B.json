@@ -7,134 +7,38 @@
   "levels": {
     "B2": {
       "quizlet": [
-        [
-          "global population",
-          "население мира",
-          "global population"
-        ],
-        [
-          "hearing aid",
-          "слуховой аппарат",
-          "hearing aid"
-        ],
-        [
-          "cochlear implant",
-          "кохлеарный имплант",
-          "cochlear implant"
-        ],
-        [
-          "social isolation",
-          "социальная изоляция",
-          "social isolation"
-        ],
-        [
-          "loneliness",
-          "одиночество",
-          "loneliness"
-        ],
-        [
-          "self-esteem",
-          "самооценка",
-          "self-esteem"
-        ],
-        [
-          "high blood pressure",
-          "высокое кровяное давление",
-          "high blood pressure"
-        ],
-        [
-          "stroke",
-          "инсульт",
-          "stroke"
-        ]
+        ["global population","население мира","global population"],
+        ["hearing aid","слуховой аппарат","hearing aid"],
+        ["cochlear implant","кохлеарный имплант","cochlear implant"],
+        ["social isolation","социальная изоляция","social isolation"],
+        ["loneliness","одиночество","loneliness"],
+        ["self-esteem","самооценка","self-esteem"],
+        ["high blood pressure","высокое кровяное давление","high blood pressure"],
+        ["stroke","инсульт","stroke"]
       ]
     },
     "C1": {
       "quizlet": [
-        [
-          "chronic conditions",
-          "хронические заболевания",
-          "chronic conditions"
-        ],
-        [
-          "the prevalence doubles",
-          "распространённость удваивается",
-          "prevalence doubles"
-        ],
-        [
-          "some form of intervention",
-          "какая-либо форма вмешательства",
-          "some other form of intervention"
-        ],
-        [
-          "worldwide well-being",
-          "глобальное благополучие",
-          "worldwide well-being"
-        ],
-        [
-          "socially disengaged",
-          "социально отчуждённый",
-          "socially disengaged"
-        ],
-        [
-          "withdrawal from social activities",
-          "отказ от социальной активности",
-          "withdrawal from social activities"
-        ],
-        [
-          "blood lipids",
-          "липиды крови",
-          "blood lipids"
-        ],
-        [
-          "metabolic syndrome",
-          "метаболический синдром",
-          "metabolic syndrome"
-        ]
+        ["chronic conditions","хронические заболевания","chronic conditions"],
+        ["the prevalence doubles","распространённость удваивается","prevalence doubles"],
+        ["some form of intervention","какая-либо форма вмешательства","some other form of intervention"],
+        ["worldwide well-being","глобальное благополучие","worldwide well-being"],
+        ["socially disengaged","социально отчуждённый","socially disengaged"],
+        ["withdrawal from social activities","отказ от социальной активности","withdrawal from social activities"],
+        ["blood lipids","липиды крови","blood lipids"],
+        ["metabolic syndrome","метаболический синдром","metabolic syndrome"]
       ]
     },
     "C2": {
       "quizlet": [
-        [
-          "the ramifications could be seismic",
-          "последствия могут быть огромными",
-          "ramifications for worldwide well-being could be seismic"
-        ],
-        [
-          "evidence of an association",
-          "доказательства связи",
-          "Evidence of an association"
-        ],
-        [
-          "two sides of the same coin",
-          "две стороны одной медали",
-          "two sides of the same coin"
-        ],
-        [
-          "asymmetric hearing loss",
-          "асимметричная потеря слуха",
-          "Asymmetric hearing loss"
-        ],
-        [
-          "localized damage",
-          "локализованное повреждение",
-          "localized damage"
-        ],
-        [
-          "cardiovascular trouble brewing",
-          "надвигающиеся сердечно-сосудистые проблемы",
-          "cardiovascular trouble brewing"
-        ],
-        [
-          "early intervention",
-          "раннее вмешательство",
-          "early intervention"
-        ],
-        [
-          "troubling scourges",
-          "серьёзные бедствия",
-          "troubling scourges"
-        ]
+        ["the ramifications could be seismic","последствия могут быть огромными","ramifications for worldwide well-being could be seismic"],
+        ["evidence of an association","доказательства связи","Evidence of an association"],
+        ["two sides of the same coin","две стороны одной медали","two sides of the same coin"],
+        ["asymmetric hearing loss","асимметричная потеря слуха","Asymmetric hearing loss"],
+        ["localized damage","локализованное повреждение","localized damage"],
+        ["cardiovascular trouble brewing","надвигающиеся сердечно-сосудистые проблемы","cardiovascular trouble brewing"],
+        ["early intervention","раннее вмешательство","early intervention"],
+        ["troubling scourges","серьёзные бедствия","troubling scourges"]
       ]
     }
   },

@@ -1,0 +1,67 @@
+{
+  "type": "true-false-not-given",
+  "title": "True / False / Not Given",
+  "instructions": "Write TRUE, FALSE or NOT GIVEN.",
+  "questions": [
+    {
+      "number": 1,
+      "statement": "Sensorineural hearing loss is more prevalent than conductive hearing loss.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 2,
+      "statement": "The World Health Organization predicts that one-third of the world's population will experience hearing loss by 2050.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 3,
+      "statement": "All forms of hearing loss can be successfully treated with hearing aids.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 4,
+      "statement": "Researchers have conclusively demonstrated that hearing loss directly causes cardiovascular disease.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 5,
+      "statement": "Asymmetric hearing loss may serve as an early indicator of future cardiovascular problems.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 6,
+      "statement": "According to the Lancet commission, hearing loss accounts for approximately seven per cent of dementia cases.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 7,
+      "statement": "The study conducted by Séverine Sabia's team found a stronger link between hearing loss and dementia than previous research had suggested.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 8,
+      "statement": "One explanation for the association between hearing loss and dementia is that increased cognitive load may contribute to brain deterioration.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 9,
+      "statement": "The phase III trial of the Australian gene therapy has already published its final results in a peer-reviewed journal.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 10,
+      "statement": "The article states that hearing aids are equally effective for all categories of people at risk of dementia.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 11,
+      "statement": "The article explains exactly how oxidative stress damages structures within the inner ear.",
+      "answer": "NOT GIVEN"
+    },
+    {
+      "number": 12,
+      "statement": "Researchers expect gene therapy to replace cochlear implants completely within the next decade.",
+      "answer": "NOT GIVEN"
+    }
+  ]
+}

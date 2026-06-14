@@ -1,0 +1,87 @@
+{
+  "type": "grammar-gap-fill",
+  "title": "Grammar Structures from the Text",
+  "instructions": "Complete each sentence with 2–5 words exactly as they appear in the article.",
+  "questions": [
+    {
+      "number": 1,
+      "sentence": "Once regarded as a mere inconvenience of getting older, hearing loss ______ as a major public health issue.",
+      "answer": ["is now being recognized"],
+      "minWords": 4,
+      "maxWords": 4,
+      "explanation": "Present continuous passive."
+    },
+    {
+      "number": 2,
+      "sentence": "Earwax build-up and infections are the usual causes of conductive hearing loss and ______ relatively easily.",
+      "answer": ["can be cleared up"],
+      "minWords": 4,
+      "maxWords": 4,
+      "explanation": "Modal passive phrasal verb."
+    },
+    {
+      "number": 3,
+      "sentence": "Sensorineural hearing loss is the most common type and ______ damage to the inner ear.",
+      "answer": ["is caused by"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Passive voice."
+    },
+    {
+      "number": 4,
+      "sentence": "Oxidative stress and inflammation ______ in the connection between hearing loss and cardiovascular disease.",
+      "answer": ["may also be involved"],
+      "minWords": 4,
+      "maxWords": 4,
+      "explanation": "Modal passive."
+    },
+    {
+      "number": 5,
+      "sentence": "The Lancet commission concluded that some cases of dementia are caused by hearing loss and ______.",
+      "answer": ["could be prevented"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Modal passive expressing possibility."
+    },
+    {
+      "number": 6,
+      "sentence": "Foods rich in antioxidants, folate and omega-3 fatty acids ______ protective of the inner ear.",
+      "answer": ["have been found to be"],
+      "minWords": 5,
+      "maxWords": 5,
+      "explanation": "Present perfect passive reporting structure."
+    },
+    {
+      "number": 7,
+      "sentence": "According to Golub, new therapies for hearing loss ______ recently.",
+      "answer": ["have gotten a bit of a buzz"],
+      "minWords": 6,
+      "maxWords": 6,
+      "explanation": "Present perfect idiomatic expression."
+    },
+    {
+      "number": 8,
+      "sentence": "The phase III trial results look promising, but they ______.",
+      "answer": ["have yet to be published"],
+      "minWords": 5,
+      "maxWords": 5,
+      "explanation": "Formal C1/C2 structure meaning 'have not been published yet'."
+    },
+    {
+      "number": 9,
+      "sentence": "The delivery system developed in Australia ______ for standalone gene therapy in the future.",
+      "answer": ["could eventually be used"],
+      "minWords": 4,
+      "maxWords": 4,
+      "explanation": "Modal passive with future possibility."
+    },
+    {
+      "number": 10,
+      "sentence": "Researchers hope gene therapies can be delivered to the correct part of the inner ear and ______.",
+      "answer": ["restore hearing"],
+      "minWords": 2,
+      "maxWords": 2,
+      "explanation": "Infinitive structure after 'and'."
+    }
+  ]
+}

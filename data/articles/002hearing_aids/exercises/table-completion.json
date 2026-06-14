@@ -1,0 +1,101 @@
+{
+  "type": "table-completion",
+  "title": "Complete the Table",
+  "instructions": "Choose NO MORE THAN THREE WORDS from the passage.",
+  "columns": [
+    "Example",
+    "Information from the passage"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "left": "Damage caused by loud noise, ageing or toxic drugs",
+      "prompt": "Known as ____",
+      "answer": [
+        "sensorineural hearing loss"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 2,
+      "left": "A hearing condition caused by problems in sound processing",
+      "prompt": "Called ____",
+      "answer": [
+        "auditory neuropathy spectrum disorder"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 3,
+      "left": "A major consequence of untreated hearing loss",
+      "prompt": "Social ____",
+      "answer": [
+        "isolation"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 4,
+      "left": "A process believed to contribute to cardiovascular disease",
+      "prompt": "Oxidative stress and ____",
+      "answer": [
+        "inflammation"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 5,
+      "left": "A possible explanation for exaggerated dementia statistics",
+      "prompt": "____ causation",
+      "answer": [
+        "reverse"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 6,
+      "left": "Mental effort required to process sounds",
+      "prompt": "High cognitive ____",
+      "answer": [
+        "load"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 7,
+      "left": "Gene therapy approved for congenital deafness",
+      "prompt": "Treatment called ____",
+      "answer": [
+        "Otarmeni"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 8,
+      "left": "Growth factors used in Australian gene therapy",
+      "prompt": "____ and BDNF",
+      "answer": [
+        "neurotrophin-3"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 9,
+      "left": "Stem cells used to regenerate auditory neurons",
+      "prompt": "____ progenitors",
+      "answer": [
+        "otic neural"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 10,
+      "left": "Diet recommended to reduce hearing-loss risk",
+      "prompt": "The ____ diet",
+      "answer": [
+        "DASH"
+      ],
+      "maxWords": 3
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Part 2 Quiz",
+  "part": 2,
+  "questions": [
+    {
+      "question": "What social consequence of hearing loss is emphasized in the article?",
+      "options": [
+        "Increased competitiveness",
+        "Social isolation and loneliness",
+        "Reduced sleep requirements",
+        "Improved concentration"
+      ],
+      "answer": 1,
+      "explanation": "Researchers found that hearing loss often leads to withdrawal from social activities."
+    },
+    {
+      "question": "People with hearing loss have a higher risk of which condition?",
+      "options": [
+        "Cardiovascular disease",
+        "Lung cancer",
+        "Kidney failure",
+        "Arthritis"
+      ],
+      "answer": 0,
+      "explanation": "The article reports a significant association with cardiovascular disease."
+    },
+    {
+      "question": "What term describes the possibility that dementia itself may affect hearing?",
+      "options": [
+        "Cognitive load",
+        "Metabolic syndrome",
+        "Reverse causation",
+        "Neuroplasticity"
+      ],
+      "answer": 2,
+      "explanation": "Some researchers suggest hearing loss may sometimes be a consequence rather than a cause."
+    },
+    {
+      "question": "According to one theory, why might hearing loss contribute to dementia?",
+      "options": [
+        "It increases oxygen levels in the brain",
+        "It creates a chronic cognitive load",
+        "It strengthens auditory processing",
+        "It eliminates sensory stimulation"
+      ],
+      "answer": 1,
+      "explanation": "The brain may work harder to process sounds, creating cognitive overload."
+    },
+    {
+      "question": "What percentage increase in dementia risk was found for every 10 decibels of hearing loss?",
+      "options": [
+        "6%",
+        "10%",
+        "16%",
+        "25%"
+      ],
+      "answer": 2,
+      "explanation": "The article cites a study showing a 16% increase per 10 decibels."
+    }
+  ]
+}
