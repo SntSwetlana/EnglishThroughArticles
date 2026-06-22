@@ -1,0 +1,28 @@
+{
+  "title": "Part 3 Quiz",
+  "part": 2,
+  "questions": [
+    {
+      "question": "Why is the Chernobyl story not simply positive?",
+      "options": [
+        "Some species show mutation and health problems",
+        "No animals returned",
+        "All plants disappeared",
+        "The area became a city"
+      ],
+      "answer": 0,
+      "explanation": "The passage mentions reduced reproductive success, higher mutation rates and health problems."
+    },
+    {
+      "question": "What is the author’s conclusion?",
+      "options": [
+        "Nuclear disasters should be encouraged",
+        "Radiation is always beneficial",
+        "Chernobyl is both a warning and a sign of ecological resilience",
+        "Humans have no effect on nature"
+      ],
+      "answer": 2,
+      "explanation": "The final paragraph presents both warning and resilience."
+    }
+  ]
+}

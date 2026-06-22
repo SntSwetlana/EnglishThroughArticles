@@ -1,0 +1,45 @@
+{
+  "title": "Academic Collocations",
+  "items": [
+    {
+      "term": "wildlife recovery",
+      "definition": "the return or improvement of wild animal populations",
+      "translation": "восстановление дикой природы"
+    },
+    {
+      "term": "ecological recovery",
+      "definition": "the restoration of ecosystem functions after damage",
+      "translation": "экологическое восстановление"
+    },
+    {
+      "term": "human disturbance",
+      "definition": "disruption caused by human presence or activity",
+      "translation": "беспокойство со стороны человека"
+    },
+    {
+      "term": "conservation experiment",
+      "definition": "a trial designed to improve species protection",
+      "translation": "природоохранный эксперимент"
+    },
+    {
+      "term": "wetland habitat",
+      "definition": "an ecosystem characterised by waterlogged conditions",
+      "translation": "водно-болотная экосистема"
+    },
+    {
+      "term": "radiation exposure",
+      "definition": "contact with ionising radiation",
+      "translation": "воздействие радиации"
+    },
+    {
+      "term": "ecosystem recovery",
+      "definition": "the restoration of ecological functions after disruption",
+      "translation": "восстановление экосистемы"
+    },
+    {
+      "term": "radioactive environment",
+      "definition": "an environment containing elevated levels of radiation",
+      "translation": "радиоактивная среда"
+    }
+  ]
+}

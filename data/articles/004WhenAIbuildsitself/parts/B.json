@@ -1,0 +1,113 @@
+{
+  "article": "When AI builds itself",
+  "part": "Part B",
+  "title": "I, robot",
+  "level": "B2/C1/C2",
+  "text": "I, robot \n\nYet Anthropic’s leaders, who have for years worried about the prospect of out-of-control AI wreaking havoc, seem sincere. The latest generation of AI models are such competent coders, engineers and (soon) scientists that many worry they may be among the last ever made by humans. Jack Clark, an Anthropic co-founder, thinks there is a 60% chance that, by the end of 2028, an AI system will be capable of creating its own successor with no human involvement at all. \n\nThat moment would mark the beginning of a process called “recursive self-improvement” (RSI), a closed loop. Version one of a model produces version two, which is faster and more capable; version two produces version three, which is more so again. The loop continues, and the improvements grow with each iteration. Build an AI system capable of this, and your human engineers never need to build another one again. “What can seem to many like a fanciful story may instead be a real trend,” says Mr Clark. \n\nNobody knows for sure what the consequences of recursive self-improvement would be. Because AI can, unlike humans, work tirelessly and constantly, some think it would in short order lead to a superintelligent AI—a “fast take-off”. (It has also been onomatopoeically dubbed “going foom”, for the sound one might imagine an intelligence explosion making). AI doomers fear the superintelligence would be beyond human control, and that the start of RSI is the moment at which humanity’s fate is handed over to the machines. Yet a self-improving AI would probably face speed limits, at least at first. \n\nBuilding a model capable of RSI would require automating a range of specialist tasks currently carried out by humans. At present data scientists work on the theory of AI and coders put it into practice. Systems engineers build the foundations on which toy models can be raised to production scale. Other people seek out novel sources of training data, or experiment with ways to generate it fresh. Alignment and safety teams check that what comes out of the training process won’t cause harm, intentional or otherwise. ",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["capable of", "способный на", "capable of creating"],
+        ["human involvement", "участие человека", "without human involvement"],
+        ["build a model", "создать модель", "build a model"],
+        ["work tirelessly", "работать неустанно", "work tirelessly and constantly"],
+        ["specialist task", "специализированная задача", "specialist tasks"],
+        ["put into practice", "применять на практике", "put it into practice"],
+        ["carry out", "выполнять", "tasks carried out by humans"],
+        ["seek out", "искать", "seek out novel sources"],
+        ["training data", "обучающие данные", "training data"],
+        ["cause harm", "причинять вред", "cause harm"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["out-of-control AI", "ИИ, вышедший из-под контроля", "out-of-control AI"],
+        ["wreak havoc", "сеять хаос", "wreaking havoc"],
+        ["recursive self-improvement", "рекурсивное самоусовершенствование", "recursive self-improvement"],
+        ["closed loop", "замкнутый цикл", "a closed loop"],
+        ["with each iteration", "с каждой итерацией", "grow with each iteration"],
+        ["fanciful story", "маловероятная история", "a fanciful story"],
+        ["superintelligent AI", "сверхразумный ИИ", "superintelligent AI"],
+        ["in short order", "очень быстро", "lead in short order"],
+        ["face speed limits", "сталкиваться с ограничениями скорости развития", "face speed limits"],
+        ["production scale", "промышленный масштаб", "raised to production scale"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["competent coders", "высококвалифицированные программисты", "competent coders"],
+        ["create its own successor", "создать собственного преемника", "create its own successor"],
+        ["self-improving AI", "самоусовершенствующийся ИИ", "a self-improving AI"],
+        ["onomatopoeically dubbed", "звукоподражательно названный", "onomatopoeically dubbed"],
+        ["going foom", "взрывной рост интеллекта", "going foom"],
+        ["humanity’s fate", "судьба человечества", "humanity's fate"],
+        ["handed over to the machines", "передана машинам", "handed over to the machines"],
+        ["automating a range of tasks", "автоматизация целого ряда задач", "automating a range of tasks"],
+        ["alignment and safety teams", "команды по выравниванию и безопасности ИИ", "alignment and safety teams"],
+        ["intentional or otherwise", "умышленно или нет", "intentional or otherwise"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "What does Jack Clark believe may happen by the end of 2028?",
+      "options": [
+        "AI will replace all workers",
+        "AI will create its own successor without human involvement",
+        "AI development will stop",
+        "Anthropic will become a government agency"
+      ],
+      "answer": 1,
+      "explanation": "Clark estimates a 60% chance that AI systems will be able to create their own successors."
+    },
+    {
+      "type": "choice",
+      "question": "What is recursive self-improvement (RSI)?",
+      "options": [
+        "Humans improving AI systems",
+        "AI teaching children programming",
+        "A process in which AI creates increasingly capable versions of itself",
+        "A method of collecting data"
+      ],
+      "answer": 2,
+      "explanation": "RSI is a cycle where one model creates a stronger successor, which creates another."
+    },
+    {
+      "type": "choice",
+      "question": "Why do some researchers think RSI could lead to superintelligence?",
+      "options": [
+        "Because AI can improve continuously without tiring",
+        "Because AI has unlimited electricity",
+        "Because AI already controls governments",
+        "Because humans will stop using computers"
+      ],
+      "answer": 0,
+      "explanation": "Unlike humans, AI can work constantly and may improve itself repeatedly."
+    },
+    {
+      "type": "choice",
+      "question": "What do AI 'doomers' fear?",
+      "options": [
+        "AI will become too expensive",
+        "AI will never improve",
+        "Superintelligent AI may move beyond human control",
+        "AI will eliminate the internet"
+      ],
+      "answer": 2,
+      "explanation": "They fear that humanity could lose control once AI becomes sufficiently powerful."
+    },
+    {
+      "type": "choice",
+      "question": "Which of the following is NOT mentioned as a task involved in creating advanced AI systems?",
+      "options": [
+        "Finding new training data",
+        "Building production-scale systems",
+        "Checking safety and alignment",
+        "Manufacturing computer chips"
+      ],
+      "answer": 3,
+      "explanation": "The article discusses data, engineering, scaling, and safety, but not chip manufacturing."
+    }
+  ]
+}

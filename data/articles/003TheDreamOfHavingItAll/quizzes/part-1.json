@@ -1,0 +1,28 @@
+{
+  "title": "Part 1 Quiz",
+  "part": 0,
+  "questions": [
+    {
+      "question": "Why has wildlife returned to the Chernobyl Exclusion Zone?",
+      "options": [
+        "Because radiation made animals stronger",
+        "Because human activity has largely disappeared",
+        "Because the climate changed suddenly",
+        "Because predators were removed"
+      ],
+      "answer": 1,
+      "explanation": "The passage says that the long-term absence of human activity allowed many species to return."
+    },
+    {
+      "question": "What does the exclusion zone restrict?",
+      "options": [
+        "Only farming",
+        "Only tourism",
+        "Permanent habitation, commercial activity and access",
+        "Only scientific research"
+      ],
+      "answer": 2,
+      "explanation": "The text lists permanent human habitation, commercial activity, public access and resource extraction."
+    }
+  ]
+}

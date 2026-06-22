@@ -1,0 +1,63 @@
+{
+  "type": "matching-headings",
+  "title": "Matching Headings",
+  "instructions": "Choose the correct heading for each paragraph.",
+  "headings": {
+    "A": "Physical limits on AI self-improvement",
+    "B": "A warning from AI safety researchers",
+    "C": "The concept of recursive self-improvement",
+    "D": "AI begins improving AI training processes",
+    "E": "Anthropic’s commercial success",
+    "F": "Tasks that must be automated for RSI",
+    "G": "Different levels of automation across professions",
+    "H": "AI accelerating research and development",
+    "I": "Potential dangers of a self-improving intelligence",
+    "J": "Evidence that AI can already assist AI creation",
+    "K": "Why Anthropic wants to slow AI development",
+    "L": "The history of OpenAI and GPT models",
+    "M": "How AI is changing consumer entertainment",
+    "N": "The environmental benefits of artificial intelligence"
+  },
+  "questions": [
+    {
+      "number": 1,
+      "paragraph": "WHEN ANTHROPIC, an artificial-intelligence lab, debuts on stock markets later this year, it is likely to be one of the biggest initial public offerings in history. That’s because Claude, the company’s chatbot is beloved of coders, who are willing to pay a lot for access. Since Claude Code, its software-engineering agent, launched in February 2025, it has become indispensable for developers around the world. That includes Anthropic’s own: more than four-fifths of the code it published in May was written by Claude, the company says. Before Claude Code, the percentage was “low single-digits”",
+      "answer": "K"
+    },
+    {
+      "number": 2,
+      "paragraph": "Yet Anthropic’s leaders, who have for years worried about the prospect of out-of-control AI wreaking havoc, seem sincere. The latest generation of AI models are such competent coders, engineers and (soon) scientists that many worry they may be among the last ever made by humans. Jack Clark, an Anthropic co-founder, thinks there is a 60% chance that, by the end of 2028, an AI system will be capable of creating its own successor with no human involvement at all.",
+      "answer": "C"
+    },
+    {
+      "number": 3,
+      "paragraph": "Nobody knows for sure what the consequences of recursive self-improvement would be. Because AI can, unlike humans, work tirelessly and constantly, some think it would in short order lead to a superintelligent AI—a “fast take-off”. (It has also been onomatopoeically dubbed “going foom”, for the sound one might imagine an intelligence explosion making). AI doomers fear the superintelligence would be beyond human control, and that the start of RSI is the moment at which humanity’s fate is handed over to the machines. Yet a self-improving AI would probably face speed limits, at least at first.",
+      "answer": "I"
+    },
+    {
+      "number": 4,
+      "paragraph": "Building a model capable of RSI would require automating a range of specialist tasks currently carried out by humans. At present data scientists work on the theory of AI and coders put it into practice. Systems engineers build the foundations on which toy models can be raised to production scale. Other people seek out novel sources of training data, or experiment with ways to generate it fresh. Alignment and safety teams check that what comes out of the training process won’t cause harm, intentional or otherwise.",
+      "answer": "F"
+    },
+    {
+      "number": 5,
+      "paragraph": "Not all of those teams are equally amenable to AI assistance, and within each specialism some tasks are more automatable than others. It will not be too long until a human coder can do their job without ever writing a line of computer code themselves, but it may be some time until an AI is able to negotiate to acquire a previously undigitised collection of scientific papers.",
+      "answer": "G"
+    },
+    {
+      "number": 6,
+      "paragraph": "Full RSI requires every task in this chain to become automated. The AI-powered acceleration of research and development (R&D) may be felt before then, however. “As the fraction of AI R&D performed by AI systems increases, the productivity boost over human-only R&D” could increase tenfold, then a hundred-fold, then a thousandfold, according to a report published in January by the Centre for Security and Emerging Technology (CSET), a think-tank within Georgetown University. In that scenario, it warns that even if some aspects of AI R&D are initially difficult to automate, “the accelerated rate of progress means those bottlenecks are soon overcome.”",
+      "answer": "H"
+    },
+    {
+      "number": 7,
+      "paragraph": "Today no AI model can build its own successor. But big AI models can build smaller models on their own. With human help they can build other big AI models, too. Earlier this year Andrej Karpathy, a then-independent researcher who now works for Anthropic, trained a chatbot about as capable as GPT-2, a large language model built by OpenAI in 2019. Back then the model took 168 hours of training to build on 32 state-of-the-art chips; Dr Karpathy achieved the same result using a single computer with eight GPUs, the specatecialised chips used to build AI, in only three hours. With some more months of work he reduced the training time for his model, Nanochat, to just over two hours. ",
+      "answer": "J"
+    },
+    {
+      "number": 8,
+      "paragraph": "There are also several physical constraints that will, for now, impose limits on the speed at which models can improve themselves. The most important is access to compute. Despite efficiency gains, newer models continue to use more computing power to train than their predecessors, forcing progress to occur at the pace of data- centre development. ",
+      "answer": "D"
+    }
+  ]
+}

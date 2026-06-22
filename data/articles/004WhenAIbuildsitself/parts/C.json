@@ -1,0 +1,113 @@
+{
+  "article": "When AI builds itself",
+  "part": "Part C",
+  "title": "The joy of repetition part 1",
+  "level": "B2/C1/C2",
+  "text": "The joy of repetition \n\nNot all of those teams are equally amenable to AI assistance, and within each specialism some tasks are more automatable than others. It will not be too long until a human coder can do their job without ever writing a line of computer code themselves, but it may be some time until an AI is able to negotiate to acquire a previously undigitised collection of scientific papers. \n\nIt is not always obvious how the “jagged frontier” will progress. Designing new algorithms seemed one of the safer jobs, until one of Google DeepMind’s models, AlphaEvolve, began doing it in May 2025. It proposed a change to how Google spreads workloads across its data centres that saved 0.7% of the company’s worldwide computing power, and found better ways to perform matrix multiplication, which speeded up the training of Gemini, the company’s flagship large language model (LLM), by 1%. \n\nFull RSI requires every task in this chain to become automated. The AI-powered acceleration of research and development (R&D) may be felt before then, however. “As the fraction of AI R&D performed by AI systems increases, the productivity boost over human-only R&D” could increase tenfold, then a hundred-fold, then a thousandfold, according to a report published in January by the Centre for Security and Emerging Technology (CSET), a think-tank within Georgetown University. In that scenario, it warns that even if some aspects of AI R&D are initially difficult to automate, “the accelerated rate of progress means those bottlenecks are soon overcome.” \n\nToday no AI model can build its own successor. But big AI models can build smaller models on their own. With human help they can build other big AI models, too. Earlier this year Andrej Karpathy, a then-independent researcher who now works for Anthropic, trained a chatbot about as capable as GPT-2, a large language model built by OpenAI in 2019. Back then the model took 168 hours of training to build on 32 state-of-the-art chips; Dr Karpathy achieved the same result using a single computer with eight GPUs, the specatecialised chips used to build AI, in only three hours. With some more months of work he reduced the training time for his model, Nanochat, to just over two hours. \n\nIn March he handed the work of speeding up the training process over to an AI agent called Autoresearch. In two days the training time dropped to one hour and 48 minutes, and five days after that it fell to one hour and 39 minutes. “I didn’t touch anything,” Dr Karpathy says. The 18% improvement on the human work is striking because Dr Karpathy is a particularly talented human: he was a founding member of the research team at OpenAI and the head of AI at Tesla for five years. \n\n",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["AI assistance", "помощь ИИ", "amenable to AI assistance"],
+        ["write a line of code", "написать строку кода", "writing a line of code"],
+        ["scientific paper", "научная статья", "collection of scientific papers"],
+        ["workload", "рабочая нагрузка", "spreads workloads"],
+        ["computing power", "вычислительная мощность", "worldwide computing power"],
+        ["speed up", "ускорять", "speeded up the training"],
+        ["research and development (R&D)", "исследования и разработки", "AI-powered R&D"],
+        ["productivity boost", "рост производительности", "productivity boost"],
+        ["training time", "время обучения", "training time dropped"],
+        ["on its own", "самостоятельно", "build smaller models on their own"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["amenable to", "поддающийся", "amenable to AI assistance"],
+        ["automatable", "подлежащий автоматизации", "more automatable than others"],
+        ["jagged frontier", "неровная граница возможностей", "the jagged frontier"],
+        ["design algorithms", "разрабатывать алгоритмы", "designing new algorithms"],
+        ["matrix multiplication", "матричное умножение", "perform matrix multiplication"],
+        ["flagship model", "флагманская модель", "flagship large language model"],
+        ["tenfold", "в десять раз", "increase tenfold"],
+        ["bottleneck", "узкое место", "those bottlenecks are overcome"],
+        ["state-of-the-art", "самый современный", "state-of-the-art chips"],
+        ["independent researcher", "независимый исследователь", "then-independent researcher"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["undigitised collection", "неоцифрованная коллекция", "undigitised collection of papers"],
+        ["AlphaEvolve", "AlphaEvolve", "Google DeepMind's AlphaEvolve"],
+        ["worldwide computing power", "мировые вычислительные ресурсы", "worldwide computing power"],
+        ["AI-powered acceleration", "ускорение за счёт ИИ", "AI-powered acceleration of R&D"],
+        ["human-only R&D", "исследования без участия ИИ", "human-only R&D"],
+        ["accelerated rate of progress", "ускоренный темп прогресса", "accelerated rate of progress"],
+        ["specialised chips", "специализированные чипы", "GPUs, the specialised chips"],
+        ["frontier model", "передовая модель ИИ", "frontier AI models"],
+        ["hand over", "передать задачу", "handed the work over"],
+        ["striking improvement", "поразительное улучшение", "the improvement is striking"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why does the article say some jobs are more difficult to automate than others?",
+      "options": [
+        "Some tasks require human interaction and negotiation",
+        "AI systems cannot read documents",
+        "Computers are too slow",
+        "Researchers refuse to use AI"
+      ],
+      "answer": 0,
+      "explanation": "The article contrasts coding tasks with acquiring undigitised scientific papers, which requires negotiation."
+    },
+    {
+      "type": "choice",
+      "question": "What achievement of AlphaEvolve is mentioned?",
+      "options": [
+        "It created a new programming language",
+        "It reduced Google's computing costs and improved model training",
+        "It replaced all Google engineers",
+        "It built a new data centre"
+      ],
+      "answer": 1,
+      "explanation": "AlphaEvolve improved workload distribution and matrix multiplication, saving computing resources."
+    },
+    {
+      "type": "choice",
+      "question": "According to the CSET report, what may happen as AI performs more R&D?",
+      "options": [
+        "Progress could accelerate dramatically",
+        "Research will become impossible",
+        "AI development will stop",
+        "Human productivity will decrease"
+      ],
+      "answer": 0,
+      "explanation": "The report predicts productivity gains could increase tenfold, hundred-fold, or even thousandfold."
+    },
+    {
+      "type": "choice",
+      "question": "How did Andrej Karpathy initially improve Nanochat's training process?",
+      "options": [
+        "By using more engineers",
+        "By using a larger data centre",
+        "By reducing training time through optimisation",
+        "By replacing GPUs with CPUs"
+      ],
+      "answer": 2,
+      "explanation": "Karpathy reduced training time from 168 hours to just over two hours through optimisation."
+    },
+    {
+      "type": "choice",
+      "question": "What happened after Karpathy handed optimisation work to Autoresearch?",
+      "options": [
+        "The model stopped working",
+        "Training time increased",
+        "Training time decreased even further without human intervention",
+        "The AI designed a completely new model"
+      ],
+      "answer": 2,
+      "explanation": "Autoresearch reduced the training time from over two hours to one hour and 39 minutes."
+    }
+  ]
+}

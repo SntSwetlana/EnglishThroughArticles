@@ -1,0 +1,60 @@
+{
+  "title": "C1 Academic Vocabulary",
+  "items": [
+    {
+      "term": "rewilding",
+      "definition": "restoring ecosystems by allowing natural processes to return",
+      "translation": "восстановление дикой природы"
+    },
+    {
+      "term": "natural resource extraction",
+      "definition": "the removal of valuable materials from the environment",
+      "translation": "добыча природных ресурсов"
+    },
+    {
+      "term": "evacuation",
+      "definition": "the organised removal of people from danger",
+      "translation": "эвакуация"
+    },
+    {
+      "term": "reintroduce",
+      "definition": "to return a species to an area where it previously disappeared",
+      "translation": "повторно заселять"
+    },
+    {
+      "term": "sensitive to disturbance",
+      "definition": "easily affected by environmental disruption",
+      "translation": "чувствительный к беспокойству"
+    },
+    {
+      "term": "chronic radiation exposure",
+      "definition": "long-term contact with radiation",
+      "translation": "хроническое воздействие радиации"
+    },
+    {
+      "term": "undisturbed",
+      "definition": "remaining in a natural state without human interference",
+      "translation": "нетронутый"
+    },
+    {
+      "term": "environmental degradation",
+      "definition": "the deterioration of environmental quality",
+      "translation": "деградация окружающей среды"
+    },
+    {
+      "term": "reproductive success",
+      "definition": "the ability to produce surviving offspring",
+      "translation": "успешность размножения"
+    },
+    {
+      "term": "mutation rate",
+      "definition": "the frequency of genetic changes within a population",
+      "translation": "частота мутаций"
+    },
+    {
+      "term": "ecological resilience",
+      "definition": "the capacity of an ecosystem to recover from disturbance",
+      "translation": "экологическая устойчивость"
+    }
+  ]
+}

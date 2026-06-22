@@ -1,0 +1,12 @@
+{
+  "id": "004WhenAIbuildsitself",
+  "slug": "004WhenAIbuildsitself",
+  "title": "When AI builds itself",
+  "subtitle": "When AI builds itself",
+  "level": "C1/C2",
+  "ieltsTarget": "8.0-9.0",
+  "source": "The Economist",
+  "originalUrl": "https://www.economist.com/science-and-technology/2026/06/07/how-artificial-intelligence-got-better-at-building-itself",
+  "description": "Can artificial intelligence learn to build better versions of itself? This article explores the concept of recursive self-improvement (RSI), a process in which AI systems design increasingly capable successors with less and less human involvement. It examines recent advances in AI-assisted research and software engineering, the potential for accelerating technological progress, and the concerns raised by researchers about safety, control, and superintelligence. Readers will encounter advanced vocabulary related to artificial intelligence, scientific innovation, automation, ethics, and future technologies.",
+  "enabled": true
+}

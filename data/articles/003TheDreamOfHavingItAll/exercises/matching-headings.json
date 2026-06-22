@@ -1,0 +1,60 @@
+{
+  "type": "matching-headings",
+  "title": "Matching Headings",
+  "instructions": "Choose the correct heading for each paragraph.",
+  "headings": {
+    "A": "",
+    "B": "",
+    "C": "",
+    "D": "",
+    "E": "",
+    "F": "",
+    "G": "",
+    "H": "",
+    "I": "",
+    "J": "",
+    "K": ""
+  },
+  "questions": [
+    {
+      "number": 1,
+      "paragraph": "",
+      "answer": "K"
+    },
+    {
+      "number": 2,
+       "paragraph": "",
+      "answer": "C"
+    },
+    {
+      "number": 3,
+       "paragraph": "",
+      "answer": "I"
+    },
+    {
+      "number": 4,
+       "paragraph": "",
+      "answer": "F"
+    },
+    {
+      "number": 5,
+       "paragraph": "",
+      "answer": "G"
+    },
+    {
+      "number": 6,
+       "paragraph": "",
+      "answer": "H"
+    },
+    {
+      "number": 7,
+       "paragraph": "",
+      "answer": "J"
+    },
+    {
+      "number": 8,
+       "paragraph": "",
+      "answer": "D"
+    }
+  ]
+}

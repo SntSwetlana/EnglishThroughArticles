@@ -1,0 +1,37 @@
+{
+  "type": "grammar-gap-fill",
+  "title": "Grammar Gap Fill",
+  "instructions": "Complete each sentence with 2–5 words.",
+  "questions": [
+    {
+      "number": 1,
+      "sentence": "The exclusion zone ______ one of Europe’s most unusual wildlife sanctuaries.",
+      "answer": [
+        "has become"
+      ],
+      "minWords": 2,
+      "maxWords": 5,
+      "explanation": "Present perfect describes a change that started in the past and is relevant now."
+    },
+    {
+      "number": 2,
+      "sentence": "The area has become an unintended experiment ______.",
+      "answer": [
+        "in large-scale rewilding"
+      ],
+      "minWords": 3,
+      "maxWords": 5,
+      "explanation": "The collocation is an experiment in something."
+    },
+    {
+      "number": 3,
+      "sentence": "The ecological story of Chernobyl is ______.",
+      "answer": [
+        "not simply positive"
+      ],
+      "minWords": 3,
+      "maxWords": 5,
+      "explanation": "This phrase introduces a balanced argument."
+    }
+  ]
+}

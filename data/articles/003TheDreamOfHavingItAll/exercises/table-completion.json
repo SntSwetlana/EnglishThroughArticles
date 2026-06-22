@@ -1,0 +1,21 @@
+{
+  "type": "table-completion",
+  "title": "Complete the Table",
+  "instructions": "Choose NO MORE THAN THREE WORDS from the passage.",
+  "columns": [
+    "Example",
+    "Information from the passage"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "left": "Przewalski’s horses",
+      "prompt": "introduced in 1998 as a ____",
+      "answer": [
+        "conservation experiment"
+      ],
+      "maxWords": 3
+    },
+...
+  ]
+}

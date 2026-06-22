@@ -1,0 +1,113 @@
+{
+  "article": "When AI builds itself",
+  "part": "Part A",
+  "title": "How artificial intelligence got better at building itself",
+  "level": "B2/C1/C2",
+  "text": "Over and over \n\n\nHow artificial intelligence got better at building itself \n\nWHEN ANTHROPIC, an artificial-intelligence lab, debuts on stock markets later this year, it is likely to be one of the biggest initial public offerings in history. That’s because Claude, the company’s chatbot is beloved of coders, who are willing to pay a lot for access. Since Claude Code, its software-engineering agent, launched in February 2025, it has become indispensable for developers around the world. That includes Anthropic’s own: more than four-fifths of the code it published in May was written by Claude, the company says. Before Claude Code, the percentage was “low single-digits”. \n\nThe systems have improved in quality of output as well as quantity. An influential benchmark from METR, a think-tank, shows that in early 2025 Anthropic’s models could complete tasks that took human engineers a little under an hour. The company’s latest systems can complete tasks that would take more than a working day. \n\nAnd so it may be easy to raise a cynical eyebrow when the company, at the top of its game and outclassing the competition, calls for the world to have “the option to slow or temporarily pause frontier AI development”, as it did on June 5th. What market leader would not wish that its competition stop trying to catch up? ",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["stock market", "фондовый рынок", "debut on stock markets"],
+        ["developer", "разработчик", "developers around the world"],
+        ["working day", "рабочий день", "more than a working day"],
+        ["willing to pay", "готовый платить", "willing to pay for access"],
+        ["quality of output", "качество результата", "quality of output"],
+        ["complete a task", "выполнять задачу", "complete tasks"],
+        ["around the world", "по всему миру", "developers around the world"],
+        ["catch up", "догнать", "trying to catch up"],
+        ["slow down", "замедлять", "slow development"],
+        ["access", "доступ", "pay for access"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["indispensable", "незаменимый", "indispensable for developers"],
+        ["initial public offering (IPO)", "первичное размещение акций", "initial public offerings"],
+        ["influential benchmark", "авторитетный эталонный тест", "an influential benchmark"],
+        ["think-tank", "аналитический центр", "METR, a think-tank"],
+        ["raise a cynical eyebrow", "отнестись скептически", "raise a cynical eyebrow"],
+        ["at the top of its game", "находиться на пике формы", "at the top of its game"],
+        ["outclass the competition", "значительно превосходить конкурентов", "outclassing the competition"],
+        ["frontier AI development", "разработка передового ИИ", "frontier AI development"],
+        ["temporarily pause", "временно приостановить", "temporarily pause development"],
+        ["market leader", "лидер рынка", "what market leader"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["artificial-intelligence lab", "лаборатория искусственного интеллекта", "an artificial-intelligence lab"],
+        ["software-engineering agent", "агент программной инженерии", "software-engineering agent"],
+        ["beloved of coders", "пользующийся огромной популярностью у программистов", "beloved of coders"],
+        ["low single-digits", "единичные проценты", "the percentage was low single-digits"],
+        ["more than four-fifths", "более четырёх пятых", "more than four-fifths of the code"],
+        ["quality as well as quantity", "качество наряду с количеством", "quality of output as well as quantity"],
+        ["debut on stock markets", "выйти на фондовый рынок", "debuts on stock markets"],
+        ["human engineers", "инженеры-люди", "tasks that took human engineers"],
+        ["frontier AI", "передовой искусственный интеллект", "frontier AI development"],
+        ["outclassing the competition", "оставляя конкурентов далеко позади", "outclassing the competition"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why is Anthropic expected to have one of the largest IPOs in history?",
+      "options": [
+        "Because Claude has become highly valuable and popular",
+        "Because it manufactures computer chips",
+        "Because it owns several stock exchanges",
+        "Because it receives government funding"
+      ],
+      "answer": 0,
+      "explanation": "The article says Claude is widely used and people are willing to pay for access."
+    },
+    {
+      "type": "choice",
+      "question": "How much of Anthropic's code was reportedly written by Claude in May?",
+      "options": [
+        "About one-fifth",
+        "About half",
+        "More than four-fifths",
+        "All of it"
+      ],
+      "answer": 2,
+      "explanation": "The company states that more than four-fifths of its code was written by Claude."
+    },
+    {
+      "type": "choice",
+      "question": "What does the METR benchmark show?",
+      "options": [
+        "Claude is cheaper than competitors",
+        "Anthropic's models can complete increasingly complex tasks",
+        "Developers dislike AI tools",
+        "AI progress has slowed down"
+      ],
+      "answer": 1,
+      "explanation": "The benchmark shows that newer models can complete tasks that once required much more human time."
+    },
+    {
+      "type": "choice",
+      "question": "Why might some people be surprised by Anthropic's call to slow AI development?",
+      "options": [
+        "The company is leaving the AI industry",
+        "The company has failed commercially",
+        "The company currently leads the market",
+        "The company does not use AI itself"
+      ],
+      "answer": 2,
+      "explanation": "As a market leader, Anthropic benefits from its competitive advantage."
+    },
+    {
+      "type": "choice",
+      "question": "What does the phrase 'trying to catch up' refer to?",
+      "options": [
+        "Developers learning programming",
+        "Competitors attempting to reach Anthropic's level",
+        "Investors buying shares",
+        "Governments regulating AI"
+      ],
+      "answer": 1,
+      "explanation": "The phrase refers to rival companies trying to match Anthropic's progress."
+    }
+  ]
+}

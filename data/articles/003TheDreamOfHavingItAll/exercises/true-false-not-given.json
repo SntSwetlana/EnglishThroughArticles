@@ -1,0 +1,22 @@
+{
+  "type": "true-false-not-given",
+  "title": "True / False / Not Given",
+  "instructions": "Write TRUE, FALSE or NOT GIVEN.",
+  "questions": [
+    {
+      "number": 1,
+      "statement": "The exclusion zone was established after the 1986 accident.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 2,
+      "statement": "Radiation has benefited animal populations more than the absence of humans.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 3,
+      "statement": "The Red Forest recovered within ten years of the accident.",
+      "answer": "NOT GIVEN"
+    }
+  ]
+}

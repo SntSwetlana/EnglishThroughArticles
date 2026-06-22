@@ -1,0 +1,19 @@
+{
+  "type": "multiple-choice",
+  "title": "Multiple Choice",
+  "instructions": "Choose the correct letter, A, B, C or D.",
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is the main reason wildlife has recovered in the Chernobyl Exclusion Zone?",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "answer": "B"
+    },
+...
+  ]
+}

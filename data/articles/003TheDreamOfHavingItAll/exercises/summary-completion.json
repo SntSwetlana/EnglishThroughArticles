@@ -1,0 +1,16 @@
+{
+  "type": "summary-completion",
+  "title": "Complete the Summary",
+  "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage.",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "The Chernobyl Exclusion Zone was created after the nuclear accident in ____.",
+      "answer": [
+        "1986"
+      ],
+      "maxWords": 2
+    },
+...
+  ]
+}

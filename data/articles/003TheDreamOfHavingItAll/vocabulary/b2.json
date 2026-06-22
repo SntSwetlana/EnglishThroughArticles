@@ -1,0 +1,60 @@
+{
+  "title": "B2 Core Vocabulary",
+  "items": [
+    {
+      "term": "wildlife sanctuary",
+      "definition": "a protected area where wild animals can live safely",
+      "translation": "заповедник дикой природы"
+    },
+    {
+      "term": "natural habitat",
+      "definition": "the environment where a species normally lives",
+      "translation": "естественная среда обитания"
+    },
+    {
+      "term": "endangered species",
+      "definition": "a species at risk of becoming extinct",
+      "translation": "исчезающий вид"
+    },
+    {
+      "term": "human activity",
+      "definition": "actions carried out by people that affect the environment",
+      "translation": "деятельность человека"
+    },
+    {
+      "term": "radiation damage",
+      "definition": "harm caused by exposure to radiation",
+      "translation": "ущерб от радиации"
+    },
+    {
+      "term": "exclusion zone",
+      "definition": "an area where people are prohibited from entering or living",
+      "translation": "зона отчуждения"
+    },
+    {
+      "term": "flourish",
+      "definition": "to grow, develop or succeed strongly",
+      "translation": "процветать"
+    },
+    {
+      "term": "thrive",
+      "definition": "to grow vigorously and prosper",
+      "translation": "процветать"
+    },
+    {
+      "term": "biodiversity",
+      "definition": "the variety of living organisms in an ecosystem",
+      "translation": "биоразнообразие"
+    },
+    {
+      "term": "adaptation",
+      "definition": "a characteristic that improves survival in a particular environment",
+      "translation": "адаптация"
+    },
+    {
+      "term": "recovery",
+      "definition": "the process of returning to a healthy or stable condition",
+      "translation": "восстановление"
+    }
+  ]
+}

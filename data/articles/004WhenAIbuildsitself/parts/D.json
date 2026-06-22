@@ -1,0 +1,113 @@
+{
+  "article": "When AI builds itself",
+  "part": "Part D",
+  "title": "The joy of repetition part 2",
+  "level": "B2/C1/C2",
+  "text": "The improvements themselves were prosaic. The AI agent picked better starting values for the training run, widened the scope of the LLM’s “attention” window and noticed that the model’s focus was wandering. None of this is particularly novel, Dr Karpathy says. But he had missed them. “They stack up and actually improved Nanochat,” he says. \n\nSpeed-ups of this kind are inevitable as models become more capable. Much of the work of building terabyte-size frontier models is less glamorous than the AI industry’s enormous salaries and fancy offices suggest. It involves plumbing together the layers of an infrastructure stack that are bought in from third parties, debugging hardware and software set-ups and tweaking “hyperparameters”, the initial set-up of a training run, until the outcome looks solid. An AI system can do much of that today, with little supervision. \n\nBut even the more nuanced intellectual work is nearing automation, says Joe Spisak, a researcher at Reflection AI, a lab based in New York that is building frontier models that are open-weight (meaning their parameters are publicly released). Give a frontier system a rough sketch of an idea for efficiency gains, and it is increasingly capable of designing an experiment, running tests on a toy model, seeing what works and responding with a plan that is ready to implement at scale. \n\nAI models can carry out these sorts of tasks, which take humans hours, in around 30 minutes. Increasingly, humans play the role only of research director, steering the AI to run experiments, which the models code up, debug, optimise and monitor themselves. The productivity boost is alluring, but also alarming. As the role that humans play in the production process shrinks, they may lose control. The end result could be models trained by models, to achieve goals set by models, whose safety is verified only by models. \n\nSome fear a disaster. Max Tegmark, a physicist and machine-learning researcher at the Massachusetts Institute of Technology who has devoted much of the past decade to campaigning for AI safety, likens it to a driver flooring the accelerator on the motorway with their eyes closed. The result would be certain doom, he told the The Economist’s “Inside Tech” video show, as long as the driver refuses to open their eyes. Powerful AI systems could outcompete humans as the decision makers in government and commerce, says Professor Tegmark, disempowering humanity; they could offer supreme power to whoever first builds them, ushering in global totalitarianism; or they could simply cease to care about humanity at all, and gradually squeeze people out to make room for more data centres and power generation. \n\nThree years ago, Professor Tegmark led a call for a pause in global AI development, arguing that the creation of the then-cutting edge GPT-4 was tantamount to that blindfolded journey. This year’s CSET report warned that the systems created by RSI “pose extreme risks. This warrants preparatory action now.” Anthropic, it seems, is close to agreeing with that idea. \n\n",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["starting values", "начальные значения", "better starting values"],
+        ["training run", "процесс обучения модели", "the training run"],
+        ["focus", "фокус, внимание", "the model's focus"],
+        ["speed-up", "ускорение", "speed-ups of this kind"],
+        ["debug", "искать и исправлять ошибки", "debug hardware and software"],
+        ["set-up", "настройка", "software set-ups"],
+        ["carry out", "выполнять", "carry out these tasks"],
+        ["run tests", "проводить тесты", "running tests"],
+        ["efficiency gain", "повышение эффективности", "efficiency gains"],
+        ["research director", "руководитель исследований", "play the role of research director"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["prosaic", "обыденный, прозаичный", "the improvements were prosaic"],
+        ["attention window", "окно внимания модели", "attention window"],
+        ["frontier model", "передовая модель ИИ", "frontier models"],
+        ["infrastructure stack", "инфраструктурный стек", "layers of an infrastructure stack"],
+        ["hyperparameter", "гиперпараметр", "tweaking hyperparameters"],
+        ["little supervision", "минимальный контроль", "with little supervision"],
+        ["nuanced intellectual work", "тонкая интеллектуальная работа", "nuanced intellectual work"],
+        ["implement at scale", "внедрить в крупном масштабе", "implement at scale"],
+        ["productivity boost", "рост производительности", "the productivity boost"],
+        ["alluring but alarming", "привлекательный, но тревожный", "alluring, but also alarming"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["stack up", "накапливаться и давать эффект", "they stack up"],
+        ["plumbing together", "интегрировать многочисленные компоненты", "plumbing together the layers"],
+        ["open-weight models", "модели с открытыми весами", "frontier models that are open-weight"],
+        ["rough sketch", "примерный набросок идеи", "a rough sketch of an idea"],
+        ["toy model", "упрощённая тестовая модель", "tests on a toy model"],
+        ["verified only by models", "проверяемые только моделями", "safety is verified only by models"],
+        ["outcompete humans", "превзойти людей в конкуренции", "outcompete humans"],
+        ["disempowering humanity", "лишая человечество влияния", "disempowering humanity"],
+        ["usher in global totalitarianism", "привести к глобальному тоталитаризму", "ushering in global totalitarianism"],
+        ["tantamount to", "равносильно чему-либо", "tantamount to that journey"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why were the improvements made by Autoresearch described as 'prosaic'?",
+      "options": [
+        "They relied on simple optimisations rather than revolutionary discoveries",
+        "They required new hardware",
+        "They changed the architecture completely",
+        "They were invented by humans"
+      ],
+      "answer": 0,
+      "explanation": "The AI improved existing settings and parameters rather than introducing entirely new ideas."
+    },
+    {
+      "type": "choice",
+      "question": "What kind of work can AI systems already perform with little supervision?",
+      "options": [
+        "Managing governments",
+        "Debugging systems and adjusting training settings",
+        "Building data centres",
+        "Creating new chip factories"
+      ],
+      "answer": 1,
+      "explanation": "The article states that AI can already handle debugging, infrastructure work, and hyperparameter tuning."
+    },
+    {
+      "type": "choice",
+      "question": "According to Joe Spisak, what can advanced AI systems increasingly do?",
+      "options": [
+        "Design and test research experiments",
+        "Negotiate international treaties",
+        "Manufacture computer hardware",
+        "Control financial markets"
+      ],
+      "answer": 0,
+      "explanation": "AI can design experiments, run tests, analyse results, and propose scalable solutions."
+    },
+    {
+      "type": "choice",
+      "question": "Why is the growing role of AI in research both attractive and worrying?",
+      "options": [
+        "Because AI is expensive",
+        "Because productivity rises, but human oversight may decrease",
+        "Because AI requires more office space",
+        "Because researchers dislike automation"
+      ],
+      "answer": 1,
+      "explanation": "The productivity gains are significant, but humans may gradually lose control of the process."
+    },
+    {
+      "type": "choice",
+      "question": "What concern does Max Tegmark express?",
+      "options": [
+        "AI development is progressing too slowly",
+        "AI may eventually become more powerful than humans can control",
+        "AI companies are not profitable",
+        "Open-source models are ineffective"
+      ],
+      "answer": 1,
+      "explanation": "Tegmark compares unchecked AI development to driving with your eyes closed and warns about extreme risks."
+    }
+  ]
+}
