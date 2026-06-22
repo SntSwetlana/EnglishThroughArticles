@@ -2,11 +2,40 @@
   "id": "004WhenAIbuildsitself",
   "slug": "004WhenAIbuildsitself",
   "title": "When AI builds itself",
-  "subtitle": "When AI builds itself",
+  "subtitle": "How artificial intelligence got better at building itself",
   "level": "C1/C2",
   "ieltsTarget": "8.0-9.0",
+  "bands": ["8.0-8.5", "8.5-9.0"],
   "source": "The Economist",
   "originalUrl": "https://www.economist.com/science-and-technology/2026/06/07/how-artificial-intelligence-got-better-at-building-itself",
-  "description": "Can artificial intelligence learn to build better versions of itself? This article explores the concept of recursive self-improvement (RSI), a process in which AI systems design increasingly capable successors with less and less human involvement. It examines recent advances in AI-assisted research and software engineering, the potential for accelerating technological progress, and the concerns raised by researchers about safety, control, and superintelligence. Readers will encounter advanced vocabulary related to artificial intelligence, scientific innovation, automation, ethics, and future technologies.",
-  "enabled": true
+  "description": "An exploration of recursive self-improvement, the process by which AI systems may eventually design increasingly capable successors. The article examines recent advances in AI-assisted research, the possibility of accelerating innovation, the risks of losing human oversight, and the physical constraints that may slow the emergence of superintelligent systems.",
+  "topics": ["Technology", "Artificial Intelligence", "Science"],
+  "enabled": true,
+  "parts": [
+    {
+      "id": "A",
+      "icon": "🤖",
+      "title": "How artificial intelligence got better at building itself"
+    },
+    {
+      "id": "B",
+      "icon": "♾️",
+      "title": "I, robot"
+    },
+    {
+      "id": "C",
+      "icon": "🔬",
+      "title": "The joy of repetition part 1"
+    },
+    {
+      "id": "D",
+      "icon": "🤯",
+      "title": "The joy of repetition part 2"
+    },
+    {
+      "id": "E",
+      "icon": "🖥️",
+      "title": "Hot chip"
+    }
+  ]
 }
