@@ -1,0 +1,113 @@
+{
+  "article": "America's AI power grab",
+  "part": "Part C",
+  "title": "What Should the Rest of the World Do?",
+  "level": "B2/C1/C2",
+  "text": "Such a future would be uncomfortable for America's allies, which are nowhere close to rivalling the likes of Anthropic. They are already vulnerable to Mr Trump's bargaining on trade, alliances, the dollar system and more. Al could become the most important lever of the lot. True, some of the depen-dence is two-way: America needs Dutch lithography machines and Taiwanese fabs. And foreigners could al-ways shun Anthropic or OpenAt in favour of good-enough open-weight alternatives.\n\nYet running models requires computing power, which America has perhaps 15 times more of than Europe, plus much more ongo-ing investment. If SpaceX, whose share price has surged after listing on June 12th, realises its vision of data centres in space, the gap is unlikely to close. \"Europe 2031\", a gloomy essay about the fu-ture of Al, imagines vassal status for Europe as its cyber-securi-ty, defence and swathes of its economy come to depend on American models and compute (see By Invitation).\n\nMany countries will conclude they need America more than ever. They can still strengthen their bargaining positions. Compute is so lacking that it makes sense to build data centres almost anywhere, yet countries show no sense of what is at stake. In the seven months to June 2025 demand for new grid connections in Britain rose from 41GW to 125GW, more than twice peak power demand. OpenAl paused a data-centre pro-ject there in April, citing regulation and costly energy.\n\nToken gestures\n\nThroughout Europe more energy, easier planning and looser rules for modelmakers would help. In East Asia Taiwan, Japan and South Korea must integrate rather than duplicate their ef-forts. All should avoid the false promise of government at-tempts at steering investment. The goal should not be protec-tionism but ensuring that America is not the only economy where the At ecosystem can thrive. As in trade and defence, the way to cope with Uncle Sam's transactional turn is not toeйд whine about alliances but to build strength.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["computing power", "вычислительная мощность", "computing power"],
+        ["ongoing investment", "постоянные инвестиции", "ongoing investment"],
+        ["build data centres", "строить центры обработки данных", "build data centres"],
+        ["grid connections", "подключение к электросети", "grid connections"],
+        ["peak power demand", "пиковый спрос на электроэнергию", "peak power demand"],
+        ["costly energy", "дорогая электроэнергия", "costly energy"],
+        ["bargaining position", "переговорная позиция", "bargaining positions"],
+        ["what is at stake", "что поставлено на карту", "what is at stake"],
+        ["more than ever", "как никогда раньше", "more than ever"],
+        ["build strength", "наращивать собственную силу", "build strength"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["be vulnerable to", "быть уязвимым перед", "vulnerable to"],
+        ["bargaining on", "торговаться по поводу", "bargaining on trade"],
+        ["two-way dependence", "взаимозависимость", "dependence is two-way"],
+        ["shun", "отказаться от; избегать", "shun Anthropic"],
+        ["vassal status", "положение вассала", "vassal status"],
+        ["come to depend on", "стать зависимым от", "come to depend on"],
+        ["looser rules", "менее жёсткие правила", "looser rules"],
+        ["integrate rather than duplicate", "интегрировать вместо дублирования", "integrate rather than duplicate"],
+        ["steer investment", "направлять инвестиции", "steering investment"],
+        ["AI ecosystem", "экосистема искусственного интеллекта", "AI ecosystem"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["rival the likes of", "соперничать с такими компаниями, как", "rivalling the likes of Anthropic"],
+        ["the most important lever", "важнейший рычаг влияния", "the most important lever"],
+        ["Dutch lithography machines", "нидерландские литографические установки", "Dutch lithography machines"],
+        ["Taiwanese fabs", "тайваньские полупроводниковые фабрики", "Taiwanese fabs"],
+        ["good-enough open-weight alternatives", "достаточно хорошие модели с открытыми весами", "good-enough open-weight alternatives"],
+        ["data centres in space", "центры обработки данных в космосе", "data centres in space"],
+        ["swathes of its economy", "целые отрасли экономики", "swathes of its economy"],
+        ["token gestures", "символические меры", "Token gestures"],
+        ["protectionism", "протекционизм", "protectionism"],
+        ["transactional turn", "переход к прагматичной политике", "transactional turn"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why does the author believe America's allies may become increasingly dependent on the United States?",
+      "options": [
+        "Because America controls most of the world's oil",
+        "Because America dominates advanced AI models and computing power",
+        "Because America produces all semiconductors",
+        "Because Europe has stopped investing in technology"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that America's lead in frontier AI and compute could become its greatest source of geopolitical leverage."
+    },
+    {
+      "type": "choice",
+      "question": "According to the article, why is Europe's AI gap unlikely to close soon?",
+      "options": [
+        "Europe has banned AI research",
+        "America has much more compute and continues investing heavily",
+        "European universities no longer teach AI",
+        "OpenAI has left Europe permanently"
+      ],
+      "answer": 1,
+      "explanation": "The author points to America's huge advantage in computing power and continued investment."
+    },
+    {
+      "type": "choice",
+      "question": "What problem does the article identify in Britain?",
+      "options": [
+        "A shortage of AI engineers",
+        "Insufficient electricity infrastructure for new data centres",
+        "A ban on cloud computing",
+        "A lack of internet access"
+      ],
+      "answer": 1,
+      "explanation": "Demand for grid connections has surged, while regulation and expensive energy delayed AI infrastructure projects."
+    },
+    {
+      "type": "choice",
+      "question": "What does the author recommend for Europe and East Asia?",
+      "options": [
+        "Restrict all foreign AI companies",
+        "Nationalise AI laboratories",
+        "Increase energy capacity, cooperate and strengthen their own AI ecosystems",
+        "Depend more heavily on American companies"
+      ],
+      "answer": 2,
+      "explanation": "The proposed solution is greater investment, regional cooperation and stronger domestic AI ecosystems rather than protectionism."
+    },
+    {
+      "type": "choice",
+      "question": "What is the main message of the article's conclusion?",
+      "options": [
+        "Countries should wait for America to solve AI challenges",
+        "Governments should introduce stricter AI bans",
+        "Complaining about America is less useful than becoming technologically stronger",
+        "Open-weight AI should be prohibited worldwide"
+      ],
+      "answer": 2,
+      "explanation": "The author concludes that nations should build their own technological strength instead of relying on or complaining about the United States."
+    }
+  ]
+}

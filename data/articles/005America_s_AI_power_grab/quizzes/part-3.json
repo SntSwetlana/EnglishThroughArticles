@@ -1,0 +1,61 @@
+{
+  "title": "Part 3 Quiz",
+  "part": 2,
+  "questions": [
+    {
+      "question": "What problem does Britain face according to the article?",
+      "options": [
+        "A shortage of AI researchers",
+        "Rapidly increasing demand for electricity connections",
+        "Falling internet usage",
+        "A ban on data centres"
+      ],
+      "answer": 1,
+      "explanation": "Demand for new grid connections has risen dramatically due to AI infrastructure."
+    },
+    {
+      "question": "Why did OpenAI pause a UK data-centre project?",
+      "options": [
+        "Political protests",
+        "Poor internet speeds",
+        "Regulation and expensive energy",
+        "Lack of investors"
+      ],
+      "answer": 2,
+      "explanation": "The article cites regulation and high energy costs."
+    },
+    {
+      "question": "What does the article recommend for Europe and East Asia?",
+      "options": [
+        "Copy American restrictions",
+        "Reduce AI investment",
+        "Increase energy capacity and cooperate more closely",
+        "Nationalise AI companies"
+      ],
+      "answer": 2,
+      "explanation": "The author argues for more energy, easier planning and stronger regional cooperation."
+    },
+    {
+      "question": "What criticism does the author make of governments?",
+      "options": [
+        "They rely too much on universities",
+        "They focus on symbolic actions instead of meaningful reforms",
+        "They spend too much on defence",
+        "They encourage too much competition"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that token gestures are insufficient."
+    },
+    {
+      "question": "What is the central conclusion of the article?",
+      "options": [
+        "AI should be banned internationally",
+        "America's AI dominance is temporary",
+        "Other countries should strengthen their own AI ecosystems instead of simply complaining",
+        "Only open-source AI has a future"
+      ],
+      "answer": 2,
+      "explanation": "The author concludes that countries should build their own technological strength rather than depend entirely on the United States."
+    }
+  ]
+}

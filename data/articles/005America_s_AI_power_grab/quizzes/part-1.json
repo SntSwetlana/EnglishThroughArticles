@@ -1,0 +1,61 @@
+{
+  "title": "Part 1 Quiz",
+  "part": 0,
+  "questions": [
+    {
+      "question": "Why did the Trump administration order Anthropic to block foreign users from its latest AI models?",
+      "options": [
+        "To reduce server costs",
+        "Because of concerns about a possible jailbreak",
+        "To increase subscription prices",
+        "To comply with European regulations"
+      ],
+      "answer": 1,
+      "explanation": "The order followed concerns that a prompt could bypass the models' safety protections."
+    },
+    {
+      "question": "According to the article, what became clear after the order?",
+      "options": [
+        "Anthropic would relocate abroad",
+        "Europe now controls frontier AI",
+        "The American government can determine who accesses the world's leading AI",
+        "China immediately copied the models"
+      ],
+      "answer": 2,
+      "explanation": "The incident demonstrated that access to frontier AI ultimately depends on decisions made by the US government."
+    },
+    {
+      "question": "Why does the article compare AI to nuclear technology and cryptography?",
+      "options": [
+        "All three were invented at the same time",
+        "They are difficult to export",
+        "They create difficult trade-offs between security and openness",
+        "They are mainly military technologies"
+      ],
+      "answer": 2,
+      "explanation": "The article argues that frontier AI raises similar strategic dilemmas about sharing advanced technologies."
+    },
+    {
+      "question": "What concern does the article raise about open-weight AI models?",
+      "options": [
+        "They are too expensive to train",
+        "They could spread advanced capabilities widely",
+        "They require no computing power",
+        "They cannot be modified"
+      ],
+      "answer": 1,
+      "explanation": "Open-weight models may allow powerful capabilities to proliferate beyond their creators' control."
+    },
+    {
+      "question": "What is the main idea of the first section?",
+      "options": [
+        "America has lost its technological advantage",
+        "AI has become a new source of American geopolitical power",
+        "Europe is leading AI development",
+        "Open-source AI has replaced commercial AI"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that frontier AI gives the United States significant new leverage."
+    }
+  ]
+}

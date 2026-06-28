@@ -1,0 +1,71 @@
+{
+  "type": "summary-completion",
+  "title": "Complete the Summary",
+  "instructions": "Complete the summary below. Choose NO MORE THAN TWO WORDS from the passage.",
+  "questions": [
+    {
+      "number": 1,
+      "prompt": "The article argues that America has gained enormous geopolitical influence because it can control access to frontier ____.",
+      "answer": [
+        "AI"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 2,
+      "prompt": "The restriction on Anthropic's models followed concerns about a possible ____ that bypassed safety protections.",
+      "answer": [
+        "jailbreak"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 3,
+      "prompt": "The author compares AI with technologies such as nuclear weapons and ____.",
+      "answer": [
+        "cryptography"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 4,
+      "prompt": "Unlike proprietary systems, ____ models can be downloaded by anyone.",
+      "answer": [
+        "Open-weight"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 5,
+      "prompt": "America also has a strong economic interest in selling its technology to ____.",
+      "answer": [
+        "foreigners"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 6,
+      "prompt": "The article predicts that countries may receive different levels of AI through a hierarchy of ____.",
+      "answer": [
+        "access"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 7,
+      "prompt": "America's lead is reinforced by its enormous advantage in ____ power.",
+      "answer": [
+        "computing"
+      ],
+      "maxWords": 2
+    },
+    {
+      "number": 8,
+      "prompt": "To reduce dependence on America, Europe and East Asia should strengthen their own AI ____.",
+      "answer": [
+        "ecosystem"
+      ],
+      "maxWords": 2
+    }
+  ]
+}

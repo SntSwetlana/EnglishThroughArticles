@@ -1,0 +1,87 @@
+{
+  "type": "grammar-gap-fill",
+  "title": "Grammar Structures from the Text",
+  "instructions": "Complete each sentence with 2–5 words exactly as they appear in the article.",
+  "questions": [
+    {
+      "number": 1,
+      "sentence": "The Trump administration ordered Anthropic ______ from its latest AI models.",
+      "answer": ["to block foreigners"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Infinitive construction: order somebody to do something."
+    },
+    {
+      "number": 2,
+      "sentence": "The government can decide who ______ the world's most important technology.",
+      "answer": ["may use"],
+      "minWords": 2,
+      "maxWords": 2,
+      "explanation": "Modal verb expressing permission."
+    },
+    {
+      "number": 3,
+      "sentence": "The administration was responding to a prompt that ______ against hacking or making bioweapons.",
+      "answer": ["circumvents defences"],
+      "minWords": 2,
+      "maxWords": 2,
+      "explanation": "Present Simple used in a defining relative clause."
+    },
+    {
+      "number": 4,
+      "sentence": "The legal basis of the order ______, according to the article.",
+      "answer": ["remains unclear"],
+      "minWords": 2,
+      "maxWords": 2,
+      "explanation": "Linking verb + adjective."
+    },
+    {
+      "number": 5,
+      "sentence": "Global access to the best AI may ______ a decision in the Oval Office.",
+      "answer": ["come down to"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Phrasal verb meaning 'depend mainly on'."
+    },
+    {
+      "number": 6,
+      "sentence": "Modern cryptography led America to accept ______ secure allies and boosting offensive capabilities.",
+      "answer": ["the trade-off between"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Fixed expression followed by parallel noun phrases."
+    },
+    {
+      "number": 7,
+      "sentence": "Open-weight models could ______ if they become widely available.",
+      "answer": ["advance and proliferate"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Coordinated infinitives joined by 'and'."
+    },
+    {
+      "number": 8,
+      "sentence": "A stronger AI model may uncover one more vulnerability, and the weaker party ______.",
+      "answer": ["will be compromised"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Future passive construction."
+    },
+    {
+      "number": 9,
+      "sentence": "To freeze AI research at America's best lab ______.",
+      "answer": ["would be self-defeating"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Second conditional result clause."
+    },
+    {
+      "number": 10,
+      "sentence": "The best capabilities will ______ by America.",
+      "answer": ["be closely guarded"],
+      "minWords": 3,
+      "maxWords": 3,
+      "explanation": "Future passive voice."
+    }
+  ]
+}

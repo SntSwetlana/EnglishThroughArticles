@@ -1,0 +1,155 @@
+{
+  "title": "B2 Core Vocabulary",
+  "items": [
+    {
+      "term": "peace deal",
+      "definition": "an agreement to end a conflict between countries or groups",
+      "translation": "мирное соглашение"
+    },
+    {
+      "term": "decline in power",
+      "definition": "a reduction in political or economic influence",
+      "translation": "ослабление влияния"
+    },
+    {
+      "term": "government order",
+      "definition": "an official instruction issued by a government",
+      "translation": "распоряжение правительства"
+    },
+    {
+      "term": "foreign users",
+      "definition": "people from other countries using a service or technology",
+      "translation": "иностранные пользователи"
+    },
+    {
+      "term": "capable model",
+      "definition": "an AI system with advanced abilities",
+      "translation": "мощная модель ИИ"
+    },
+    {
+      "term": "access to technology",
+      "definition": "the ability to use technological resources",
+      "translation": "доступ к технологиям"
+    },
+    {
+      "term": "respond to",
+      "definition": "to react to an event or situation",
+      "translation": "реагировать на"
+    },
+    {
+      "term": "legal basis",
+      "definition": "the legal justification for an action",
+      "translation": "правовая основа"
+    },
+    {
+      "term": "remain unclear",
+      "definition": "to continue to be uncertain or undefined",
+      "translation": "оставаться неясным"
+    },
+    {
+      "term": "global access",
+      "definition": "availability to people around the world",
+      "translation": "глобальный доступ"
+    },
+    {
+      "term": "decision-maker",
+      "definition": "a person with authority to make important decisions",
+      "translation": "лицо, принимающее решения"
+    },
+    {
+      "term": "frontier technology",
+      "definition": "the most advanced technology currently available",
+      "translation": "передовая технология"
+    },
+    {
+      "term": "economic interest",
+      "definition": "financial or commercial advantage",
+      "translation": "экономический интерес"
+    },
+    {
+      "term": "consumer use",
+      "definition": "use by ordinary customers",
+      "translation": "использование потребителями"
+    },
+    {
+      "term": "intellectual property",
+      "definition": "creations of the mind protected by law",
+      "translation": "интеллектуальная собственность"
+    },
+    {
+      "term": "reason to cooperate",
+      "definition": "a motive for working together",
+      "translation": "причина сотрудничать"
+    },
+    {
+      "term": "military capability",
+      "definition": "the ability of armed forces to carry out operations",
+      "translation": "военный потенциал"
+    },
+    {
+      "term": "close ally",
+      "definition": "a trusted partner nation",
+      "translation": "близкий союзник"
+    },
+    {
+      "term": "computing power",
+      "definition": "the processing capacity of computers",
+      "translation": "вычислительная мощность"
+    },
+    {
+      "term": "investment",
+      "definition": "money put into a project to generate future returns",
+      "translation": "инвестиции"
+    },
+    {
+      "term": "energy demand",
+      "definition": "the amount of energy required",
+      "translation": "спрос на энергию"
+    },
+    {
+      "term": "data centre",
+      "definition": "a facility that houses computer systems and servers",
+      "translation": "центр обработки данных"
+    },
+    {
+      "term": "public hands",
+      "definition": "controlled or available to the general public",
+      "translation": "в распоряжении общества"
+    },
+    {
+      "term": "open-weight model",
+      "definition": "an AI model whose weights are publicly available",
+      "translation": "модель с открытыми весами"
+    },
+    {
+      "term": "cybersecurity",
+      "definition": "the protection of computer systems from attacks",
+      "translation": "кибербезопасность"
+    },
+    {
+      "term": "artificial intelligence",
+      "definition": "computer systems capable of performing tasks requiring human intelligence",
+      "translation": "искусственный интеллект"
+    },
+    {
+      "term": "government policy",
+      "definition": "an official plan or course of action adopted by a government",
+      "translation": "государственная политика"
+    },
+    {
+      "term": "technological advantage",
+      "definition": "an advantage gained through superior technology",
+      "translation": "технологическое преимущество"
+    },
+    {
+      "term": "trade-off",
+      "definition": "a balance between two competing advantages or disadvantages",
+      "translation": "компромисс"
+    },
+    {
+      "term": "build strength",
+      "definition": "to become stronger or more resilient",
+      "translation": "наращивать силу"
+    }
+  ]
+}

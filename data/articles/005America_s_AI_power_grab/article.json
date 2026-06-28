@@ -1,0 +1,20 @@
+{
+  "id": "005AIPowerGrab",
+  "slug": "005AIPowerGrab",
+  "title": "America's AI Power Grab",
+  "subtitle": "How AI has granted America vast new geopolitical leverage",
+  "level": "C1/C2",
+  "ieltsTarget": "8.0-9.0",
+  "bands": ["8.0-8.5","8.5-9.0"],
+  "source": "The Economist",
+  "originalUrl": "https://www.economist.com/leaders/2026/06/18/ai-has-granted-america-vast-new-power",
+  "description": "An analysis of how frontier artificial intelligence has become a new source of geopolitical and economic power. The article explores America's control over leading AI models, export restrictions, compute infrastructure, strategic alliances, and the implications for Europe, China, and the future global balance of power.",
+  "topics": [
+    "Artificial Intelligence",
+    "Technology",
+    "Geopolitics",
+    "Economics",
+    "International Relations"
+  ],
+  "enabled": true
+}

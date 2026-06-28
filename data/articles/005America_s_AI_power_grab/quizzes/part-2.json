@@ -1,0 +1,61 @@
+{
+  "title": "Part 2 Quiz",
+  "part": 1,
+  "questions": [
+    {
+      "question": "Why would completely restricting access to frontier AI be self-defeating for America?",
+      "options": [
+        "It would reduce electricity prices",
+        "Most AI companies are based in Europe",
+        "American AI firms depend heavily on international customers and talent",
+        "It would eliminate military funding"
+      ],
+      "answer": 2,
+      "explanation": "The article notes that companies such as Anthropic rely on overseas users, researchers and revenue."
+    },
+    {
+      "question": "What hierarchy of access does the article predict?",
+      "options": [
+        "Everyone will receive identical AI models",
+        "Different countries may receive AI systems of different capability",
+        "Only governments will use AI",
+        "China will receive the best models"
+      ],
+      "answer": 1,
+      "explanation": "The most advanced systems may remain restricted while weaker versions are exported."
+    },
+    {
+      "question": "Why might America's allies feel uncomfortable?",
+      "options": [
+        "Because AI could become another source of American political influence",
+        "Because AI development has stopped",
+        "Because Europe has more computing power",
+        "Because AI will replace NATO"
+      ],
+      "answer": 0,
+      "explanation": "Dependence on American AI could strengthen Washington's bargaining power."
+    },
+    {
+      "question": "According to the article, what alternative might some countries choose?",
+      "options": [
+        "Stop developing AI entirely",
+        "Purchase Russian AI systems",
+        "Support open-weight or non-American models",
+        "Ban cloud computing"
+      ],
+      "answer": 2,
+      "explanation": "Countries may prefer open-weight models or competitors if American restrictions become too severe."
+    },
+    {
+      "question": "Which factor gives America another major advantage besides AI models?",
+      "options": [
+        "Cheaper universities",
+        "Greater computing capacity",
+        "Larger population",
+        "More mobile phones"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that America also dominates compute infrastructure."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "article": "America's AI power grab",
+  "part": "Part B",
+  "title": "AI as a Strategic Weapon",
+  "level": "B2/C1/C2",
+  "text": "America must decide how to wield this vast new power. The rest of the world must decide what to do about it. Even as it plans for an un-reliable America in everything from defence to trade, it now has to cope with a new way of\n\nbeing captive to the world's biggest economy. This is not the first time America has tried to restrict access to frontier technologies.\n\nAfter the second world war it stopped helping Britain's nuclear weapons programme. When modern cryp tography emerged in the 1970s, it blocked exports, before ac-cepting the trade-off between having secure allies and using secrets to boost its own offensive capabilities. Uncle Sam still refuses to share its best military equipment, even with close al-lies. America kept the F-22 fighter for itself; allies got the F-35.\n\nTo control access to a technology, though, depends on its nature, and rivals ability to develop it independently. Nuclear co-operation with Britain resumed in the 1950s after it devel-oped technology of its own; with other countries, America used the Nuclear Non-Proliferation Treaty of 1968. Cryptogra-phy methods could not be contained and eventually went pub-lic. Many countries are capable of cyber-attacks.\n\nFrontier At has echoes of all these examples. If the very best models can disable crucial infrastructure or help users create pandemic-ready pathogens then, like nuclear weapons, they are too dangerous for public hands. But as with cryptography algorithms, it will be hard to be sure that advanced proprietary capabilities will never be copied. Open-weight models, which anyone can download, could advance and proliferate. In cyber-security a small imbalance can bring big advantages: if an at-tacker has version 5 while the defender is stuck with version 4. and the better model uncovers just one more vulnerability, the weaker party will be compromised. As AI is embedded in mil-itary hardware, a similar logic may apply on the battlefield.\n\nYet America has a huge economic interest in leading in AI and selling its tech to foreigners. Many Anthropic staff are not American and so were hit by the ban; to freeze Al research at America's best lab would be self-defeating. The firm also says that 80% of its consumer use is overseas. As American technol-ogy has boomed over the past decade, Europe's payments to America for intellectual-property products have risen fivefold. America should not want to give the rest of the world a reason to team up with China, the second-ranking Al power.\n\nThis may lead to a hierarchy of access. The best capabilities will be closely guarded by America, to provide an edge in cyb-er-offence and military capability. The next-best alternatives may be available to allies the equivalent of the F-35. And a sufficiently handicapped model may be sold to the world with the best safety precautions its makers can design.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["restrict access", "ограничивать доступ", "restrict access"],
+        ["close ally", "близкий союзник", "close allies"],
+        ["trade-off", "компромисс", "trade-off"],
+        ["economic interest", "экономический интерес", "economic interest"],
+        ["consumer use", "использование потребителями", "consumer use"],
+        ["team up with", "объединиться с", "team up with China"],
+        ["military capability", "военный потенциал", "military capability"],
+        ["guard closely", "тщательно охранять", "closely guarded"],
+        ["technology of its own", "собственная технология", "technology of its own"],
+        ["public hands", "в распоряжении общества", "public hands"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["wield power", "использовать власть", "wield this vast new power"],
+        ["be captive to", "оказаться зависимым от", "being captive to"],
+        ["frontier technologies", "передовые технологии", "frontier technologies"],
+        ["offensive capabilities", "наступательные возможности", "offensive capabilities"],
+        ["develop independently", "разрабатывать самостоятельно", "develop it independently"],
+        ["proprietary capabilities", "проприетарные технологии", "proprietary capabilities"],
+        ["open-weight models", "модели с открытыми весами", "Open-weight models"],
+        ["proliferate", "быстро распространяться", "proliferate"],
+        ["hierarchy of access", "иерархия доступа", "hierarchy of access"],
+        ["self-defeating", "контрпродуктивный", "self-defeating"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["Nuclear Non-Proliferation Treaty", "Договор о нераспространении ядерного оружия", "Nuclear Non-Proliferation Treaty"],
+        ["crucial infrastructure", "критически важная инфраструктура", "crucial infrastructure"],
+        ["pandemic-ready pathogens", "патогены, пригодные для создания пандемии", "pandemic-ready pathogens"],
+        ["cyber-security", "кибербезопасность", "cyber-security"],
+        ["uncover a vulnerability", "обнаружить уязвимость", "uncovers just one more vulnerability"],
+        ["embedded in military hardware", "встроенный в военную технику", "embedded in military hardware"],
+        ["intellectual-property products", "продукты интеллектуальной собственности", "intellectual-property products"],
+        ["cyber-offence", "кибернаступление", "cyber-offence"],
+        ["handicapped model", "искусственно ограниченная модель", "handicapped model"],
+        ["safety precautions", "меры безопасности", "safety precautions"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why does the author compare AI with nuclear technology and cryptography?",
+      "options": [
+        "Because they were invented at the same time",
+        "Because they all require government funding",
+        "Because they present similar security and access dilemmas",
+        "Because they are equally easy to control"
+      ],
+      "answer": 2,
+      "explanation": "The article argues that frontier AI raises many of the same strategic questions as nuclear technology and cryptography."
+    },
+    {
+      "type": "choice",
+      "question": "What makes open-weight AI models different from proprietary models?",
+      "options": [
+        "They can only be used by governments",
+        "Anyone can download them",
+        "They are less powerful than all proprietary models",
+        "They require military approval"
+      ],
+      "answer": 1,
+      "explanation": "The article states that open-weight models can be downloaded by anyone, allowing advanced capabilities to spread more easily."
+    },
+    {
+      "type": "choice",
+      "question": "Why would freezing AI research at Anthropic be self-defeating for America?",
+      "options": [
+        "The company mainly serves European governments",
+        "Most of its employees and customers are international",
+        "China owns part of the company",
+        "Its research is funded by the United Nations"
+      ],
+      "answer": 1,
+      "explanation": "The article explains that many staff are not American and around 80% of consumer use comes from overseas."
+    },
+    {
+      "type": "choice",
+      "question": "What does the author predict about future access to advanced AI?",
+      "options": [
+        "Everyone will receive the same AI models",
+        "Only governments will be allowed to use AI",
+        "Different countries may receive different levels of AI capability",
+        "Open-weight models will disappear"
+      ],
+      "answer": 2,
+      "explanation": "The article predicts a hierarchy of access, with the best models reserved for America and its closest allies."
+    },
+    {
+      "type": "choice",
+      "question": "According to the article, why should America avoid pushing other countries away?",
+      "options": [
+        "Because AI development is slowing down",
+        "Because other countries may strengthen cooperation with China",
+        "Because Europe produces most AI chips",
+        "Because open-weight models are illegal"
+      ],
+      "answer": 1,
+      "explanation": "The author argues that excessive restrictions could encourage other countries to turn toward China, the world's second-ranking AI power."
+    }
+  ]
+}

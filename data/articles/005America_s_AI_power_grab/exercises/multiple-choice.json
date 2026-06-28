@@ -1,0 +1,117 @@
+{
+  "type": "multiple-choice",
+  "title": "Multiple Choice",
+  "instructions": "Choose the correct letter, A, B, C or D.",
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is the author's main argument in the opening section of the article?",
+      "options": {
+        "A": "America's influence is rapidly disappearing.",
+        "B": "AI companies should ignore government regulations.",
+        "C": "Control over frontier AI has become a major source of American power.",
+        "D": "Anthropic is the world's only successful AI company."
+      },
+      "answer": "C"
+    },
+    {
+      "number": 2,
+      "question": "Why did the Trump administration order Anthropic to restrict access to Fable and Mythos?",
+      "options": {
+        "A": "To increase subscription revenue.",
+        "B": "Because of concerns over a possible jailbreak.",
+        "C": "To prepare the company for its IPO.",
+        "D": "To reduce electricity consumption."
+      },
+      "answer": "B"
+    },
+    {
+      "number": 3,
+      "question": "According to the article, why is AI compared with nuclear technology and cryptography?",
+      "options": {
+        "A": "All three technologies were developed by the US military.",
+        "B": "They all became obsolete over time.",
+        "C": "Each raises questions about controlling access to powerful technology.",
+        "D": "Each technology was freely shared with allies."
+      },
+      "answer": "C"
+    },
+    {
+      "number": 4,
+      "question": "What challenge do open-weight AI models present?",
+      "options": {
+        "A": "They cannot be improved further.",
+        "B": "They may allow advanced capabilities to spread widely.",
+        "C": "They require government approval before downloading.",
+        "D": "They are less useful than previous AI systems."
+      },
+      "answer": "B"
+    },
+    {
+      "number": 5,
+      "question": "Why would restricting AI research too heavily be harmful to America?",
+      "options": {
+        "A": "Most AI research is funded by Europe.",
+        "B": "American companies rely on international talent and customers.",
+        "C": "China already controls the AI market.",
+        "D": "Open-weight models would immediately disappear."
+      },
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "question": "What does the author predict about future access to frontier AI?",
+      "options": {
+        "A": "Every country will receive the same AI models.",
+        "B": "Only military organisations will use AI.",
+        "C": "Access will likely depend on strategic importance.",
+        "D": "Open-source AI will replace commercial AI completely."
+      },
+      "answer": "C"
+    },
+    {
+      "number": 7,
+      "question": "According to the article, what gives America another major advantage besides leading AI models?",
+      "options": {
+        "A": "Its larger population.",
+        "B": "Its greater computing infrastructure.",
+        "C": "Its lower electricity prices.",
+        "D": "Its stronger universities."
+      },
+      "answer": "B"
+    },
+    {
+      "number": 8,
+      "question": "Which recommendation does the author make for Europe and East Asia?",
+      "options": {
+        "A": "Introduce stronger protectionist policies.",
+        "B": "Depend more heavily on American AI companies.",
+        "C": "Reduce investment in AI infrastructure.",
+        "D": "Expand computing capacity and build stronger domestic AI ecosystems."
+      },
+      "answer": "D"
+    },
+    {
+      "number": 9,
+      "question": "What does the phrase 'vassal status' suggest in the article?",
+      "options": {
+        "A": "Europe could become heavily dependent on American AI.",
+        "B": "Europe will surpass America technologically.",
+        "C": "AI will eliminate international cooperation.",
+        "D": "Space-based data centres will replace all existing infrastructure."
+      },
+      "answer": "A"
+    },
+    {
+      "number": 10,
+      "question": "What is the author's overall conclusion?",
+      "options": {
+        "A": "Governments should prohibit frontier AI.",
+        "B": "The best response is to build technological strength rather than complain.",
+        "C": "Open-weight AI should become the global standard immediately.",
+        "D": "International cooperation on AI is impossible."
+      },
+      "answer": "B"
+    }
+  ]
+}

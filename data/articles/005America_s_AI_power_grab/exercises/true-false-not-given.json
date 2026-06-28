@@ -1,0 +1,57 @@
+{
+  "type": "true-false-not-given",
+  "title": "True / False / Not Given",
+  "instructions": "Write TRUE, FALSE or NOT GIVEN.",
+  "questions": [
+    {
+      "number": 1,
+      "statement": "The Trump administration ordered Anthropic to block access only for users outside the United States.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 2,
+      "statement": "The article states that the legal basis for the government's order has already been confirmed by the courts.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 3,
+      "statement": "The United States has never previously restricted access to important technologies.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 4,
+      "statement": "According to the article, open-weight AI models may become widely available.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 5,
+      "statement": "Anthropic earns most of its consumer revenue from American users.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 6,
+      "statement": "The article suggests that different countries may receive AI models with different capabilities.",
+      "answer": "TRUE"
+    },
+    {
+      "number": 7,
+      "statement": "Europe currently possesses more computing power than the United States.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 8,
+      "statement": "The author argues that Europe should ban American AI companies.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 9,
+      "statement": "The article says that SpaceX has already built operational data centres in space.",
+      "answer": "FALSE"
+    },
+    {
+      "number": 10,
+      "statement": "The article explains exactly how much money European governments should invest in AI infrastructure.",
+      "answer": "NOT GIVEN"
+    }
+  ]
+}

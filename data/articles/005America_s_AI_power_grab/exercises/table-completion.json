@@ -1,0 +1,84 @@
+{
+  "type": "table-completion",
+  "title": "Complete the Table",
+  "instructions": "Choose NO MORE THAN THREE WORDS from the passage.",
+  "columns": [
+    "Example",
+    "Information from the passage"
+  ],
+  "questions": [
+    {
+      "number": 1,
+      "left": "Reason for restricting Anthropic's models",
+      "prompt": "Concern about a possible ____",
+      "answer": [
+        "jailbreak"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 2,
+      "left": "Technology compared with AI",
+      "prompt": "Historical example: ____",
+      "answer": [
+        "nuclear weapons"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 3,
+      "left": "Another technology used as a comparison",
+      "prompt": "Example: ____",
+      "answer": [
+        "modern cryptography",
+        "cryptography"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 4,
+      "left": "AI models available for public download",
+      "prompt": "Known as ____",
+      "answer": [
+        "Open-weight models"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 5,
+      "left": "Main hardware advantage of the United States",
+      "prompt": "Greater ____",
+      "answer": [
+        "computing power"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 6,
+      "left": "Infrastructure needed to expand AI",
+      "prompt": "Countries should build more ____",
+      "answer": [
+        "data centres"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 7,
+      "left": "Britain's infrastructure problem",
+      "prompt": "Demand for new ____ increased dramatically",
+      "answer": [
+        "grid connections"
+      ],
+      "maxWords": 3
+    },
+    {
+      "number": 8,
+      "left": "Author's recommendation",
+      "prompt": "Countries should build ____",
+      "answer": [
+        "AI ecosystem"
+      ],
+      "maxWords": 3
+    }
+  ]
+}

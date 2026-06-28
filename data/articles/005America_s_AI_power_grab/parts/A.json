@@ -1,0 +1,113 @@
+{
+  "article": "America's AI power grab",
+  "part": "Part A",
+  "title": "America's New AI Power",
+  "level": "B2/C1/C2",
+  "text": "Uncle Sam has become the gatekeeper to frontier AI-a new source of extraordinary leverage\n\nTHE NEWS is full of how an ignominious peace deal with Iran exemplifies a decline in American power (see Leader).\n\nThat conclusion could hardly be more wrong. On June 12th the Trump administration ordered Anthropic to block foreigners from Fable and Mythos, its latest and most capable frontier AI models. In an instant, everyone learned that the American gov ernment can decide who may use the world's most important technology. You don't get much more powerful than that.\n\nThe administration was responding to a supposed jailbreak for Fable, meaning a prompt that circumvents defences against uses such as hacking computers or making biowea-pons. The chances are that it wanted Anthropic to switch off the models for everyone, and that targeting foreigners was a means to an end. Sure enough, that is what Anthropic did, while claiming that the concern about its model was over-blown. The legal basis of the order remains unclear, and the ban seems unlikely to last.\n\nWhat matters, though, is the demonstration that global ac-cess to the best Al may come down to a decision in the Oval Office. The administration showed in March that it is prepared to trample on the frontier Al companies, when it designated Anthropic a \"supply-chain risk\". Now it has shown that it is prepared to trample on users, too.",
+  "levels": {
+    "B2": {
+      "quizlet": [
+        ["block foreigners", "запретить доступ иностранцам", "block foreigners"],
+        ["capable model", "мощная модель", "most capable frontier AI models"],
+        ["respond to", "реагировать на", "responding to"],
+        ["switch off", "отключить", "switch off the models"],
+        ["legal basis", "правовая основа", "legal basis"],
+        ["remain unclear", "оставаться неясным", "remains unclear"],
+        ["global access", "глобальный доступ", "global access"],
+        ["come down to", "сводиться к", "come down to"],
+        ["decision", "решение", "a decision in the Oval Office"],
+        ["world's most important technology", "важнейшая технология в мире", "world's most important technology"]
+      ]
+    },
+    "C1": {
+      "quizlet": [
+        ["gatekeeper", "контролирующая сторона", "gatekeeper"],
+        ["frontier AI", "передовой искусственный интеллект", "frontier AI"],
+        ["extraordinary leverage", "исключительное влияние", "extraordinary leverage"],
+        ["supposed jailbreak", "предполагаемый обход защиты", "supposed jailbreak"],
+        ["circumvent defences", "обходить защитные механизмы", "circumvents defences"],
+        ["means to an end", "средство достижения цели", "means to an end"],
+        ["over-blown", "сильно преувеличенный", "over-blown"],
+        ["trample on", "попирать; грубо нарушать", "trample on"],
+        ["supply-chain risk", "риск для цепочки поставок", "supply-chain risk"],
+        ["designate as", "квалифицировать как; объявить", "designated Anthropic"]
+      ]
+    },
+    "C2": {
+      "quizlet": [
+        ["ignominious", "позорный", "ignominious peace deal"],
+        ["exemplify", "служить ярким примером", "exemplifies"],
+        ["decline in power", "ослабление влияния", "decline in American power"],
+        ["could hardly be more wrong", "быть совершенно ошибочным", "could hardly be more wrong"],
+        ["frontier models", "передовые модели ИИ", "frontier AI models"],
+        ["bioweapons", "биологическое оружие", "making bioweapons"],
+        ["Oval Office", "Овальный кабинет; администрация президента США", "Oval Office"],
+        ["wield power", "использовать власть", "wield this vast new power"],
+        ["prepared to trample on", "готовый грубо нарушать", "prepared to trample on"],
+        ["latest and most capable", "самые новые и самые мощные", "latest and most capable frontier AI models"]
+      ]
+    }
+  },
+  "questions": [
+    {
+      "type": "choice",
+      "question": "Why does the author argue that claims about America's declining power are mistaken?",
+      "options": [
+        "Because America has reduced military spending",
+        "Because the US government can control access to frontier AI",
+        "Because Europe depends on American energy",
+        "Because China has stopped developing AI"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that America's ability to decide who can use the world's leading AI models demonstrates extraordinary geopolitical power."
+    },
+    {
+      "type": "choice",
+      "question": "Why did the Trump administration order Anthropic to block foreign users?",
+      "options": [
+        "To reduce server costs",
+        "Because of concerns about a possible jailbreak",
+        "To prepare for a stock-market listing",
+        "To increase subscription prices"
+      ],
+      "answer": 1,
+      "explanation": "The administration responded to reports of a possible jailbreak that could bypass the model's safety protections."
+    },
+    {
+      "type": "choice",
+      "question": "What does the article suggest about the legal basis of the government's order?",
+      "options": [
+        "It is clearly established",
+        "It was approved by Congress",
+        "It remains uncertain",
+        "It was supported by the United Nations"
+      ],
+      "answer": 2,
+      "explanation": "The author states that the legal basis of the order remains unclear."
+    },
+    {
+      "type": "choice",
+      "question": "According to the article, what is the most significant consequence of the Anthropic incident?",
+      "options": [
+        "AI companies will move abroad",
+        "The AI models became permanently unavailable",
+        "The world learned that access to frontier AI may depend on the US government",
+        "Anthropic stopped developing new models"
+      ],
+      "answer": 2,
+      "explanation": "The key issue is not the temporary ban itself but the demonstration that Washington can control global access to frontier AI."
+    },
+    {
+      "type": "choice",
+      "question": "What criticism does the author make of the US administration?",
+      "options": [
+        "It ignored AI safety concerns",
+        "It was willing to override both AI companies and their users",
+        "It invested too little in AI research",
+        "It refused to regulate AI companies"
+      ],
+      "answer": 1,
+      "explanation": "The article argues that the administration first pressured frontier AI companies and then showed it was also prepared to restrict users."
+    }
+  ]
+}

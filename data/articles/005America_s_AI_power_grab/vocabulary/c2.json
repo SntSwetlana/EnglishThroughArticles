@@ -1,0 +1,155 @@
+{
+  "title": "C2 Mastery Vocabulary",
+  "items": [
+    {
+      "term": "ignominious",
+      "definition": "deserving shame or public disgrace",
+      "translation": "позорный"
+    },
+    {
+      "term": "frontier AI",
+      "definition": "the most advanced artificial intelligence systems currently available",
+      "translation": "передовой искусственный интеллект"
+    },
+    {
+      "term": "supposed jailbreak",
+      "definition": "an alleged bypass of AI safety mechanisms",
+      "translation": "предполагаемый обход защиты"
+    },
+    {
+      "term": "circumvent safeguards",
+      "definition": "to evade built-in safety measures",
+      "translation": "обходить механизмы безопасности"
+    },
+    {
+      "term": "bioweapon",
+      "definition": "a weapon that uses biological agents",
+      "translation": "биологическое оружие"
+    },
+    {
+      "term": "trample on users' rights",
+      "definition": "to violate the rights of users",
+      "translation": "попирать права пользователей"
+    },
+    {
+      "term": "frontier companies",
+      "definition": "companies operating at the cutting edge of technology",
+      "translation": "ведущие технологические компании"
+    },
+    {
+      "term": "non-proliferation",
+      "definition": "the prevention of the spread of dangerous technologies or weapons",
+      "translation": "нераспространение"
+    },
+    {
+      "term": "proprietary algorithms",
+      "definition": "algorithms owned exclusively by a company",
+      "translation": "проприетарные алгоритмы"
+    },
+    {
+      "term": "pandemic-ready pathogens",
+      "definition": "microorganisms capable of causing widespread disease",
+      "translation": "патогены, пригодные для создания пандемии"
+    },
+    {
+      "term": "public-domain cryptography",
+      "definition": "cryptographic methods freely available to everyone",
+      "translation": "криптография открытого доступа"
+    },
+    {
+      "term": "version imbalance",
+      "definition": "a significant difference in software capability between versions",
+      "translation": "дисбаланс версий"
+    },
+    {
+      "term": "uncover a vulnerability",
+      "definition": "to discover a security weakness",
+      "translation": "обнаружить уязвимость"
+    },
+    {
+      "term": "embedded in military hardware",
+      "definition": "built into military equipment",
+      "translation": "встроенный в военную технику"
+    },
+    {
+      "term": "cyber-defence capability",
+      "definition": "the ability to defend against cyber attacks",
+      "translation": "возможности киберобороны"
+    },
+    {
+      "term": "open-weight alternative",
+      "definition": "an AI model whose parameters are publicly available",
+      "translation": "альтернатива с открытыми весами"
+    },
+    {
+      "term": "vassal status",
+      "definition": "a condition of dependence on a more powerful state",
+      "translation": "положение вассала"
+    },
+    {
+      "term": "compute scarcity",
+      "definition": "a shortage of computing resources",
+      "translation": "дефицит вычислительных мощностей"
+    },
+    {
+      "term": "grid connection",
+      "definition": "a connection to an electricity network",
+      "translation": "подключение к энергосети"
+    },
+    {
+      "term": "peak power demand",
+      "definition": "the highest level of electricity consumption",
+      "translation": "пиковый спрос на электроэнергию"
+    },
+    {
+      "term": "token gestures",
+      "definition": "symbolic actions with little practical effect",
+      "translation": "символические меры"
+    },
+    {
+      "term": "looser regulatory framework",
+      "definition": "a less restrictive system of regulation",
+      "translation": "более мягкое регулирование"
+    },
+    {
+      "term": "integrate rather than duplicate",
+      "definition": "to combine efforts instead of repeating them",
+      "translation": "интегрировать вместо дублирования"
+    },
+    {
+      "term": "protectionism",
+      "definition": "government policies protecting domestic industries from foreign competition",
+      "translation": "протекционизм"
+    },
+    {
+      "term": "AI ecosystem",
+      "definition": "the network of organisations, infrastructure and technologies supporting AI",
+      "translation": "экосистема искусственного интеллекта"
+    },
+    {
+      "term": "transactional foreign policy",
+      "definition": "an international policy focused on immediate national interests",
+      "translation": "прагматичная внешняя политика"
+    },
+    {
+      "term": "frontier capability",
+      "definition": "a cutting-edge technological ability",
+      "translation": "передовая технологическая возможность"
+    },
+    {
+      "term": "technology transfer restrictions",
+      "definition": "limitations on sharing advanced technologies",
+      "translation": "ограничения на передачу технологий"
+    },
+    {
+      "term": "strategic leverage",
+      "definition": "power that can be used to influence others",
+      "translation": "стратегический рычаг влияния"
+    },
+    {
+      "term": "technological containment",
+      "definition": "a strategy of limiting another country's technological development",
+      "translation": "технологическое сдерживание"
+    }
+  ]
+}
